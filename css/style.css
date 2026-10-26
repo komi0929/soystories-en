@@ -2230,3 +2230,405 @@ img {
     text-align: center;
     padding: 14px;
 }
+
+/* ==========================================================================
+   Allergen Matrix Table (#concept)
+   ========================================================================== */
+.allergen-matrix {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(109, 128, 89, 0.25);
+}
+
+.allergen-matrix__title {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--brand-green-dark);
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.allergen-matrix__table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(109, 128, 89, 0.25);
+    background: #fff;
+}
+
+.allergen-matrix__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    min-width: 640px;
+}
+
+.allergen-matrix__table th,
+.allergen-matrix__table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid rgba(109, 128, 89, 0.15);
+    vertical-align: middle;
+    line-height: 1.45;
+}
+
+.allergen-matrix__table th {
+    background: #F4F7F0;
+    color: var(--brand-green-dark);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.allergen-matrix__table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.allergen-matrix__table small {
+    color: var(--text-muted);
+    font-size: 11.5px;
+}
+
+.matrix-safe {
+    display: inline-block;
+    background: #E8F5E9;
+    color: #1B5E20;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 3px 9px;
+    border-radius: 999px;
+}
+
+.matrix-contains {
+    display: inline-block;
+    background: #FFF3E0;
+    color: #B25000;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 3px 9px;
+    border-radius: 999px;
+}
+
+.matrix-note {
+    display: inline-block;
+    background: #F3F4F6;
+    color: #374151;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 3px 9px;
+    border-radius: 999px;
+}
+
+/* ==========================================================================
+   Point-and-Order Code Badge (#menu)
+   ========================================================================== */
+.menu__order-code {
+    display: inline-block;
+    background: #FDF8F2;
+    border: 1px dashed var(--brand-brown);
+    color: var(--brand-brown-dark);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.menu__order-code strong {
+    color: var(--brand-green-dark);
+    font-weight: 800;
+}
+
+/* ==========================================================================
+   Seasonal Limited-Edition Menus & Craft Drinks (#seasonal)
+   ========================================================================== */
+.seasonal {
+    padding: 64px 0;
+    background: linear-gradient(180deg, #FAF6F0 0%, #F3EFE6 100%);
+}
+
+.seasonal__header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 36px;
+}
+
+.seasonal__title {
+    font-family: var(--font-serif);
+    font-size: clamp(26px, 4vw, 38px);
+    color: var(--brand-brown-dark);
+    margin: 8px 0 12px;
+}
+
+.seasonal__lead {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-body);
+}
+
+.seasonal__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 640px) {
+    .seasonal__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .seasonal__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.seasonal__card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(74, 58, 42, 0.08);
+    border: 1px solid rgba(139, 109, 76, 0.15);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.seasonal__img-wrap {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: #f5f2ec;
+}
+
+.seasonal__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.seasonal__card:hover .seasonal__img-wrap img {
+    transform: scale(1.04);
+}
+
+.seasonal__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(46, 90, 54, 0.92);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    letter-spacing: 0.03em;
+}
+
+.seasonal__caption {
+    padding: 16px 18px 20px;
+    flex: 1;
+}
+
+.seasonal__caption h3 {
+    font-family: var(--font-serif);
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--brand-brown-dark);
+    margin-bottom: 6px;
+}
+
+.seasonal__caption p {
+    font-family: var(--font-sans);
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text-body);
+}
+
+.seasonal__note {
+    text-align: center;
+    margin-top: 24px;
+    font-family: var(--font-sans);
+    font-size: 13.5px;
+    color: var(--text-muted);
+}
+
+.seasonal__note a {
+    color: var(--brand-green-dark);
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   Store Atmosphere, 12 Indoor Seats & Souvenir Guide (#atmosphere)
+   ========================================================================== */
+.eat-in__subtitle {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    color: var(--text-body);
+    max-width: 680px;
+    margin: 10px auto 0;
+    line-height: 1.65;
+}
+
+.eat-in__slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+@media (min-width: 768px) {
+    .eat-in__slide img {
+        height: 340px;
+    }
+}
+
+.house-rules-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+@media (min-width: 640px) {
+    .house-rules-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .house-rules-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.house-rule-card {
+    background: #fff;
+    border: 1px solid rgba(109, 128, 89, 0.25);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.house-rule-card__icon {
+    font-size: 24px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.house-rule-card h3 {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--brand-green-dark);
+    margin-bottom: 4px;
+}
+
+.house-rule-card p {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--text-body);
+}
+
+.souvenir-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 28px;
+}
+
+@media (min-width: 840px) {
+    .souvenir-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.souvenir-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(139, 109, 76, 0.22);
+    box-shadow: 0 10px 28px rgba(74, 58, 42, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.souvenir-card__img {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    background: #f6f2eb;
+    overflow: hidden;
+}
+
+.souvenir-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.souvenir-card__badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: #B85D19;
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.souvenir-card__badge--green {
+    background: var(--brand-green-dark);
+}
+
+.souvenir-card__body {
+    padding: 22px 24px 24px;
+    flex: 1;
+}
+
+.souvenir-card__eyebrow {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--brand-green-dark);
+    margin-bottom: 6px;
+}
+
+.souvenir-card__body h3 {
+    font-family: var(--font-serif);
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--brand-brown-dark);
+    margin-bottom: 10px;
+    line-height: 1.35;
+}
+
+.souvenir-card__body p {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--text-body);
+}
+
+.souvenir-card__body a {
+    color: var(--brand-green-dark);
+    font-weight: 700;
+    text-decoration: underline;
+}

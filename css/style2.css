@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
 /* Waffle & Soft Serve Subpage CSS (waffle&soft.html) */
 
@@ -820,4 +820,17 @@ p {
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+.order-code {
+    display: inline-block;
+    background: #E8F5E9;
+    color: #1B5E20;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 5px;
+    margin-right: 4px;
+    vertical-align: middle;
 }

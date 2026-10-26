@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
 /* Baked & Moist Cake Donuts Subpage CSS (dounuts.html) */
 
@@ -763,4 +763,62 @@ p {
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+/* Point-and-Order Code Pill & Souvenir Showcase */
+.order-code {
+    display: inline-block;
+    background: #E8F5E9;
+    color: #1B5E20;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 5px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.donut-souvenir-showcase {
+    margin: 22px auto 28px;
+    max-width: 960px;
+}
+
+.donut-souvenir-showcase__photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+@media (min-width: 680px) {
+    .donut-souvenir-showcase__photos {
+        grid-template-columns: 1.25fr 1fr;
+    }
+}
+
+.donut-souvenir-showcase__fig {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(109, 128, 89, 0.25);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.donut-souvenir-showcase__fig img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.donut-souvenir-showcase__fig figcaption {
+    padding: 10px 14px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #2E5A36;
+    text-align: center;
+    background: #F4F7F0;
 }
