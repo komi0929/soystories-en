@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#F7F1E7">
-    <title>SoyStories Yakuin, Fukuoka | 100% Gluten-Free &amp; Vegan Café (Dedicated Kitchen)</title>
-    <meta name="description" content="SoyStories in Yakuin, Fukuoka: a 100% dedicated gluten-free &amp; plant-based (vegan) café. Freshly baked rice flour bubble waffles, soy milk soft serve, donuts &amp; gelato. No wheat, dairy, eggs, honey or gelatin. 12 seats &amp; takeout. Open daily 11:00–22:00 (L.O. 21:45).">
+    <title>SoyStories Yakuin, Fukuoka | 100% Gluten-Free &amp; Vegan Sweets Café</title>
+    <meta name="description" content="SoyStories in Yakuin, Fukuoka: a 100% gluten-free &amp; plant-based (vegan) sweets shop. Freshly baked rice-flour bubble waffles, soy milk soft serve, baked donuts &amp; craft gelato made without wheat, dairy, eggs or refined white sugar. Open daily 11:00–22:00 (L.O. 21:45).">
     <link rel="canonical" href="https://en.soystories.cafe/">
     <link rel="alternate" hreflang="en" href="https://en.soystories.cafe/">
-    <link rel="alternate" hreflang="ja" href="https://www.soystories.jp/">
-    <link rel="alternate" hreflang="x-default" href="https://www.soystories.jp/">
+    <link rel="alternate" hreflang="ja" href="https://soystories.jp/">
+    <link rel="alternate" hreflang="ko" href="https://en.soystories.cafe/ko.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://en.soystories.cafe/zh-tw.html">
+    <link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/">
     <meta property="og:url" content="https://en.soystories.cafe/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="SoyStories Yakuin, Fukuoka | 100% Gluten-Free &amp; Vegan Café">
-    <meta property="og:description" content="A 100% dedicated gluten-free &amp; plant-based café in Fukuoka. Bubble waffles, soy soft serve, donuts &amp; gelato. Open daily until 10 PM.">
-    <meta property="og:image" content="https://en.soystories.cafe/img/interior_seating.jpg">
+    <meta property="og:title" content="SoyStories Yakuin, Fukuoka | 100% Gluten-Free &amp; Vegan Sweets Café">
+    <meta property="og:description" content="Freshly baked rice-flour bubble waffles, pure soy milk soft serve, baked donuts &amp; craft gelato in Yakuin, Fukuoka. Made without wheat, dairy, eggs or refined white sugar. Open daily 11:00–22:00.">
+    <meta property="og:image" content="https://en.soystories.cafe/img/waffle-softcream.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="preload" as="image" href="./img/tray_waffle_latte.jpg" media="(max-width: 767px)">
@@ -23,42 +25,185 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Noto+Sans+JP:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/home.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSN34RVWC2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KSN34RVWC2', { 'anonymize_ip': true });
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["CafeOrCoffeeShop", "Bakery", "IceCreamShop"],
-      "name": "SoyStories (Soy Stories Yakuin / ソイストーリーズ 薬院店)",
-      "url": "https://en.soystories.cafe/",
-      "description": "100% dedicated gluten-free and plant-based (vegan) café in Yakuin, Fukuoka. Free from wheat, dairy, eggs, honey and gelatin.",
-      "image": [
-        "https://en.soystories.cafe/img/interior_seating.jpg",
-        "https://en.soystories.cafe/img/tray_waffle_latte.jpg",
-        "https://en.soystories.cafe/img/cake_donuts_box.jpg"
-      ],
-      "telephone": "+81-92-231-0677",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Chisan Mansion Dai-3 Hakata 1F, 2-2-24 Yakuin, Chuo-ku",
-        "addressLocality": "Fukuoka",
-        "addressRegion": "Fukuoka",
-        "postalCode": "810-0022",
-        "addressCountry": "JP"
-      },
-      "geo": { "@type": "GeoCoordinates", "latitude": 33.5806, "longitude": 130.3944 },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "11:00",
-        "closes": "22:00"
-      },
-      "servesCuisine": ["Gluten-Free", "Vegan", "Plant-Based", "Desserts"],
-      "priceRange": "¥330 - ¥900",
-      "currenciesAccepted": "JPY",
-      "paymentAccepted": "Cash, Credit Card, Suica, PASMO, ICOCA, SUGOCA, iD, QUICPay, PayPay",
-      "sameAs": [
-        "https://www.instagram.com/soystories_yakuin/",
-        "https://www.happycow.net/reviews/soy-stories-fukuoka-298687",
-        "https://www.soystories.jp/"
+      "@graph": [
+        {
+          "@type": ["IceCreamShop", "Bakery", "CafeOrCoffeeShop"],
+          "@id": "https://en.soystories.cafe/#store",
+          "name": "SoyStories (Soy Stories Yakuin / グルテンフリー＆100％植物性スイーツ Soy Stories)",
+          "url": "https://en.soystories.cafe/",
+          "description": "Vegan and gluten-free sweets shop in Yakuin, Fukuoka. Freshly baked rice-flour bubble waffles, soy soft serve, baked donuts and craft ice cream made without wheat, dairy, eggs or refined white sugar.",
+          "image": [
+            "https://en.soystories.cafe/img/top_wafflesoft.png",
+            "https://en.soystories.cafe/img/tray_waffle_latte.jpg",
+            "https://en.soystories.cafe/img/cake_donuts_box.jpg"
+          ],
+          "telephone": "+81-92-231-0677",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Chisan Mansion Dai-3 Hakata 1F, 2-2-24 Yakuin, Chuo-ku",
+            "addressLocality": "Fukuoka",
+            "addressRegion": "Fukuoka",
+            "postalCode": "810-0022",
+            "addressCountry": "JP"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 33.5806,
+            "longitude": 130.3944
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "11:00",
+            "closes": "22:00"
+          },
+          "servesCuisine": ["Vegan", "Gluten-Free", "Plant-Based", "Desserts", "Sweets"],
+          "priceRange": "¥330 - ¥900",
+          "currenciesAccepted": "JPY",
+          "paymentAccepted": "Cash, Visa, Mastercard, JCB, American Express, Diners Club, Suica, PASMO, ICOCA, SUGOCA, nimoca, Hayakaken, iD, QUICPay, PayPay",
+          "hasMenu": {
+            "@type": "Menu",
+            "name": "SoyStories Yakuin In-Store Menu",
+            "url": "https://en.soystories.cafe/#menu",
+            "hasMenuSection": [
+              {
+                "@type": "MenuSection",
+                "name": "Signature Waffle & Soy Soft Serve / Whip",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Signature Rice-Flour Bubble Waffle & Pure Soy Soft Serve (ワッフル純豆乳ソフトクリーム)",
+                    "description": "Freshly baked 100% Niigata rice-flour bubble waffle paired with creamy morning-squeezed soy milk soft serve and 6 free toppings. Contains: Soybeans (optional Okara cookie topping contains Almonds).",
+                    "SuitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
+                    "offers": [
+                      { "@type": "Offer", "name": "Full Size", "price": "900", "priceCurrency": "JPY" },
+                      { "@type": "Offer", "name": "Half Size", "price": "690", "priceCurrency": "JPY" }
+                    ]
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Rice-Flour Bubble Waffle & Soy Whipped Cream (ワッフル豆乳ホイップクリーム)",
+                    "description": "Freshly baked rice-flour bubble waffle topped with fluffy dairy-free soy whipped cream and 6 free toppings. Contains: Soybeans.",
+                    "SuitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
+                    "offers": [
+                      { "@type": "Offer", "name": "Full Size", "price": "900", "priceCurrency": "JPY" },
+                      { "@type": "Offer", "name": "Half Size", "price": "690", "priceCurrency": "JPY" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Freshly Baked Rice-Flour Bubble Waffles",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Plain Rice-Flour Bubble Waffle (国産米粉の焼きたてワッフル プレーン)",
+                    "offers": { "@type": "Offer", "price": "600", "priceCurrency": "JPY" }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Matcha / Cocoa / Black Sesame Rice-Flour Bubble Waffle (抹茶・ココア・黒ゴマ)",
+                    "offers": { "@type": "Offer", "price": "690", "priceCurrency": "JPY" }
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Pure Soy Milk Soft Serve",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Pure Soy Milk Soft Serve Large (純豆乳ソフト Large)",
+                    "offers": { "@type": "Offer", "price": "660", "priceCurrency": "JPY" }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Pure Soy Milk Soft Serve Medium (純豆乳ソフト Medium)",
+                    "offers": { "@type": "Offer", "price": "390", "priceCurrency": "JPY" }
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Baked Soy Donuts & Glazed Cake Donuts",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Baked Soy & Rice-Flour Donuts - 6 Flavors (プレーンドーナツ各種)",
+                    "description": "Cranberry, Black Sesame, Yame Matcha, Kinako, Earl Grey, Chocolat. Contains: Soybeans, Japanese Yam (plus Sesame in Black Sesame).",
+                    "offers": { "@type": "Offer", "price": "330", "priceCurrency": "JPY" }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Glazed Almond & Rice-Flour Cake Donuts - 6 Flavors (しっとりケーキドーナツ各種)",
+                    "description": "Strawberry, Matcha, Double Chocolate, Lemon, Chocolate Mint, Coconut. Soy-free recipe. Contains: Almonds, Apple.",
+                    "offers": { "@type": "Offer", "price": "430", "priceCurrency": "JPY" }
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Rice-Flour Craft Gelato",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Rice-Flour Craft Gelato - 8 Flavors (米粉ジェラート各種)",
+                    "description": "Berry Mix, Melting Chocolate, Vanilla Coconut, Refreshing Apple, Too Juicy Peach, Supreme Rich Matcha, Fragrant Hojicha, Juicy Dragon Fruit.",
+                    "offers": { "@type": "Offer", "price": "490", "priceCurrency": "JPY" }
+                  }
+                ]
+              }
+            ]
+          },
+          "sameAs": [
+            "https://soystories.jp/",
+            "https://www.soystories.jp/",
+            "https://www.instagram.com/soystories_yakuin/",
+            "https://www.happycow.net/reviews/soy-stories-fukuoka-381962",
+            "https://food-hug.com/soystoriesenglish-page/"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Are all sweets at SoyStories 100% vegan and plant-based?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Every item at SoyStories Yakuin is 100% plant-based (vegan). We do not use meat, fish, dairy, eggs, honey, or gelatin in any of our products."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is your gluten-free and kitchen allergen policy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All items are made with 100% gluten-free rice flour or almond flour. Wheat, dairy, and eggs are not brought into our kitchen. However, soybeans, almonds, sesame, Japanese yam, apples, peaches, and oranges are used in specific products in the same kitchen, and complete elimination of trace allergens cannot be guaranteed. Guests with severe allergies or celiac disease are encouraged to review per-item ingredients and consult our staff."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are your opening hours, last order, and seating capacity?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We are open daily from 11:00 AM to 10:00 PM (22:00), with last order at 9:45 PM and no regular holidays. Our shop offers a compact dine-in space (4 main seats plus wooden cube stools) and full takeaway service."
+              }
+            }
+          ]
+        }
       ]
     }
     </script>
@@ -82,7 +227,11 @@
                 <a href="#access">Access</a>
             </nav>
             <div class="hd__actions">
-                <a href="https://www.soystories.jp/" class="hd__lang" lang="ja" title="日本語サイト">日本語</a>
+                <div class="hd__lang-group" aria-label="Language switcher">
+                    <a href="https://soystories.jp/" class="hd__lang" lang="ja" data-lang-switch="ja" title="日本語サイト">日本語</a>
+                    <a href="./ko.html" class="hd__lang" lang="ko" data-lang-switch="ko" title="한국어 안내">KO</a>
+                    <a href="./zh-tw.html" class="hd__lang" lang="zh-Hant" data-lang-switch="zh-Hant" title="繁體中文指南">繁中</a>
+                </div>
                 <button type="button" class="hd__burger" id="js-drawer-icon" aria-label="Open menu" aria-expanded="false" aria-controls="js-drawer-content">
                     <span></span><span></span><span></span>
                 </button>
@@ -91,24 +240,27 @@
         <div class="drawer" id="js-drawer-content">
             <nav class="drawer__nav" aria-label="Mobile">
                 <a href="#inside" class="drawer-content__link">Inside the café</a>
-                <a href="#menu" class="drawer-content__link">Menu &amp; prices</a>
-                <a href="#allergy" class="drawer-content__link">Allergen checker</a>
+                <a href="#menu" class="drawer-content__link">Menu &amp; full price list</a>
+                <a href="#allergy" class="drawer-content__link">Allergen &amp; ingredient guide</a>
                 <a href="#seasonal" class="drawer-content__link">Seasonal specials</a>
                 <a href="#takeout" class="drawer-content__link">Takeout, souvenirs &amp; pre-orders</a>
-                <a href="#reviews" class="drawer-content__link">Reviews</a>
-                <a href="#qa" class="drawer-content__link">FAQ</a>
+                <a href="#reviews" class="drawer-content__link">Traveler reviews</a>
+                <a href="#commitment" class="drawer-content__link">Our story &amp; craft</a>
+                <a href="#qa" class="drawer-content__link">FAQ (13 questions)</a>
                 <a href="#access" class="drawer-content__link">Access, hours &amp; taxi card</a>
-                <a href="https://www.soystories.jp/" class="drawer-content__link drawer__ja" lang="ja">日本語サイトはこちら</a>
+                <a href="./ko.html" class="drawer-content__link drawer__ja" lang="ko" data-lang-switch="ko">한국어 메뉴 및 매장 안내 (Korean)</a>
+                <a href="./zh-tw.html" class="drawer-content__link drawer__ja" lang="zh-Hant" data-lang-switch="zh-Hant">繁體中文菜單與店鋪指南 (Chinese)</a>
+                <a href="https://soystories.jp/" class="drawer-content__link drawer__ja" lang="ja" data-lang-switch="ja">日本語公式サイトはこちら</a>
             </nav>
         </div>
     </header>
 
     <main id="main">
-        <!-- ================= Hero ================= -->
+        <!-- ================= 1. Hero ================= -->
         <section class="hero" aria-labelledby="hero-title">
             <picture class="hero__media">
                 <source media="(min-width: 768px)" srcset="./img/interior_seating.jpg">
-                <img src="./img/tray_waffle_latte.jpg" alt="A freshly baked bubble waffle and a warm drink on a wooden tray inside SoyStories" width="800" height="1200" fetchpriority="high">
+                <img src="./img/tray_waffle_latte.jpg" alt="Freshly baked rice-flour bubble waffle with soy milk soft serve and warm latte on a wooden tray at SoyStories Yakuin" width="800" height="1200" fetchpriority="high">
             </picture>
             <div class="hero__shade" aria-hidden="true"></div>
             <div class="hero__content">
@@ -116,29 +268,29 @@
                     <span class="dot" aria-hidden="true"></span>
                     <span class="hero__status-text">Open daily 11:00 AM – 10:00 PM</span>
                 </p>
-                <p class="hero__eyebrow">Yakuin, Fukuoka &middot; 3 min from Yakuin-odori Stn</p>
-                <h1 class="hero__title" id="hero-title">100% Gluten-Free &amp; Vegan Sweets Café</h1>
-                <p class="hero__lead">Freshly baked rice flour bubble waffles, soy milk soft serve, donuts &amp; gelato &mdash; all made in our <strong>dedicated gluten-free, plant-based kitchen.</strong></p>
+                <p class="hero__eyebrow">Yakuin, Fukuoka &middot; 2–3 min walk from Yakuin-odori Stn (Exit 2)</p>
+                <h1 class="hero__title" id="hero-title">Gluten-Free &amp; Vegan Sweets in Fukuoka</h1>
+                <p class="hero__lead">Freshly baked <strong>Niigata rice-flour bubble waffles</strong>, morning-squeezed <strong>pure soy milk soft serve</strong>, baked donuts &amp; craft gelato &mdash; crafted without wheat, dairy, eggs, or refined white sugar.</p>
                 <div class="hero__cta">
-                    <a href="#menu" class="btn btn--light">See the menu</a>
-                    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=%E3%80%92810-0022+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%96%AC%E9%99%A2%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%92%EF%BC%94+%E3%83%81%E3%82%B5%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E7%AC%AC3%E5%8D%9A%E5%A4%9A+1F+Soy+Stories" class="btn btn--ghost" target="_blank" rel="noopener">Directions</a>
+                    <a href="#menu" class="btn btn--light">See Full Menu</a>
+                    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=%E3%80%92810-0022+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%96%AC%E9%99%A2%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%92%EF%BC%94+%E3%83%81%E3%82%B5%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E7%AC%AC3%E5%8D%9A%E5%A4%9A+1F+Soy+Stories" class="btn btn--ghost" target="_blank" rel="noopener">Get Directions</a>
                 </div>
                 <a href="#reviews" class="hero__rating">
                     <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <span><strong>4.7</strong> Google (250+) &middot; <strong>5.0</strong> HappyCow</span>
+                    <span><strong>4.7</strong> on Google Maps (250+ reviews) &middot; Featured on HappyCow</span>
                 </a>
             </div>
         </section>
 
         <!-- ================= Trust chips ================= -->
-        <section class="trust" aria-label="Key facts">
+        <section class="trust" aria-label="Key store facts">
             <ul class="trust__list">
-                <li><span class="ico" aria-hidden="true">🌾</span><span><strong>Dedicated GF kitchen</strong>Celiac-safe</span></li>
-                <li><span class="ico" aria-hidden="true">🌱</span><span><strong>100% plant-based</strong>No honey or gelatin</span></li>
-                <li><span class="ico" aria-hidden="true">🪑</span><span><strong>12 seats</strong>Strollers &amp; suitcases OK</span></li>
-                <li><span class="ico" aria-hidden="true">🛍️</span><span><strong>Takeout</strong>Every item</span></li>
-                <li><span class="ico" aria-hidden="true">📖</span><span><strong>English menu</strong>At the counter</span></li>
-                <li><span class="ico" aria-hidden="true">💳</span><span><strong>Cards, IC &amp; PayPay</strong>Cash too</span></li>
+                <li><span class="ico" aria-hidden="true">🌾</span><span><strong>100% gluten-free</strong>No wheat in kitchen</span></li>
+                <li><span class="ico" aria-hidden="true">🌱</span><span><strong>100% plant-based</strong>No dairy, eggs or honey</span></li>
+                <li><span class="ico" aria-hidden="true">🍯</span><span><strong>No white sugar</strong>Sweetened with beet sugar</span></li>
+                <li><span class="ico" aria-hidden="true">🪑</span><span><strong>Dine-in &amp; Takeout</strong>4 main seats + wooden stools</span></li>
+                <li><span class="ico" aria-hidden="true">📖</span><span><strong>Multilingual menu</strong>EN / KO / 繁中 / JP</span></li>
+                <li><span class="ico" aria-hidden="true">💳</span><span><strong>Cards, IC &amp; PayPay</strong>Cash (JPY) accepted</span></li>
             </ul>
         </section>
 
@@ -147,66 +299,66 @@
             <div class="wrap">
                 <p class="kicker">Inside the café</p>
                 <h2 class="sec__title" id="inside-title">Warm wood, bright light &amp; waffles straight off the iron</h2>
-                <p class="sec__lead">A bright little café in Yakuin. Sit on our wooden cube stools, watch your waffle bake, and take a slow break from sightseeing.</p>
+                <p class="sec__lead">A welcoming neighborhood sweets shop in Yakuin. Watch your rice-flour bubble waffle bake fresh to order, enjoy it warm at our wooden seats, or take boxes of baked donuts back to your hotel.</p>
             </div>
-            <div class="rail rail--photos" tabindex="0" aria-label="Photos of the café (swipe)">
+            <div class="rail rail--photos" tabindex="0" aria-label="Photos of the café and sweets (swipe)">
                 <figure class="photo photo--wide">
-                    <img src="./img/interior_seating.jpg" alt="Bright café interior with wooden cube stools and a guest enjoying a drink" loading="lazy" width="1200" height="800">
-                    <figcaption>12 seats on wooden cube stools</figcaption>
+                    <img src="./img/eat-in_photo3.png" alt="Warm wooden dine-in seating inside SoyStories Yakuin" loading="lazy" width="550" height="366">
+                    <figcaption>Cozy wooden dine-in space (4 main seats + cube stools)</figcaption>
                 </figure>
                 <figure class="photo">
-                    <img src="./img/interior_baking.jpg" alt="A bubble waffle being baked on the waffle iron" loading="lazy" width="800" height="1200">
-                    <figcaption>Every waffle is baked to order</figcaption>
-                </figure>
-                <figure class="photo photo--wide">
-                    <img src="./img/interior_counter.jpg" alt="Staff member holding a soft serve at the wooden counter" loading="lazy" width="1200" height="800">
-                    <figcaption>Soy milk soft serve, swirled fresh</figcaption>
+                    <img src="./img/interior_baking.jpg" alt="A rice-flour bubble waffle being baked fresh on the waffle iron" loading="lazy" width="800" height="1200">
+                    <figcaption>Every bubble waffle is baked to order</figcaption>
                 </figure>
                 <figure class="photo">
-                    <img src="./img/tray_half_pair.jpg" alt="Two bubble waffle cups topped with gelato on a wooden tray" loading="lazy" width="800" height="1200">
-                    <figcaption>Waffle cups with gelato</figcaption>
-                </figure>
-                <figure class="photo photo--wide">
-                    <img src="./img/interior_showcase.jpg" alt="Wooden shelf displaying baked donuts" loading="lazy" width="1200" height="800">
-                    <figcaption>Baked donuts on the wooden shelf</figcaption>
+                    <img src="./img/top_wafflesoft.png" alt="Freshly baked bubble waffle topped with pure soy milk soft serve" loading="lazy" width="1025" height="1205">
+                    <figcaption>Morning-squeezed soy milk soft serve &amp; waffle</figcaption>
                 </figure>
                 <figure class="photo">
-                    <img src="./img/tray_waffle_latte.jpg" alt="A bubble waffle and a warm drink on a wooden tray" loading="lazy" width="800" height="1200">
-                    <figcaption>Waffle &amp; a warm drink</figcaption>
+                    <img src="./img/tray_half_pair.jpg" alt="Two half-size bubble waffle cups topped with soy soft serve on a wooden tray" loading="lazy" width="800" height="1200">
+                    <figcaption>Half-size waffle cups — easy to compare flavors</figcaption>
+                </figure>
+                <figure class="photo photo--wide">
+                    <img src="./img/interior_showcase.jpg" alt="Wooden shelf displaying baked soy and rice-flour donuts" loading="lazy" width="1200" height="800">
+                    <figcaption>12 varieties of baked donuts — never fried</figcaption>
+                </figure>
+                <figure class="photo">
+                    <img src="./img/tray_waffle_latte.jpg" alt="A bubble waffle and a warm soy latte on a wooden tray" loading="lazy" width="800" height="1200">
+                    <figcaption>Freshly baked waffle &amp; warm drink</figcaption>
                 </figure>
             </div>
             <div class="wrap">
                 <ul class="facts">
-                    <li><span aria-hidden="true">🪑</span><div><strong>12 indoor seats</strong><small>Wooden cube stools</small></div></li>
+                    <li><span aria-hidden="true">🪑</span><div><strong>4 main seats + stools</strong><small>Compact dine-in &amp; takeaway</small></div></li>
                     <li><span aria-hidden="true">🤝</span><div><strong>No minimum order</strong><small>Sharing is welcome</small></div></li>
                     <li><span aria-hidden="true">🧳</span><div><strong>Strollers &amp; suitcases</strong><small>Welcome inside</small></div></li>
-                    <li><span aria-hidden="true">🔌</span><div><strong>Power outlet</strong><small>Available at 1 seat</small></div></li>
+                    <li><span aria-hidden="true">🌙</span><div><strong>Open until 10:00 PM</strong><small>Ideal post-dinner dessert stop</small></div></li>
                 </ul>
             </div>
         </section>
 
-        <!-- ================= Menu ================= -->
+        <!-- ================= 2 & 3. Signature Dish & Full Menu ================= -->
         <section class="sec sec--menu" id="menu" aria-labelledby="menu-title">
             <div class="wrap">
-                <p class="kicker">Menu</p>
-                <h2 class="sec__title" id="menu-title">What to order</h2>
-                <p class="sec__lead">All prices include tax. Not sure how to order in Japanese? Tap <strong>“Show staff”</strong> and hold your phone up at the counter.</p>
+                <p class="kicker">Menu &amp; Prices</p>
+                <h2 class="sec__title" id="menu-title">What to order at SoyStories</h2>
+                <p class="sec__lead">All prices include tax. Not sure how to order in Japanese? Tap <strong>“Show staff”</strong> on any item and hold your phone up at the counter.</p>
 
-                <!-- Signature -->
+                <!-- Signature Dish -->
                 <article class="sig">
                     <a href="./waffle&amp;soft.html" class="sig__media">
-                        <img src="./img/menu_photo1-2.webp" alt="Bubble waffle filled with soy milk soft serve" loading="lazy">
-                        <span class="badge badge--gold">No.1 Signature</span>
+                        <img src="./img/menu_photo1-2.webp" alt="Signature rice-flour bubble waffle filled with pure soy milk soft serve" loading="lazy">
+                        <span class="badge badge--gold">Signature Dish</span>
                     </a>
                     <div class="sig__body">
-                        <h3 class="card__title">Waffle &amp; Soy Soft Serve</h3>
+                        <h3 class="card__title">Waffle &amp; Pure Soy Soft Serve</h3>
                         <p class="card__ja" lang="ja">ワッフル純豆乳ソフトクリーム</p>
-                        <p class="card__desc">Warm, crispy-outside, chewy-inside rice flour waffle wrapped around creamy soy milk soft serve. Comes with a free tray of 6 toppings. Also available with soy whip.</p>
-                        <p class="price">Full <strong>¥900</strong> <span>/</span> Half <strong>¥690</strong></p>
-                        <ul class="tags"><li>Nut-free</li><li>Contains soy</li><li>+6 free toppings</li></ul>
+                        <p class="card__desc">Our signature experience: a warm, crispy-outside, mochi-chewy-inside 100% Niigata rice-flour bubble waffle wrapped around rich, creamy morning-squeezed soy milk soft serve. Served with a complimentary tray of 6 Japanese toppings (Matcha, Kinako, Hojicha, Okara Cookie, Chocolate Sauce &amp; Kuromitsu). Also available with fluffy soy whipped cream.</p>
+                        <p class="price">Full <strong>¥900</strong> <span>/</span> Half <strong>¥690</strong> <small class="muted">(tax incl.)</small></p>
+                        <ul class="tags"><li>100% Gluten-Free &amp; Vegan</li><li>Contains: Soybeans</li><li>+6 free toppings</li></ul>
                         <div class="card__actions">
-                            <a href="./waffle&amp;soft.html" class="btn btn--dark btn--sm">Details</a>
-                            <button type="button" class="btn btn--outline btn--sm js-show-staff" data-ja="ワッフル純豆乳ソフトクリーム" data-en="Waffle &amp; Soy Soft Serve">Show staff</button>
+                            <a href="./waffle&amp;soft.html" class="btn btn--dark btn--sm">Details &amp; Toppings</a>
+                            <button type="button" class="btn btn--outline btn--sm js-show-staff" data-ja="ワッフル純豆乳ソフトクリーム" data-en="Waffle &amp; Pure Soy Soft Serve">Show staff</button>
                         </div>
                     </div>
                 </article>
@@ -214,58 +366,58 @@
 
             <div class="rail rail--cards" tabindex="0" aria-label="Menu categories (swipe)">
                 <article class="mcard">
-                    <a href="./waffle.html" class="mcard__media"><img src="./img/menu_photo2-1.webp" alt="Rice flour bubble waffle in a kraft sleeve" loading="lazy"></a>
+                    <a href="./waffle.html" class="mcard__media"><img src="./img/menu_photo2-1.webp" alt="Freshly baked rice-flour bubble waffle in a kraft sleeve" loading="lazy"></a>
                     <div class="mcard__body">
                         <h3 class="card__title">Bubble Waffles</h3>
                         <p class="card__ja" lang="ja">国産米粉の焼きたてワッフル</p>
                         <p class="price">¥600 – <strong>¥690</strong></p>
-                        <p class="card__desc">Plain, Matcha, Cocoa or Black Sesame. Niigata rice flour batter.</p>
-                        <ul class="tags"><li>Nut-free</li></ul>
+                        <p class="card__desc">Baked to order with 100% Niigata rice flour &amp; soy milk. Choose Plain, Matcha, Cocoa, or Black Sesame.</p>
+                        <ul class="tags"><li>Contains: Soy (+Sesame in Black Sesame)</li></ul>
                         <div class="card__actions">
                             <a href="./waffle.html" class="link-arrow">4 flavors</a>
-                            <button type="button" class="chip-btn js-show-staff" data-ja="国産米粉の焼きたてワッフル" data-en="Bubble Waffle">Show staff</button>
+                            <button type="button" class="chip-btn js-show-staff" data-ja="国産米粉の焼きたてワッフル" data-en="Rice-Flour Bubble Waffle">Show staff</button>
                         </div>
                     </div>
                 </article>
                 <article class="mcard">
-                    <a href="./soft.html" class="mcard__media"><img src="./img/menu_photo3-1.webp" alt="Soy milk soft serve in a cup" loading="lazy"></a>
+                    <a href="./soft.html" class="mcard__media"><img src="./img/menu_photo3-1.webp" alt="Pure soy milk soft serve in a cup" loading="lazy"></a>
                     <div class="mcard__body">
                         <h3 class="card__title">Soy Soft Serve</h3>
-                        <p class="card__ja" lang="ja">純豆乳ソフト</p>
+                        <p class="card__ja" lang="ja">純豆乳ソフトクリーム</p>
                         <p class="price">¥390 – <strong>¥660</strong></p>
-                        <p class="card__desc">Made from additive-free soy milk. Free tray of 6 toppings.</p>
-                        <ul class="tags"><li>Dairy-free</li><li>Nut-free</li></ul>
+                        <p class="card__desc">Crafted from additive-free soy milk processed within 48 hours of pressing. Includes 6 free toppings.</p>
+                        <ul class="tags"><li>Dairy-free</li><li>Contains: Soybeans</li></ul>
                         <div class="card__actions">
                             <a href="./soft.html" class="link-arrow">Sizes</a>
-                            <button type="button" class="chip-btn js-show-staff" data-ja="純豆乳ソフト" data-en="Soy Soft Serve">Show staff</button>
+                            <button type="button" class="chip-btn js-show-staff" data-ja="純豆乳ソフト" data-en="Pure Soy Soft Serve">Show staff</button>
                         </div>
                     </div>
                 </article>
                 <article class="mcard">
-                    <a href="./dounuts.html" class="mcard__media"><img src="./img/cake_donuts_lineup.jpg" alt="Colorful glazed cake donuts" loading="lazy"></a>
+                    <a href="./dounuts.html" class="mcard__media"><img src="./img/cake_donuts_lineup.jpg" alt="Colorful glazed cake donuts and baked soy donuts" loading="lazy"></a>
                     <div class="mcard__body">
-                        <h3 class="card__title">Donuts</h3>
+                        <h3 class="card__title">Baked Donuts</h3>
                         <p class="card__ja" lang="ja">プレーンドーナツ / しっとりケーキドーナツ</p>
                         <p class="price">¥330 – <strong>¥430</strong></p>
-                        <p class="card__desc">Chewy soy donuts (nut-free) or glazed cake donuts (soy-free, contain almond).</p>
-                        <ul class="tags"><li>Never fried</li><li>Souvenir box</li></ul>
+                        <p class="card__desc">6 chewy Soy &amp; Yam Donuts (¥330, no almonds in recipe) and 6 Soy-Free Almond Glazed Cake Donuts (¥430).</p>
+                        <ul class="tags"><li>Baked, never fried</li><li>Souvenir boxes</li></ul>
                         <div class="card__actions">
                             <a href="./dounuts.html" class="link-arrow">12 flavors</a>
-                            <button type="button" class="chip-btn js-show-staff" data-ja="ドーナツ" data-en="Donuts">Show staff</button>
+                            <button type="button" class="chip-btn js-show-staff" data-ja="ドーナツ" data-en="Baked Donuts">Show staff</button>
                         </div>
                     </div>
                 </article>
                 <article class="mcard">
-                    <a href="./ice.html" class="mcard__media"><img src="./img/menu_photo5-1.webp" alt="Cups of rice flour craft gelato" loading="lazy"></a>
+                    <a href="./ice.html" class="mcard__media"><img src="./img/menu_photo5-1.webp" alt="Cups of rice-flour craft gelato" loading="lazy"></a>
                     <div class="mcard__body">
                         <h3 class="card__title">Craft Gelato</h3>
                         <p class="card__ja" lang="ja">米粉ジェラート</p>
                         <p class="price"><strong>¥490</strong></p>
-                        <p class="card__desc">8 flavors, including 4 fruit flavors free from soy &amp; nuts.</p>
+                        <p class="card__desc">8 flavors of slow-melting rice-flour gelato, including 4 fruit flavors made without soy or almonds.</p>
                         <ul class="tags"><li>Soy-free options</li></ul>
                         <div class="card__actions">
                             <a href="./ice.html" class="link-arrow">8 flavors</a>
-                            <button type="button" class="chip-btn js-show-staff" data-ja="米粉ジェラート" data-en="Rice Flour Gelato">Show staff</button>
+                            <button type="button" class="chip-btn js-show-staff" data-ja="米粉ジェラート" data-en="Rice-Flour Craft Gelato">Show staff</button>
                         </div>
                     </div>
                 </article>
@@ -274,57 +426,171 @@
             <div class="wrap">
                 <div class="toppings">
                     <div class="toppings__head">
-                        <h3>6 free toppings</h3>
-                        <p>With every waffle &amp; soft serve, waffle &amp; whip, or soft serve.</p>
+                        <h3>6 Free Japanese Toppings</h3>
+                        <p>Included at no extra charge with every Waffle &amp; Soft Serve, Waffle &amp; Whip, or Soy Soft Serve.</p>
                     </div>
                     <ul class="toppings__list">
-                        <li><img src="./img/greentea.png" alt="" loading="lazy"><span>Matcha</span></li>
-                        <li><img src="./img/soypowder.png" alt="" loading="lazy"><span>Kinako</span></li>
-                        <li><img src="./img/houjicha.png" alt="" loading="lazy"><span>Hojicha</span></li>
-                        <li><img src="./img/okara.png" alt="" loading="lazy"><span>Okara cookie<em>soy &amp; almond</em></span></li>
-                        <li><img src="./img/chocosource.png" alt="" loading="lazy"><span>Choco sauce</span></li>
-                        <li><img src="./img/kuromitsu.png" alt="" loading="lazy"><span>Kuromitsu</span></li>
+                        <li><img src="./img/greentea.png" alt="Matcha powder" loading="lazy"><span>Matcha<em>Green tea</em></span></li>
+                        <li><img src="./img/soypowder.png" alt="Kinako powder" loading="lazy"><span>Kinako<em>Contains soy</em></span></li>
+                        <li><img src="./img/houjicha.png" alt="Hojicha powder" loading="lazy"><span>Hojicha<em>Roasted tea</em></span></li>
+                        <li><img src="./img/okara.png" alt="Okara cookies" loading="lazy"><span>Okara cookie<em>Soy &amp; almond</em></span></li>
+                        <li><img src="./img/chocosource.png" alt="Vegan chocolate sauce" loading="lazy"><span>Chocolate sauce<em>Plant-based</em></span></li>
+                        <li><img src="./img/kuromitsu.png" alt="Kuromitsu black sugar syrup" loading="lazy"><span>Kuromitsu<em>Black sugar syrup</em></span></li>
                     </ul>
                 </div>
+
+                <!-- Expandable Complete 26-Item HTML Menu Table -->
+                <details class="full-menu" id="full-menu-list" open>
+                    <summary>Complete In-Store Menu &amp; Allergen Reference (All 26 Items)</summary>
+                    <div class="full-menu__body">
+                        <table class="m-table">
+                            <thead>
+                                <tr>
+                                    <th>Item (English / Japanese)</th>
+                                    <th>Size / Type</th>
+                                    <th>Price (Tax Incl.)</th>
+                                    <th>Allergens Used in Recipe*</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td colspan="4" class="m-cat">1. Signature Bubble Waffle &amp; Soy Soft Serve / Whipped Cream (+6 Free Toppings)</td></tr>
+                                <tr>
+                                    <td><strong>Waffle &amp; Pure Soy Soft Serve</strong><span class="m-ja" lang="ja">ワッフル純豆乳ソフトクリーム</span></td>
+                                    <td>Full / Half</td>
+                                    <td class="m-price">¥900 / ¥690*</td>
+                                    <td>Soybeans <em>(Optional Okara Cookie topping contains Soy &amp; Almond)</em></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Waffle &amp; Soy Whipped Cream</strong><span class="m-ja" lang="ja">ワッフル豆乳ホイップクリーム</span></td>
+                                    <td>Full / Half</td>
+                                    <td class="m-price">¥900 / ¥690*</td>
+                                    <td>Soybeans <em>(Optional Okara Cookie topping contains Soy &amp; Almond)</em></td>
+                                </tr>
+                                <tr><td colspan="4" class="m-cat">2. Freshly Baked 100% Niigata Rice-Flour Bubble Waffles (Baked to Order)</td></tr>
+                                <tr>
+                                    <td><strong>Plain Bubble Waffle</strong><span class="m-ja" lang="ja">国産米粉の焼きたてワッフル（プレーン）</span></td>
+                                    <td>Regular</td>
+                                    <td class="m-price">¥600</td>
+                                    <td>Soybeans</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Matcha / Cocoa Bubble Waffle</strong><span class="m-ja" lang="ja">国産米粉の焼きたてワッフル（抹茶・ココア）</span></td>
+                                    <td>Regular</td>
+                                    <td class="m-price">¥690 each</td>
+                                    <td>Soybeans</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Black Sesame Bubble Waffle</strong><span class="m-ja" lang="ja">国産米粉の焼きたてワッフル（黒ゴマ）</span></td>
+                                    <td>Regular</td>
+                                    <td class="m-price">¥690</td>
+                                    <td>Soybeans, Sesame</td>
+                                </tr>
+                                <tr><td colspan="4" class="m-cat">3. Pure Soy Milk Soft Serve (+6 Free Toppings)</td></tr>
+                                <tr>
+                                    <td><strong>Pure Soy Milk Soft Serve — Large</strong><span class="m-ja" lang="ja">純豆乳ソフト Large</span></td>
+                                    <td>Large</td>
+                                    <td class="m-price">¥660</td>
+                                    <td>Soybeans</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pure Soy Milk Soft Serve — Medium</strong><span class="m-ja" lang="ja">純豆乳ソフト Medium（ハーフ）</span></td>
+                                    <td>Medium</td>
+                                    <td class="m-price">¥390</td>
+                                    <td>Soybeans</td>
+                                </tr>
+                                <tr><td colspan="4" class="m-cat">4. Baked Soy &amp; Rice-Flour Donuts (Sold Frozen or Warmed In-Store)</td></tr>
+                                <tr>
+                                    <td><strong>Cranberry / Yame Matcha / Kinako / Earl Grey / Chocolat</strong><span class="m-ja" lang="ja">プレーンドーナツ（クランベリー・八女抹茶・きなこ・アールグレイ・ショコラ）</span></td>
+                                    <td>1 piece (5 flavors)</td>
+                                    <td class="m-price">¥330 each</td>
+                                    <td>Soybeans, Japanese Yam <em>(No almonds in recipe)</em></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Black Sesame Soy Donut</strong><span class="m-ja" lang="ja">プレーンドーナツ（黒ごま）</span></td>
+                                    <td>1 piece</td>
+                                    <td class="m-price">¥330</td>
+                                    <td>Soybeans, Japanese Yam, Sesame</td>
+                                </tr>
+                                <tr><td colspan="4" class="m-cat">5. Glazed Almond &amp; Rice-Flour Cake Donuts (Soy-Free Recipe · Keeps ~1 Week at Room Temp)</td></tr>
+                                <tr>
+                                    <td><strong>Strawberry / Matcha / Double Chocolate / Lemon / Chocolate Mint / Coconut</strong><span class="m-ja" lang="ja">しっとりケーキドーナツ（ストロベリー・抹茶・ダブルチョコ・レモン・チョコミント・ココナッツ）</span></td>
+                                    <td>1 piece (6 flavors)</td>
+                                    <td class="m-price">¥430 each</td>
+                                    <td>Almonds, Apple <em>(Soy-free recipe)</em></td>
+                                </tr>
+                                <tr><td colspan="4" class="m-cat">6. Rice-Flour Craft Gelato (Cup · Dine-In or Takeout with Cooler Bag Option)</td></tr>
+                                <tr>
+                                    <td><strong>Berry Mix / Juicy Dragon Fruit</strong><span class="m-ja" lang="ja">米粉ジェラート（ベリーミックス・ジューシードラゴンフルーツ）</span></td>
+                                    <td>Cup (2 flavors)</td>
+                                    <td class="m-price">¥490 each</td>
+                                    <td>Made without the 28 specified allergen ingredients (Soy-free &amp; Almond-free recipe)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Refreshing Apple / Too Juicy Peach</strong><span class="m-ja" lang="ja">米粉ジェラート（爽やかりんご・ジューシーすぎるもも）</span></td>
+                                    <td>Cup (2 flavors)</td>
+                                    <td class="m-price">¥490 each</td>
+                                    <td>Apple (in Apple) / Peach (in Peach) <em>(Soy-free &amp; Almond-free recipe)</em></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Supreme Rich Matcha / Fragrant Hojicha / Vanilla Coconut</strong><span class="m-ja" lang="ja">米粉ジェラート（至高の濃厚抹茶・香ばしいほうじ茶・バニラココナッツ）</span></td>
+                                    <td>Cup (3 flavors)</td>
+                                    <td class="m-price">¥490 each</td>
+                                    <td>Soybeans</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Melting Chocolate</strong><span class="m-ja" lang="ja">米粉ジェラート（とろけるショコラ）</span></td>
+                                    <td>Cup</td>
+                                    <td class="m-price">¥490</td>
+                                    <td>Soybeans, Almonds</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="fine">*All items are crafted without wheat, dairy, eggs, honey, gelatin, or refined white sugar. Seasonal drinks (Organic Coffee, Soy Latte, Amazake Latte, Berry Tea) and limited sweets are also available at the counter — please check current counter prices and allergen labels when ordering.</p>
+                    </div>
+                </details>
             </div>
         </section>
 
-        <!-- ================= Allergen checker ================= -->
+        <!-- ================= 4. Allergen Checker & Dietary Policy ================= -->
         <section class="sec sec--allergy" id="allergy" aria-labelledby="allergy-title">
             <span id="concept" class="anchor-alias" aria-hidden="true"></span>
             <div class="wrap">
-                <p class="kicker">Allergen checker</p>
-                <h2 class="sec__title" id="allergy-title">Check what&rsquo;s right for you</h2>
+                <p class="kicker">Ingredients &amp; Dietary Policy</p>
+                <h2 class="sec__title" id="allergy-title">Check what&rsquo;s right for your diet</h2>
                 <div class="kitchen">
-                    <p class="kitchen__badge">100% dedicated kitchen</p>
-                    <p>Wheat, dairy, eggs and other animal-derived ingredients are <strong>never brought into our kitchen</strong>. We also use <strong>no honey and no gelatin</strong>.</p>
+                    <p class="kitchen__badge">Wheat, Dairy &amp; Egg-Free Kitchen Policy</p>
+                    <p>Every item at SoyStories is <strong>100% plant-based (vegan)</strong> and <strong>gluten-free</strong>. Wheat, dairy, eggs, and animal-derived ingredients (including honey and gelatin) are <strong>never brought into our kitchen</strong> (including staff personal meals for wheat). We also use <strong>no refined white sugar</strong> (sweetened gently with beet sugar and plant sweeteners).</p>
                     <ul class="kitchen__free">
-                        <li>No wheat / gluten</li><li>No dairy</li><li>No eggs</li><li>No honey</li><li>No gelatin</li>
+                        <li>No wheat / gluten</li><li>No dairy</li><li>No eggs</li><li>No honey</li><li>No gelatin</li><li>No white sugar</li>
                     </ul>
+                    <div class="policy-note">
+                        <strong>Important Notice for Guests with Severe Allergies or Celiac Disease:</strong><br>
+                        Within our kitchen, we handle <strong>soybeans, almonds, black sesame, Japanese yam (yamaimo), apples, peaches, and oranges</strong> (and certain delivery/seasonal items such as vegan tiramisu may use <strong>cashew nuts</strong>, a mandatory specified allergen in Japan as of April 2026). While we take the utmost care with hygiene and equipment, <strong>complete elimination of trace cross-contact cannot be guaranteed</strong>. Guests with severe allergies or celiac disease are strongly encouraged to check the per-item list below and consult our staff in advance or at the counter.
+                    </div>
                 </div>
 
                 <div class="checker">
-                    <p class="checker__q" id="checker-q">I need to avoid&hellip;</p>
+                    <p class="checker__q" id="checker-q">Filter items by ingredients to avoid:</p>
                     <div class="checker__chips" role="group" aria-labelledby="checker-q">
-                        <button type="button" class="fchip" data-avoid="soy" aria-pressed="false">Soy</button>
-                        <button type="button" class="fchip" data-avoid="nuts" aria-pressed="false">Tree nuts (almond)</button>
+                        <button type="button" class="fchip" data-avoid="soy" aria-pressed="false">Soybeans</button>
+                        <button type="button" class="fchip" data-avoid="nuts" aria-pressed="false">Almonds (Tree nuts)</button>
                         <button type="button" class="fchip" data-avoid="sesame" aria-pressed="false">Sesame</button>
                     </div>
-                    <p class="checker__result" id="js-checker-result" aria-live="polite">Select an allergen to filter the list.</p>
+                    <p class="checker__result" id="js-checker-result" aria-live="polite">Select an ingredient above to filter our regular menu items.</p>
                     <ul class="checker__list" id="js-checker-list">
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Waffle &amp; soft serve / whip</strong><small>Contains soy. Optional okara cookie topping contains almond.</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Bubble waffles &mdash; Plain, Matcha, Cocoa</strong><small>Contains soy</small></div></li>
-                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Bubble waffle &mdash; Black Sesame</strong><small>Contains soy, sesame</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Soy soft serve</strong><small>Contains soy</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Soy donuts &mdash; 5 flavors</strong><small>Cranberry, Yame Matcha, Kinako, Earl Grey, Chocolat &middot; Contains soy, Japanese yam</small></div></li>
-                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Soy donut &mdash; Black Sesame</strong><small>Contains soy, Japanese yam, sesame</small></div></li>
-                        <li data-contains="nuts"><span class="ok" aria-hidden="true"></span><div><strong>Glazed cake donuts &mdash; 6 flavors</strong><small>Soy-free &middot; Contains almond, apple</small></div></li>
-                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Gelato &mdash; Berry Mix, Juicy Dragon Fruit</strong><small>Free from the 28 major allergens listed in Japan</small></div></li>
-                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Gelato &mdash; Refreshing Apple, Too Juicy Peach</strong><small>Soy-free &amp; nut-free &middot; Contains apple / peach</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Gelato &mdash; Matcha, Hojicha, Vanilla Coconut</strong><small>Contains soy</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Gelato &mdash; Melting Chocolate</strong><small>Contains soy, almond</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Waffle &amp; Pure Soy Soft Serve / Whip</strong><small>Contains: Soybeans. (Note: Optional Okara cookie topping on the free tray contains Soybeans &amp; Almonds.)</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Bubble Waffles &mdash; Plain, Matcha, Cocoa</strong><small>Contains: Soybeans. Made without almonds or sesame in the batter.</small></div></li>
+                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Bubble Waffle &mdash; Black Sesame</strong><small>Contains: Soybeans, Sesame.</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Pure Soy Milk Soft Serve (Large / Medium)</strong><small>Contains: Soybeans. (Optional Okara cookie topping contains Soybeans &amp; Almonds.)</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Baked Soy Donuts &mdash; 5 flavors</strong><small>Cranberry, Yame Matcha, Kinako, Earl Grey, Chocolat &middot; Contains: Soybeans, Japanese yam.</small></div></li>
+                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Baked Soy Donut &mdash; Black Sesame</strong><small>Contains: Soybeans, Japanese yam, Sesame.</small></div></li>
+                        <li data-contains="nuts"><span class="ok" aria-hidden="true"></span><div><strong>Glazed Cake Donuts &mdash; 6 flavors</strong><small>Soy-free recipe &middot; Contains: Almonds, Apple.</small></div></li>
+                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Berry Mix, Juicy Dragon Fruit</strong><small>Made without the 28 specified allergen ingredients in Japan (Soy-free &amp; Almond-free recipe).</small></div></li>
+                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Refreshing Apple, Too Juicy Peach</strong><small>Soy-free &amp; Almond-free recipe &middot; Contains: Apple (in Apple) / Peach (in Peach).</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Supreme Rich Matcha, Fragrant Hojicha, Vanilla Coconut</strong><small>Contains: Soybeans.</small></div></li>
+                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Melting Chocolate</strong><small>Contains: Soybeans, Almonds.</small></div></li>
                     </ul>
-                    <p class="checker__note">Seasonal items may differ &mdash; please ask our staff. <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Read our full allergy policy &rarr;</a></p>
+                    <p class="checker__note">Seasonal items and drinks may use additional ingredients (such as oranges or cashew paste). Please ask our staff before ordering. <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">View Official FoodHug Allergy Page &rarr;</a></p>
                 </div>
             </div>
         </section>
@@ -334,43 +600,43 @@
             <div class="wrap">
                 <p class="kicker">Seasonal</p>
                 <h2 class="sec__title" id="seasonal-title">Something new every season</h2>
-                <p class="sec__lead">Besides our regular menu, we offer a variety of seasonal limited-edition sweets and drinks.</p>
+                <p class="sec__lead">Alongside our regular menu, we craft seasonal limited-edition parfaits, waffle cups, and hot/iced drinks.</p>
             </div>
             <div class="rail rail--season" tabindex="0" aria-label="Seasonal items (swipe)">
-                <figure class="season"><img src="./img/seasonal_yakiimo.jpg" alt="Seasonal soft serve cup with sweet potato on a wooden tray" loading="lazy"><figcaption>Seasonal soft serve</figcaption></figure>
-                <figure class="season"><img src="./img/seasonal_waffle_berry.jpg" alt="Bubble waffle cup with a scoop of pink gelato and red sauce" loading="lazy"><figcaption>Seasonal waffle cup</figcaption></figure>
-                <figure class="season"><img src="./img/seasonal_shortcake.jpg" alt="Box of four donuts topped with cream and a strawberry" loading="lazy"><figcaption>Seasonal donuts</figcaption></figure>
-                <figure class="season season--wide"><img src="./img/seasonal_drinks.jpg" alt="Five colorful drinks in glasses" loading="lazy"><figcaption>Drinks</figcaption></figure>
+                <figure class="season"><img src="./img/seasonal_yakiimo.jpg" alt="Seasonal soft serve cup with roasted sweet potato on a wooden tray" loading="lazy"><figcaption>Seasonal soft serve</figcaption></figure>
+                <figure class="season"><img src="./img/seasonal_waffle_berry.jpg" alt="Bubble waffle cup with berry gelato and berry sauce" loading="lazy"><figcaption>Seasonal waffle cup</figcaption></figure>
+                <figure class="season"><img src="./img/seasonal_shortcake.jpg" alt="Box of four seasonal strawberry cream donuts" loading="lazy"><figcaption>Seasonal donuts</figcaption></figure>
+                <figure class="season season--wide"><img src="./img/seasonal_drinks.jpg" alt="Assorted plant-based cafe drinks in glasses" loading="lazy"><figcaption>Soy lattes, amazake &amp; organic drinks</figcaption></figure>
             </div>
             <div class="wrap">
-                <a class="ig-link" href="https://www.instagram.com/soystories_yakuin/" target="_blank" rel="noopener">See what&rsquo;s on now &middot; @soystories_yakuin &rarr;</a>
+                <a class="ig-link" href="https://www.instagram.com/soystories_yakuin/" target="_blank" rel="noopener">See current seasonal specials on Instagram &middot; @soystories_yakuin &rarr;</a>
             </div>
         </section>
 
-        <!-- ================= Takeout & souvenirs ================= -->
+        <!-- ================= Takeout & Souvenirs ================= -->
         <section class="sec sec--takeout" id="takeout" aria-labelledby="takeout-title">
             <div class="wrap">
-                <p class="kicker">Takeout &amp; souvenirs</p>
-                <h2 class="sec__title" id="takeout-title">Take a little Fukuoka home</h2>
+                <p class="kicker">Takeout &amp; Souvenirs</p>
+                <h2 class="sec__title" id="takeout-title">Enjoy now or bring back to your hotel</h2>
                 <div class="to-grid">
                     <article class="to-card to-card--feature">
                         <img src="./img/cake_donuts_box.jpg" alt="Gift box of colorful glazed cake donuts" loading="lazy">
                         <div class="to-card__body">
                             <span class="badge badge--terra">Keeps ~1 week at room temp</span>
-                            <h3>Boxed cake donuts &mdash; the perfect souvenir</h3>
-                            <p>Our colorful glazed cake donuts keep for about a week at room temperature. Soy-free; contain almond.</p>
+                            <h3>Boxed Glazed Cake Donuts &mdash; Ideal Travel Souvenirs</h3>
+                            <p>Our moist almond &amp; rice-flour glazed cake donuts (¥430 each, soy-free recipe) keep for about a week at room temperature, making them easy to pack for hotel stays, bullet train rides, or flights.</p>
                         </div>
                     </article>
                     <ul class="to-list">
-                        <li><span aria-hidden="true">🛍️</span><div><strong>Every item can be taken out</strong><small>Waffles, soft serve, donuts &amp; gelato</small></div></li>
-                        <li><span aria-hidden="true">🧊</span><div><strong>Cooler bags for ice cream</strong><small>Free, with an ice pack, when you buy 4 or more</small></div></li>
-                        <li><span aria-hidden="true">🔥</span><div><strong>Soy donuts can be warmed in-store</strong><small>Sold frozen. At your hotel: microwave 600W for ~1 min</small></div></li>
-                        <li><span aria-hidden="true">📩</span><div><strong>Pre-order / hold donuts</strong><small>DM us on Instagram &mdash; the most reliable way</small></div></li>
+                        <li><span aria-hidden="true">🧇</span><div><strong>Bubble Waffles &amp; Soy Soft Serve (Best Immediately)</strong><small>Can be ordered for takeout, but because freshly baked waffles are piping hot and soft serve melts quickly, we recommend enjoying them right away in-store or outside.</small></div></li>
+                        <li><span aria-hidden="true">🔥</span><div><strong>Baked Soy Donuts (Warmed In-Store or Frozen Takeaway)</strong><small>Sold flash-frozen (¥330). Ask us to warm one up in-store to eat right away, or heat at your hotel (microwave 600W for ~1 min; or thaw naturally and keep refrigerated up to 3 days).</small></div></li>
+                        <li><span aria-hidden="true">🧊</span><div><strong>Cup Craft Gelato (Cooler Bags Available)</strong><small>Sold frozen in lidded cups (¥490). Cooler bags with ice packs are available — complimentary when you purchase 4 or more items.</small></div></li>
+                        <li><span aria-hidden="true">📩</span><div><strong>Pre-Order or Hold Specific Flavors</strong><small>Want to reserve a gift box or specific donut flavors before evening sell-outs? Send us a DM on Instagram.</small></div></li>
                     </ul>
                 </div>
                 <a class="btn btn--ig" href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 4.7a5.1 5.1 0 100 10.2 5.1 5.1 0 000-10.2zm0 8.4a3.3 3.3 0 110-6.6 3.3 3.3 0 010 6.6zm5.3-9.8a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg>
-                    Pre-order via Instagram DM
+                    Pre-order via Instagram DM (@soystories_yakuin)
                 </a>
             </div>
         </section>
@@ -378,95 +644,131 @@
         <!-- ================= Reviews ================= -->
         <section class="sec sec--reviews" id="reviews" aria-labelledby="reviews-title">
             <div class="wrap">
-                <p class="kicker">Reviews</p>
-                <h2 class="sec__title" id="reviews-title">Loved by travelers</h2>
+                <p class="kicker">Guest Experiences</p>
+                <h2 class="sec__title" id="reviews-title">What travelers say about SoyStories</h2>
                 <div class="scores">
                     <a class="score" href="https://www.google.com/maps?q=%E3%80%92810-0022+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%96%AC%E9%99%A2%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%92%EF%BC%94+%E3%83%81%E3%82%B5%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E7%AC%AC3%E5%8D%9A%E5%A4%9A+1F+%E3%82%B0%E3%83%AB%E3%83%86%E3%83%B3%E3%83%95%E3%83%AA%E3%83%BC%EF%BC%86100%EF%BC%85%E6%A4%8D%E7%89%A9%E6%80%A7%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84+Soy+Stories%EF%BC%88vegan%EF%BC%86gluten+free%EF%BC%89&amp;hl=en" target="_blank" rel="noopener">
                         <span class="score__num">4.7</span><span class="score__meta"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>Google Maps &middot; 250+ reviews</span>
                     </a>
-                    <a class="score" href="https://www.happycow.net/reviews/soy-stories-fukuoka-298687" target="_blank" rel="noopener">
-                        <span class="score__num">5.0</span><span class="score__meta"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>HappyCow</span>
+                    <a class="score" href="https://www.happycow.net/reviews/soy-stories-fukuoka-381962" target="_blank" rel="noopener">
+                        <span class="score__num">5.0</span><span class="score__meta"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>HappyCow Listing</span>
                     </a>
                 </div>
             </div>
             <div class="rail rail--reviews" tabindex="0" aria-label="Guest reviews (swipe)">
-                <blockquote class="rv"><p>“I have celiac and visited with my husband and son who are not. We all enjoyed the bubble waffles, soy ice cream &amp; donuts ALOT! You would never know the ice cream was dairy-free with how creamy it was &amp; the flavors were outstanding. Worth the taxi ride for sure!”</p><footer><strong>Jodi Clay</strong><span>Google Maps &middot; Celiac</span></footer></blockquote>
+                <blockquote class="rv"><p>“I have celiac and visited with my husband and son who are not. We all enjoyed the bubble waffles, soy ice cream &amp; donuts ALOT! You would never know the ice cream was dairy-free with how creamy it was &amp; the flavors were outstanding. Worth the taxi ride for sure!”</p><footer><strong>Jodi Clay</strong><span>Google Maps &middot; Family Visit</span></footer></blockquote>
                 <blockquote class="rv"><p>“The waffle and pure soy milk soft serve is particularly delicious, offering the perfect balance of warmth and creaminess. Ordering is a breeze thanks to their convenient English menu, and the staff is incredibly courteous and helpful!”</p><footer><strong>Mooloobooloo</strong><span>HappyCow</span></footer></blockquote>
-                <blockquote class="rv"><p>“This is not your typical western bland soy flavored ice-cream. This place takes it to another level! Coupled with the crispy made-to-order waffle and a complimentary tray of toppings to try, I felt I was in heaven. Friendly English-speaking staff!”</p><footer><strong>Traveling Sky</strong><span>Google Maps</span></footer></blockquote>
+                <blockquote class="rv"><p>“This is not your typical western bland soy flavored ice-cream. This place takes it to another level! Coupled with the crispy made-to-order waffle and a complimentary tray of toppings to try, I felt I was in heaven.”</p><footer><strong>Traveling Sky</strong><span>Google Maps</span></footer></blockquote>
                 <blockquote class="rv"><p>“I dare you to find an item on the menu that's not absolutely delicious! SoyStories allows people with allergies and special diets to experience sweet treats. It was such a pleasure being able to get vegan desserts after a late dinner.”</p><footer><strong>Dominik Jersabeck</strong><span>Google Maps</span></footer></blockquote>
                 <blockquote class="rv"><p>“Waffles were very crunchy and not too sweet. Highlights for me was the matcha ice cream and the custom toppings tray (I recommend the brown sugar syrup!). We also had a lemon donut which was moist and delicious with an almond flour batter.”</p><footer><strong>PlantChomper</strong><span>HappyCow</span></footer></blockquote>
                 <blockquote class="rv"><p>“You can't even tell the ice cream is made of soy milk—it is delicious and the waffles are to die for. I had the matcha ice cream with waffle twice during my stay, couldn’t stop myself! Very friendly owner and peaceful ambience.”</p><footer><strong>Poonam Parekh</strong><span>Google Maps</span></footer></blockquote>
                 <blockquote class="rv"><p>“I had the waffle with whipped cream while my partner had the large waffle with soft serve. They brought out toppings and a menu in English. We came back a second time and got cake donuts for our hotel. Reasonably priced, lovely staff!”</p><footer><strong>Kittybiscuit</strong><span>HappyCow</span></footer></blockquote>
                 <blockquote class="rv"><p>“I'm not on a gluten-free or vegan diet, but I really enjoyed the desserts I tried. Between myself and my parents, we tried the black sesame, strawberry, and chocolate bubble waffles. Very flavorful and creamy. Highly recommended for everyone!”</p><footer><strong>Merrick Clay</strong><span>Google Maps</span></footer></blockquote>
-                <blockquote class="rv"><p>“This ice cream is SOOOOO good. We are 13-year vegans from the USA and honestly, the matcha ice cream was probably my favorite vegan ice cream ever! I will be dreaming of this place when I go back home. Wish we had this where I live.”</p><footer><strong>Audrey Price</strong><span>Google Maps</span></footer></blockquote>
+                <blockquote class="rv"><p>“This ice cream is SOOOOO good. We are 13-year vegans from the USA and honestly, the matcha ice cream was probably my favorite vegan ice cream ever! I will be dreaming of this place when I go back home.”</p><footer><strong>Audrey Price</strong><span>Google Maps</span></footer></blockquote>
                 <blockquote class="rv"><p>“Their cake donuts are the best donuts I've ever had in my life, vegan or otherwise. Perfectly dense, moist, and sweet.”</p><footer><strong>Rebecca v.</strong><span>Google Maps</span></footer></blockquote>
-                <blockquote class="rv"><p>“This place is incredible. Best strawberry ice cream that I’ve ever had, vegan or not! The strawberry sauce and the crispy ‘egg’ bubble waffle—yum yum yum! With love from New York City &lt;3”</p><footer><strong>Lauren Baker</strong><span>Google Maps</span></footer></blockquote>
-                <blockquote class="rv"><p>“Had a chocolate waffle and plain waffle with soy milk soft cream and drinks. Everything was delicious! We also grabbed donuts and soy treats for our road trip through Kyushu. We felt very yumemitai (dream-like)!”</p><footer><strong>crescentmoon</strong><span>HappyCow</span></footer></blockquote>
             </div>
-            <div class="wrap"><p class="fine">Excerpts from public reviews on Google Maps and HappyCow.</p></div>
+            <div class="wrap"><p class="fine">Verbatim excerpts from public traveler reviews on Google Maps and HappyCow (individual experiences; please always verify per-item ingredients for allergies).</p></div>
         </section>
 
-        <!-- ================= Our craft ================= -->
+        <!-- ================= 6. Our Story & Craft ================= -->
         <section class="sec sec--craft" id="commitment" aria-labelledby="craft-title">
             <div class="wrap">
-                <p class="kicker">Our craft</p>
-                <h2 class="sec__title" id="craft-title">Simple ingredients, made with care</h2>
-                <ul class="craft">
-                    <li><img src="./img/commitment_3.png" alt="" loading="lazy"><div><strong>Fresh soy milk</strong><small>Additive-free, processed within 48 hours of pressing</small></div></li>
-                    <li><img src="./img/commitment_2.png" alt="" loading="lazy"><div><strong>Niigata rice flour</strong><small>100% domestic &mdash; crispy outside, chewy inside</small></div></li>
-                    <li><img src="./img/commitment_1.png" alt="" loading="lazy"><div><strong>Okara (soy pulp)</strong><small>Fiber and plant protein for a moist texture</small></div></li>
-                </ul>
+                <p class="kicker">Our Story &amp; Craft</p>
+                <h2 class="sec__title" id="craft-title">A “Yumemitai” (Dream-Like) Table for Everyone</h2>
+                <div>
+                    <div class="story-box">
+                        <h3>Sharing the same delicious moment together</h3>
+                        <p>Our mission at SoyStories is to create a <strong>“Yumemitai” (dream-like)</strong> place for everyone &mdash; whether you follow a vegan lifestyle, live with food allergies, or simply love pure Japanese ingredients.</p>
+                        <p>The happiness of sitting at the same table with family and friends and enjoying the exact same sweet treats without worry &mdash; to bring that joy to life, we bake and swirl our sweets fresh in Yakuin every day.</p>
+                    </div>
+                    <ul class="craft">
+                        <li><img src="./img/commitment_3.png" alt="Fresh morning soy milk" loading="lazy"><div><strong>Fresh Morning Soy Milk (Processed Within 48 Hours)</strong><small>Additive-free concentrated soy milk from local Fukuoka tofu craftsmen, processed within 48 hours of pressing with delicate temperature control for a rich, clean finish.</small></div></li>
+                        <li><img src="./img/commitment_2.png" alt="Niigata rice flour" loading="lazy"><div><strong>100% Domestic Niigata Rice Flour</strong><small>Finely milled Japanese rice flour gives our bubble waffles a golden, crispy exterior and a warm, mochi-chewy interior without a gram of wheat.</small></div></li>
+                        <li><img src="./img/commitment_1.png" alt="Okara soy pulp and Japanese yam" loading="lazy"><div><strong>Okara (Soy Pulp), Japanese Yam &amp; Beet Sugar</strong><small>Rich in natural fiber and plant protein, sweetened gently with beet sugar and natural plant sweeteners &mdash; zero refined white sugar.</small></div></li>
+                    </ul>
+                </div>
                 <button type="button" class="video" id="js-video" data-id="sepBm3TfdR8" aria-label="Play the SoyStories video">
-                    <img src="https://i.ytimg.com/vi/sepBm3TfdR8/hqdefault.jpg" alt="" loading="lazy">
+                    <img src="https://i.ytimg.com/vi/sepBm3TfdR8/hqdefault.jpg" alt="Inside SoyStories Yakuin video thumbnail" loading="lazy">
                     <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-                    <span class="video__label">Watch: inside SoyStories</span>
+                    <span class="video__label">Watch: Inside SoyStories Yakuin</span>
                 </button>
             </div>
         </section>
 
-        <!-- ================= FAQ ================= -->
+        <!-- ================= 7. FAQ (All 13 Required Topics) ================= -->
         <section class="sec sec--faq" id="qa" aria-labelledby="faq-title">
             <div class="wrap">
-                <p class="kicker">FAQ</p>
-                <h2 class="sec__title" id="faq-title">Good to know</h2>
+                <p class="kicker">Frequently Asked Questions</p>
+                <h2 class="sec__title" id="faq-title">Everything you need to know before visiting</h2>
                 <div class="faq">
                     <details>
-                        <summary>Is it safe for celiac disease?</summary>
-                        <div><p>Our kitchen is 100% dedicated: wheat, dairy, eggs and other animal-derived ingredients are never brought in. We also use no honey or gelatin. For other allergens, use the <a href="#allergy">allergen checker</a> above or see our <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">allergy policy</a>.</p></div>
+                        <summary>1. Are all products 100% vegan (plant-based)?</summary>
+                        <div><p>Yes. Every single sweet and drink at SoyStories Yakuin is 100% plant-based (vegan). We never use meat, fish, dairy, eggs, honey, or gelatin in any product.</p></div>
                     </details>
                     <details>
-                        <summary>How many seats? Can I bring a stroller or suitcase?</summary>
-                        <div><p>We have 12 indoor seats on wooden cube stools. Strollers and suitcases are welcome, there&rsquo;s no minimum order, and sharing is fine. One seat has a power outlet.</p></div>
+                        <summary>2. What is your gluten-free policy? Can guests with celiac disease or wheat allergies eat here?</summary>
+                        <div><p>All of our products are made with 100% gluten-free rice flour or almond flour, and <strong>wheat, dairy, and eggs are never brought into our kitchen</strong> (including staff personal food for wheat). However, because we handle soybeans, almonds, sesame, Japanese yam, apples, peaches, and oranges in the same kitchen, <strong>complete elimination of trace allergens cannot be guaranteed</strong>. Guests with severe allergies or celiac disease are encouraged to review per-item ingredients and consult our staff before ordering.</p></div>
                     </details>
                     <details>
-                        <summary>What time is last order?</summary>
-                        <div><p>We&rsquo;re open daily 11:00 AM &ndash; 10:00 PM. Last order is 9:45 PM.</p></div>
+                        <summary>3. How can I check per-item ingredients and allergens?</summary>
+                        <div><p>You can use the interactive <a href="#allergy">Allergen Checker</a> and the <a href="#full-menu-list">Complete 26-Item Menu Table</a> on this page, check the allergen badges on each menu category page, or view our <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Official FoodHug Allergy Disclosure Page</a>. You can also ask our counter staff directly.</p></div>
                     </details>
                     <details>
-                        <summary>Can I take sweets back to my hotel or home as souvenirs?</summary>
-                        <div><p>Yes, every item can be taken out. Boxed glazed cake donuts keep about 1 week at room temperature. Soy donuts are sold frozen &mdash; we can warm one for you in-store, or microwave at 600W for about 1 minute (or thaw naturally, keep refrigerated and enjoy within 3 days). For ice cream we have cooler bags, free with an ice pack when you buy 4 or more.</p></div>
+                        <summary>4. Do your products contain soy, tree nuts (almonds/cashews), sesame, or Japanese yam?</summary>
+                        <div><p>It depends on the product:<br>
+                        &bull; <strong>Soybeans:</strong> Used in Bubble Waffles, Soy Soft Serve, Soy Whip, Baked Soy Donuts, and 4 Gelato flavors. <em>Soy-free options</em> include all 6 Glazed Cake Donuts (¥430) and 4 Fruit Gelato flavors (Berry Mix, Juicy Dragon Fruit, Refreshing Apple, Too Juicy Peach).<br>
+                        &bull; <strong>Almonds (Tree Nuts):</strong> Used in Glazed Cake Donuts (¥430), Melting Chocolate Gelato, and the optional Okara Cookie topping. (Note: Certain seasonal/delivery items like vegan tiramisu may use cashew paste.)<br>
+                        &bull; <strong>Sesame:</strong> Used in the Black Sesame Bubble Waffle and Black Sesame Soy Donut.<br>
+                        &bull; <strong>Japanese Yam (Yamaimo):</strong> Used in the 6 Baked Soy Donuts (¥330) for chewiness.</p></div>
                     </details>
                     <details>
-                        <summary>Can I reserve or pre-order?</summary>
-                        <div><p>You can pre-order / hold donuts and other items. Sending us a DM on <a href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener">Instagram (@soystories_yakuin)</a> is the most reliable way.</p></div>
+                        <summary>5. Do you use white sugar? Are your sweets “sugar-free”?</summary>
+                        <div><p>We use <strong>no refined white sugar</strong>. Instead, our sweets are gently sweetened with beet sugar, organic agave/maple, or natural plant sweeteners depending on the item. Please note that this means they are free from refined white sugar, <strong>not</strong> zero-sugar / sugar-free.</p></div>
                     </details>
                     <details>
-                        <summary>Payment methods? English menu?</summary>
-                        <div><p>We have an English menu at the counter. We accept cash (JPY), credit cards (Visa, Mastercard, JCB, American Express, Diners Club), transit IC cards (Suica, PASMO, ICOCA, SUGOCA, nimoca, Hayakaken, etc.), iD, QUICPay and PayPay. All prices include tax.</p></div>
+                        <summary>6. What are your opening hours, last order time, and holidays?</summary>
+                        <div><p>We are open daily from <strong>11:00 AM to 10:00 PM (22:00)</strong>, with <strong>Last Order at 9:45 PM (21:45)</strong> and no regular holidays. Any temporary hour changes or special holidays are announced on <a href="https://www.instagram.com/soystories_yakuin/" target="_blank" rel="noopener">Instagram (@soystories_yakuin)</a>.</p></div>
                     </details>
                     <details>
-                        <summary>Is there parking?</summary>
-                        <div><p>We don&rsquo;t have our own parking lot, but there are many coin-operated parking lots right next to the shop.</p></div>
+                        <summary>7. Can items sell out? Can I pre-order or hold items?</summary>
+                        <div><p>Bubble waffles and soy soft serve are prepared fresh until last order (9:45 PM), though specific donut or gelato flavors can sell out later in the evening. To reserve specific flavors or gift boxes, send us a DM on <a href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener">Instagram (@soystories_yakuin)</a>.</p></div>
+                    </details>
+                    <details>
+                        <summary>8. How many dine-in seats do you have? Can I bring a stroller or suitcase?</summary>
+                        <div><p>We have a compact dine-in space with 4 main seats plus wooden cube stools. Strollers and suitcases are welcome inside, there is no minimum order per person, and sharing items is welcome.</p></div>
+                    </details>
+                    <details>
+                        <summary>9. Which items are best for takeaway, and how long can I carry them?</summary>
+                        <div><p>&bull; <strong>Bubble Waffles &amp; Soy Soft Serve:</strong> Available for takeaway, but because warm waffles melt soft serve quickly, we strongly recommend eating them immediately in-store or right outside.<br>
+                        &bull; <strong>Glazed Cake Donuts (¥430):</strong> Keep for <strong>about 1 week at room temperature</strong> &mdash; our best choice for hotel snacks, bullet trains, and gifts.<br>
+                        &bull; <strong>Baked Soy Donuts (¥330):</strong> Sold frozen (or warmed in-store). If carried at room temperature, they thaw naturally; keep refrigerated and enjoy within 3 days.<br>
+                        &bull; <strong>Cup Craft Gelato (¥490):</strong> Sold frozen; cooler bags with ice packs are available (free when buying 4 or more items).</p></div>
+                    </details>
+                    <details>
+                        <summary>10. How do I eat or reheat the frozen Baked Soy Donuts?</summary>
+                        <div><p>If you want to eat a Baked Soy Donut right away, <strong>ask our staff to warm it up in-store</strong>! If taking it back to your hotel or home, heat it in a <strong>600W microwave for about 1 minute</strong> (or toast lightly after thawing) for a freshly baked mochi-chewy texture.</p></div>
+                    </details>
+                    <details>
+                        <summary>11. What payment methods do you accept?</summary>
+                        <div><p>We accept Cash (JPY), major credit cards (Visa, Mastercard, JCB, American Express, Diners Club), Japanese transit IC cards (Suica, PASMO, ICOCA, SUGOCA, nimoca, Hayakaken), iD, QUICPay, and PayPay. All menu prices include tax.</p></div>
+                    </details>
+                    <details>
+                        <summary>12. How do I get there from Yakuin-odori, Tenjin, or Hakata Station?</summary>
+                        <div><p>Take the <strong>Fukuoka City Subway Nanakuma Line</strong> to <strong>Yakuin-odori Station (薬院大通駅)</strong>, take <strong>Exit 2</strong>, and walk 2–3 minutes (~160m) toward Yakuin Mutsukado. It is only ~4 minutes by subway from Tenjin-minami Station and ~9 minutes from Hakata Station. Look for our 1st-floor storefront with the glowing soft-serve sign.</p></div>
+                    </details>
+                    <details>
+                        <summary>13. Is there an English/Korean/Chinese menu? What if I don't speak Japanese?</summary>
+                        <div><p>We have printed English, Korean, and Traditional Chinese menus at the counter. Even if staff on shift speak basic English, you can tap the <strong>“Show staff”</strong> button on any item on this website to display a clear Japanese ordering card (with Eat-In / Takeout toggle) on your phone screen.</p></div>
                     </details>
                 </div>
             </div>
         </section>
 
-        <!-- ================= Access ================= -->
+        <!-- ================= 5. Visit Us & Access ================= -->
         <section class="sec sec--access" id="access" aria-labelledby="access-title">
             <div class="wrap">
-                <p class="kicker">Access</p>
-                <h2 class="sec__title" id="access-title">Find us in Yakuin</h2>
+                <p class="kicker">Visit Us in Fukuoka</p>
+                <h2 class="sec__title" id="access-title">Find SoyStories in Yakuin</h2>
 
                 <div class="access">
                     <div class="access__map">
@@ -475,55 +777,60 @@
 
                     <div class="access__info">
                         <dl class="info">
-                            <div><dt>Hours</dt><dd><strong>11:00 AM – 10:00 PM</strong> daily<br><span class="muted">Last order 9:45 PM &middot; No regular holidays</span></dd></div>
-                            <div><dt>Station</dt><dd><strong>3-min walk</strong> from Yakuin-odori Stn, Exit 2 (Nanakuma Line)<br><span class="muted">~9 min from Hakata Stn &middot; ~4 min from Tenjin-minami Stn</span></dd></div>
-                            <div><dt>Address</dt><dd>Chisan Mansion Dai-3 Hakata 1F, 2-2-24 Yakuin, Chuo-ku, Fukuoka 810-0022</dd></div>
-                            <div><dt>Phone</dt><dd><a href="tel:+81922310677">092-231-0677</a></dd></div>
+                            <div><dt>Hours</dt><dd><strong>11:00 AM – 10:00 PM (22:00)</strong> daily<br><span class="muted">Last order 9:45 PM &middot; Open daily (Check Instagram for special hours)</span></dd></div>
+                            <div><dt>Subway</dt><dd><strong>2–3 min walk</strong> from Yakuin-odori Stn, Exit 2 (Subway Nanakuma Line)<br><span class="muted">~4 min ride from Tenjin-minami Stn &middot; ~9 min ride from Hakata Stn</span></dd></div>
+                            <div><dt>Address</dt><dd>Chisan Mansion Dai-3 Hakata 1F, 2-2-24 Yakuin, Chuo-ku, Fukuoka 810-0022, Japan</dd></div>
+                            <div><dt>Seating</dt><dd>4 main dine-in seats + wooden cube stools &middot; Full takeaway available</dd></div>
+                            <div><dt>Phone</dt><dd><a href="tel:+81922310677">092-231-0677</a> (+81-92-231-0677)</dd></div>
                         </dl>
 
                         <div class="access__btns">
-                            <a class="btn btn--dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=%E3%80%92810-0022+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%96%AC%E9%99%A2%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%92%EF%BC%94+%E3%83%81%E3%82%B5%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E7%AC%AC3%E5%8D%9A%E5%A4%9A+1F+Soy+Stories" target="_blank" rel="noopener">Get directions</a>
-                            <a class="btn btn--outline" href="https://www.google.com/maps?q=%E3%80%92810-0022+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%96%AC%E9%99%A2%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%92%EF%BC%94+%E3%83%81%E3%82%B5%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E7%AC%AC3%E5%8D%9A%E5%A4%9A+1F+%E3%82%B0%E3%83%AB%E3%83%86%E3%83%B3%E3%83%95%E3%83%AA%E3%83%BC%EF%BC%86100%EF%BC%85%E6%A4%8D%E7%89%A9%E6%80%A7%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84+Soy+Stories%EF%BC%88vegan%EF%BC%86gluten+free%EF%BC%89&amp;hl=en" target="_blank" rel="noopener">Open in Google Maps</a>
+                            <a class="btn btn--dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=%E3%80%92810-0022+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%96%AC%E9%99%A2%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%92%EF%BC%94+%E3%83%81%E3%82%B5%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E7%AC%AC3%E5%8D%9A%E5%A4%9A+1F+Soy+Stories" target="_blank" rel="noopener">Get Directions in Google Maps</a>
+                            <a class="btn btn--outline" href="https://www.google.com/maps?q=%E3%80%92810-0022+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%96%AC%E9%99%A2%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%92%EF%BC%94+%E3%83%81%E3%82%B5%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E7%AC%AC3%E5%8D%9A%E5%A4%9A+1F+%E3%82%B0%E3%83%AB%E3%83%86%E3%83%B3%E3%83%95%E3%83%AA%E3%83%BC%EF%BC%86100%EF%BC%85%E6%A4%8D%E7%89%A9%E6%80%A7%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84+Soy+Stories%EF%BC%88vegan%EF%BC%86gluten+free%EF%BC%89&amp;hl=en" target="_blank" rel="noopener">Open Place Page &amp; Reviews</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="spot">
-                    <img src="./img/store.png" alt="SoyStories entrance at night with a glowing soft serve sign" loading="lazy">
-                    <p><strong>Look for the glowing soft serve sign</strong> at the 1st-floor entrance.</p>
+                    <img src="./img/store.png" alt="SoyStories Yakuin 1st-floor entrance with glowing soft serve sign" loading="lazy">
+                    <p><strong>Landmark at the Entrance:</strong> Look for the brick apartment building (Chisan Mansion Dai-3 Hakata) 1F and our glowing white soft-serve sign along the street.</p>
                 </div>
 
                 <div class="taxi">
-                    <p class="taxi__label">Show this to your taxi driver</p>
-                    <p class="taxi__ja" lang="ja" id="js-jp-address">〒810-0022<br>福岡市中央区薬院2丁目2-24<br>チサンマンション第3博多 1階<br><span>SoyStories 薬院店（地下鉄七隈線「薬院大通駅」2番出口近く）</span></p>
-                    <button type="button" class="btn btn--outline btn--sm" id="js-copy-address" data-address="〒810-0022 福岡県福岡市中央区薬院2丁目2-24 チサンマンション第3博多 1F">Copy Japanese address</button>
+                    <p class="taxi__label">Show this card to your taxi driver</p>
+                    <p class="taxi__ja" lang="ja" id="js-jp-address">〒810-0022<br>福岡市中央区薬院2丁目2-24<br>チサンマンション第3博多 1階<br><span>SoyStories 薬院店（地下鉄七隈線「薬院大通駅」2番出口から薬院六つ角方面へ徒歩約2〜3分）</span></p>
+                    <button type="button" class="btn btn--outline btn--sm" id="js-copy-address" data-address="〒810-0022 福岡県福岡市中央区薬院2丁目2-24 チサンマンション第3博多 1F">Copy Japanese Address</button>
                     <span class="taxi__msg" id="js-copy-feedback" aria-live="polite"></span>
                 </div>
 
                 <div class="pay">
-                    <p class="pay__label">Payment</p>
-                    <ul><li>Cash (JPY)</li><li>Visa / Mastercard / JCB / Amex / Diners</li><li>Suica / PASMO / ICOCA / SUGOCA</li><li>iD / QUICPay</li><li>PayPay</li></ul>
+                    <p class="pay__label">Accepted Payment Methods</p>
+                    <ul><li>Cash (JPY)</li><li>Visa / Mastercard / JCB / Amex / Diners</li><li>Suica / PASMO / ICOCA / SUGOCA / nimoca / Hayakaken</li><li>iD / QUICPay</li><li>PayPay</li></ul>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ================= Footer ================= -->
+    <!-- ================= 8. Footer & Official Links ================= -->
     <footer class="ft">
         <div class="wrap">
             <img src="./img/logo_footer.png" alt="SoyStories" class="ft__logo" loading="lazy">
-            <p class="ft__tag">100% gluten-free &amp; plant-based sweets in Yakuin, Fukuoka.</p>
+            <p class="ft__tag">100% gluten-free &amp; plant-based sweets in Yakuin, Fukuoka. Crafted without wheat, dairy, eggs, or refined white sugar.</p>
             <nav class="ft__nav" aria-label="Footer">
                 <a href="./waffle&amp;soft.html">Waffle &amp; Soft Serve</a>
                 <a href="./waffle.html">Bubble Waffles</a>
                 <a href="./soft.html">Soy Soft Serve</a>
-                <a href="./dounuts.html">Donuts</a>
+                <a href="./dounuts.html">Baked Donuts</a>
                 <a href="./ice.html">Craft Gelato</a>
-                <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Allergy policy &rarr;</a>
-                <a href="https://www.instagram.com/soystories_yakuin/" target="_blank" rel="noopener">Instagram &rarr;</a>
-                <a href="https://www.soystories.jp/" lang="ja">日本語サイト</a>
+                <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Allergy Policy (FoodHug) &rarr;</a>
+                <a href="https://www.instagram.com/soystories_yakuin/" target="_blank" rel="noopener">Instagram (@soystories_yakuin) &rarr;</a>
+                <a href="https://soystories.jp/" lang="ja" data-lang-switch="ja">日本語公式サイト (Japanese Store Site)</a>
+                <a href="./ko.html" lang="ko" data-lang-switch="ko">한국어 안내 페이지 (Korean Guide)</a>
+                <a href="./zh-tw.html" lang="zh-Hant" data-lang-switch="zh-Hant">繁體中文指南 (Traditional Chinese)</a>
+                <a href="https://soystories.com/" target="_blank" rel="noopener">Online Shop (Japan Domestic Shipping) &rarr;</a>
+                <a href="https://www.soystories.cafe/" target="_blank" rel="noopener">Craft Gelato Wholesale (B2B) &rarr;</a>
             </nav>
-            <small class="ft__copy">&copy; 2024–2026 SoyStories</small>
+            <small class="ft__copy">&copy; 2024–2026 SoyStories Yakuin (Chisan Mansion Dai-3 Hakata 1F, 2-2-24 Yakuin, Chuo-ku, Fukuoka)</small>
         </div>
     </footer>
 
@@ -538,7 +845,7 @@
     <!-- ================= Show-staff overlay ================= -->
     <div class="staff" id="js-staff" role="dialog" aria-modal="true" aria-labelledby="js-staff-item" hidden>
         <div class="staff__card">
-            <p class="staff__hint">Show this screen to our staff</p>
+            <p class="staff__hint">Show this screen to our staff at the counter</p>
             <p class="staff__please" lang="ja">これをください</p>
             <p class="staff__item" id="js-staff-item" lang="ja"></p>
             <p class="staff__en" id="js-staff-en"></p>

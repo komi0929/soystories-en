@@ -267,3 +267,55 @@ if (copyBtn) {
     }
   });
 }
+
+// 5. Deduplicated Analytics Event Tracking (GA4 / dataLayer compatible)
+(function () {
+  window.dataLayer = window.dataLayer || [];
+  let lastEventKey = '';
+  let lastEventTime = 0;
+
+  function trackSoyEvent(eventName, params) {
+    const now = Date.now();
+    const key = eventName + ':' + JSON.stringify(params || {});
+    if (key === lastEventKey && now - lastEventTime < 800) return; // Prevent double-firing
+    lastEventKey = key;
+    lastEventTime = now;
+    const payload = Object.assign({ event: eventName, page_path: window.location.pathname, page_lang: document.documentElement.lang || 'en' }, params || {});
+    window.dataLayer.push(payload);
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, params || {});
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    const target = e.target.closest('a, button, summary');
+    if (!target) return;
+
+    if (target.classList.contains('js-show-staff')) {
+      trackSoyEvent('use_show_staff', { item_name: target.dataset.en || target.dataset.ja || 'unknown' });
+      return;
+    }
+    if (target.classList.contains('fchip')) {
+      trackSoyEvent('filter_allergen', { allergen: target.dataset.avoid || 'unknown' });
+      return;
+    }
+    if (target.id === 'js-copy-address') {
+      trackSoyEvent('copy_taxi_address', { location: 'yakuin' });
+      return;
+    }
+
+    const href = target.getAttribute('href') || '';
+    if (href.indexOf('google.com/maps/dir') !== -1) {
+      trackSoyEvent('click_directions', { link_url: href });
+    } else if (href.indexOf('google.com/maps') !== -1 || href.indexOf('g.page') !== -1) {
+      trackSoyEvent('open_google_maps', { link_url: href });
+    } else if (href.indexOf('ig.me/') !== -1 || href.indexOf('instagram.com/') !== -1) {
+      trackSoyEvent('click_instagram_dm', { link_url: href });
+    } else if (target.classList.contains('hd__lang') || target.classList.contains('drawer__ja') || target.hasAttribute('data-lang-switch')) {
+      trackSoyEvent('switch_language', { target_lang: target.getAttribute('lang') || href });
+    } else if (href.indexOf('#menu') !== -1 || href.indexOf('waffle') !== -1 || href.indexOf('soft.html') !== -1 || href.indexOf('dounuts.html') !== -1 || href.indexOf('ice.html') !== -1) {
+      trackSoyEvent('view_menu_section', { menu_target: href });
+    }
+  }, { passive: true });
+})();
+

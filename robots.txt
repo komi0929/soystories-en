@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://en.soystories.cafe/sitemap.xml
