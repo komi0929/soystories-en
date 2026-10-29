@@ -14,10 +14,24 @@
     <link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/">
     <meta property="og:url" content="https://en.soystories.cafe/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SoyStories Yakuin, Fukuoka">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="zh_TW">
     <meta property="og:title" content="SoyStories Yakuin, Fukuoka | 100% Gluten-Free &amp; Vegan Sweets Café">
     <meta property="og:description" content="Freshly baked rice-flour bubble waffles, pure soy milk soft serve, baked donuts &amp; craft gelato in Yakuin, Fukuoka. Made without wheat, dairy, eggs or refined white sugar. Open daily 11:00–22:00.">
     <meta property="og:image" content="https://en.soystories.cafe/img/waffle-softcream.png">
+    <meta property="og:image:alt" content="Freshly baked rice-flour bubble waffle and pure soy milk soft serve at SoyStories Yakuin, Fukuoka">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SoyStories Yakuin, Fukuoka | 100% Gluten-Free &amp; Vegan Sweets Café">
+    <meta name="twitter:description" content="100% gluten-free &amp; vegan sweets in Yakuin, Fukuoka: rice-flour bubble waffles, pure soy soft serve, baked donuts &amp; craft gelato. Open daily 11:00–22:00.">
+    <meta name="twitter:image" content="https://en.soystories.cafe/img/waffle-softcream.png">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="geo.region" content="JP-40">
+    <meta name="geo.placename" content="Yakuin, Chuo-ku, Fukuoka">
+    <meta name="geo.position" content="33.5806;130.3944">
+    <meta name="ICBM" content="33.5806, 130.3944">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="preload" as="image" href="./img/interior_seating.jpg" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,12 +56,14 @@
           "@type": ["IceCreamShop", "Bakery", "CafeOrCoffeeShop"],
           "@id": "https://en.soystories.cafe/#store",
           "name": "SoyStories (Soy Stories Yakuin / グルテンフリー＆100％植物性スイーツ Soy Stories)",
+          "alternateName": ["SoyStories Yakuin", "Soy Stories Fukuoka", "ソイストーリーズ 薬院店"],
           "url": "https://en.soystories.cafe/",
           "description": "Vegan and gluten-free sweets shop in Yakuin, Fukuoka. Freshly baked rice-flour bubble waffles, soy soft serve, baked donuts and craft ice cream made without wheat, dairy, eggs or refined white sugar.",
           "image": [
             "https://en.soystories.cafe/img/top_wafflesoft.png",
             "https://en.soystories.cafe/img/tray_waffle_latte.jpg",
-            "https://en.soystories.cafe/img/cake_donuts_box.jpg"
+            "https://en.soystories.cafe/img/cake_donuts_box.jpg",
+            "https://en.soystories.cafe/img/interior_seating.jpg"
           ],
           "telephone": "+81-92-231-0677",
           "address": {
@@ -63,16 +79,29 @@
             "latitude": 33.5806,
             "longitude": 130.3944
           },
+          "hasMap": "https://www.google.com/maps?q=%E3%80%92810-0022+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%96%AC%E9%99%A22-2-24+Soy+Stories",
           "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
             "opens": "11:00",
             "closes": "22:00"
           },
-          "servesCuisine": ["Vegan", "Gluten-Free", "Plant-Based", "Desserts", "Sweets"],
+          "servesCuisine": ["Vegan", "Gluten-Free", "Plant-Based", "Desserts", "Sweets", "Japanese Cafe"],
           "priceRange": "¥330 - ¥900",
           "currenciesAccepted": "JPY",
           "paymentAccepted": "Cash, Visa, Mastercard, JCB, American Express, Diners Club, Suica, PASMO, ICOCA, SUGOCA, nimoca, Hayakaken, iD, QUICPay, PayPay",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "bestRating": "5",
+            "ratingCount": "250"
+          },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "100% Gluten-Free & Vegan Kitchen (No wheat, dairy, eggs, honey, gelatin, or refined white sugar)", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Dine-in seating (4 main seats + wooden cube stools) & full takeaway", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Strollers and suitcases welcome", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Multilingual menus (English, Korean, Traditional Chinese, Japanese)", "value": true }
+          ],
           "hasMenu": {
             "@type": "Menu",
             "name": "SoyStories Yakuin In-Store Menu",
@@ -86,7 +115,7 @@
                     "@type": "MenuItem",
                     "name": "Signature Rice-Flour Bubble Waffle & Pure Soy Soft Serve (ワッフル純豆乳ソフトクリーム)",
                     "description": "Freshly baked 100% Niigata rice-flour bubble waffle paired with creamy morning-squeezed soy milk soft serve and 6 free toppings. Contains: Soybeans (optional Okara cookie topping contains Almonds).",
-                    "SuitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": [
                       { "@type": "Offer", "name": "Full Size", "price": "900", "priceCurrency": "JPY" },
                       { "@type": "Offer", "name": "Half Size", "price": "690", "priceCurrency": "JPY" }
@@ -96,7 +125,7 @@
                     "@type": "MenuItem",
                     "name": "Rice-Flour Bubble Waffle & Soy Whipped Cream (ワッフル豆乳ホイップクリーム)",
                     "description": "Freshly baked rice-flour bubble waffle topped with fluffy dairy-free soy whipped cream and 6 free toppings. Contains: Soybeans.",
-                    "SuitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": [
                       { "@type": "Offer", "name": "Full Size", "price": "900", "priceCurrency": "JPY" },
                       { "@type": "Offer", "name": "Half Size", "price": "690", "priceCurrency": "JPY" }
@@ -111,11 +140,13 @@
                   {
                     "@type": "MenuItem",
                     "name": "Plain Rice-Flour Bubble Waffle (国産米粉の焼きたてワッフル プレーン)",
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "600", "priceCurrency": "JPY" }
                   },
                   {
                     "@type": "MenuItem",
                     "name": "Matcha / Cocoa / Black Sesame Rice-Flour Bubble Waffle (抹茶・ココア・黒ゴマ)",
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "690", "priceCurrency": "JPY" }
                   }
                 ]
@@ -127,11 +158,13 @@
                   {
                     "@type": "MenuItem",
                     "name": "Pure Soy Milk Soft Serve Large (純豆乳ソフト Large)",
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "660", "priceCurrency": "JPY" }
                   },
                   {
                     "@type": "MenuItem",
                     "name": "Pure Soy Milk Soft Serve Medium (純豆乳ソフト Medium)",
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "390", "priceCurrency": "JPY" }
                   }
                 ]
@@ -144,12 +177,14 @@
                     "@type": "MenuItem",
                     "name": "Baked Soy & Rice-Flour Donuts - 6 Flavors (プレーンドーナツ各種)",
                     "description": "Cranberry, Black Sesame, Yame Matcha, Kinako, Earl Grey, Chocolat. Contains: Soybeans, Japanese Yam (plus Sesame in Black Sesame).",
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "330", "priceCurrency": "JPY" }
                   },
                   {
                     "@type": "MenuItem",
                     "name": "Glazed Almond & Rice-Flour Cake Donuts - 6 Flavors (しっとりケーキドーナツ各種)",
-                    "description": "Strawberry, Matcha, Double Chocolate, Lemon, Chocolate Mint, Coconut. Soy-free recipe. Contains: Almonds, Apple.",
+                    "description": "Strawberry, Matcha, Double Chocolate, Lemon, Chocolate Mint, Coconut. Soy-free recipe, keeps ~1 week at room temperature. Contains: Almonds, Apple.",
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "430", "priceCurrency": "JPY" }
                   }
                 ]
@@ -162,6 +197,7 @@
                     "@type": "MenuItem",
                     "name": "Rice-Flour Craft Gelato - 8 Flavors (米粉ジェラート各種)",
                     "description": "Berry Mix, Melting Chocolate, Vanilla Coconut, Refreshing Apple, Too Juicy Peach, Supreme Rich Matcha, Fragrant Hojicha, Juicy Dragon Fruit.",
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "490", "priceCurrency": "JPY" }
                   }
                 ]
@@ -181,26 +217,106 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Are all sweets at SoyStories 100% vegan and plant-based?",
+              "name": "Are all products 100% vegan (plant-based)?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Every item at SoyStories Yakuin is 100% plant-based (vegan). We do not use meat, fish, dairy, eggs, honey, or gelatin in any of our products."
+                "text": "Yes. Every single sweet and drink at SoyStories Yakuin is 100% plant-based (vegan). We never use meat, fish, dairy, eggs, honey, or gelatin in any product."
               }
             },
             {
               "@type": "Question",
-              "name": "What is your gluten-free and kitchen allergen policy?",
+              "name": "What is your gluten-free policy? Can guests with celiac disease or wheat allergies eat here?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "All items are made with 100% gluten-free rice flour or almond flour. Wheat, dairy, and eggs are not brought into our kitchen. However, soybeans, almonds, sesame, Japanese yam, apples, peaches, and oranges (as well as cashew nuts in certain seasonal/delivery items) are used in specific products in the same kitchen, and complete elimination of trace allergens cannot be guaranteed. Guests with severe allergies or celiac disease are encouraged to review per-item ingredients and consult our staff."
+                "text": "All of our products are made with 100% gluten-free rice flour or almond flour, and wheat, dairy, and eggs are never brought into our kitchen (including staff personal food for wheat). However, because we handle soybeans, almonds, sesame, Japanese yam, apples, peaches, and oranges in the same kitchen (and certain seasonal/delivery items such as vegan tiramisu may use cashew nuts), complete elimination of trace allergens cannot be guaranteed. Guests with severe allergies or celiac disease are encouraged to review per-item ingredients and consult our staff before ordering."
               }
             },
             {
               "@type": "Question",
-              "name": "What are your opening hours, last order, and seating capacity?",
+              "name": "How can I check per-item ingredients and allergens?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We are open daily from 11:00 AM to 10:00 PM (22:00), with last order at 9:45 PM and no regular holidays. Our shop offers a compact dine-in space (4 main seats plus wooden cube stools) and full takeaway service."
+                "text": "You can use the interactive Allergen Checker and the Complete 26-Item Menu Table on https://en.soystories.cafe/, check the allergen badges on each menu category page, view our Official FoodHug Allergy Disclosure Page (https://food-hug.com/soystoriesenglish-page/), or ask our counter staff directly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do your products contain soy, tree nuts (almonds/cashews), sesame, or Japanese yam?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on the product: Soybeans are used in Bubble Waffles, Soy Soft Serve, Soy Whip, Baked Soy Donuts, and 4 Gelato flavors (Soy-free options include all 6 Glazed Cake Donuts and 4 Fruit Gelato flavors: Berry Mix, Juicy Dragon Fruit, Refreshing Apple, Too Juicy Peach). Almonds (Tree Nuts) are used in Glazed Cake Donuts, Melting Chocolate Gelato, and the optional Okara Cookie topping (certain seasonal/delivery items like vegan tiramisu may use cashew paste). Sesame is used in the Black Sesame Bubble Waffle and Black Sesame Soy Donut. Japanese Yam (Yamaimo) is used in the 6 Baked Soy Donuts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you use white sugar? Are your sweets sugar-free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We use no refined white sugar. Instead, our sweets are gently sweetened with beet sugar, organic agave/maple, or natural plant sweeteners depending on the item. They are free from refined white sugar, not zero-sugar / sugar-free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are your opening hours, last order time, and holidays?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We are open daily from 11:00 AM to 10:00 PM (22:00), with Last Order at 9:45 PM (21:45) and no regular holidays. Temporary hour changes or special holidays are announced on Instagram (@soystories_yakuin)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can items sell out? Can I pre-order or hold items?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Bubble waffles and soy soft serve are prepared fresh until last order (9:45 PM), though specific donut or gelato flavors can sell out later in the evening. To reserve specific flavors or gift boxes, send a DM on Instagram (@soystories_yakuin)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How many dine-in seats do you have? Can I bring a stroller or suitcase?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We have a compact dine-in space with 4 main seats plus wooden cube stools. Strollers and suitcases are welcome inside, there is no minimum order per person, and sharing items is welcome."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which items are best for takeaway, and how long can I carry them?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Glazed Cake Donuts (¥430) keep for about 1 week at room temperature and are best for hotel snacks, bullet trains, and gifts. Baked Soy Donuts (¥330) are sold frozen or warmed in-store (keep refrigerated and enjoy within 3 days after thawing). Cup Craft Gelato (¥490) is sold frozen with cooler bags and ice packs available (free when buying 4 or more items). Bubble Waffles & Soy Soft Serve should be eaten immediately."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I eat or reheat the frozen Baked Soy Donuts?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ask our staff to warm it up in-store to eat right away, or heat it at your hotel/home in a 600W microwave for about 1 minute (or toast lightly after thawing)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What payment methods do you accept?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We accept Cash (JPY), major credit cards (Visa, Mastercard, JCB, American Express, Diners Club), Japanese transit IC cards (Suica, PASMO, ICOCA, SUGOCA, nimoca, Hayakaken), iD, QUICPay, and PayPay. All menu prices include tax."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get there from Yakuin-odori, Tenjin, or Hakata Station?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Take the Fukuoka City Subway Nanakuma Line to Yakuin-odori Station (薬院大通駅), take Exit 2, and walk 2–3 minutes (~160m) toward Yakuin Mutsukado. It is ~4 minutes by subway from Tenjin-minami Station and ~9 minutes from Hakata Station."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there an English/Korean/Chinese menu? What if I don't speak Japanese?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We have printed English, Korean, and Traditional Chinese menus at the counter, and you can tap the Show staff button on any item on our website to display a clear Japanese ordering card (with Eat-In / Takeout toggle) on your phone screen."
               }
             }
           ]
