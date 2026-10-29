@@ -25,6 +25,39 @@ if (drawerLinks.length > 0 && drawerIcon && drawerContent) {
   }
 }
 
+// 1a. Escape closes the mobile drawer and returns focus to the menu button
+if (drawerIcon && drawerContent) {
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape' || !drawerContent.classList.contains('is-checked')) return;
+    drawerIcon.classList.remove('is-checked');
+    drawerContent.classList.remove('is-checked');
+    drawerIcon.setAttribute('aria-expanded', 'false');
+    if (siteHeader) siteHeader.classList.remove('is-open');
+    drawerIcon.focus();
+  });
+}
+
+// 1a2. Mark the primary-nav link of the section currently in view (same-page anchors only)
+(function () {
+  const links = Array.prototype.slice.call(document.querySelectorAll('.hd__nav a[href^="#"]'));
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  const map = [];
+  links.forEach(function (a) { const t = document.getElementById(a.getAttribute('href').slice(1)); if (t) map.push({ a: a, t: t }); });
+  if (!map.length) return;
+  const visible = new Map();
+  const io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { visible.set(en.target, en.isIntersecting); });
+    let current = null;
+    map.forEach(function (m) { if (visible.get(m.t)) current = current || m; });
+    map.forEach(function (m) {
+      const on = current === m;
+      m.a.classList.toggle('is-current', on);
+      if (on) m.a.setAttribute('aria-current', 'true'); else m.a.removeAttribute('aria-current');
+    });
+  }, { rootMargin: '-35% 0px -60% 0px' });
+  map.forEach(function (m) { io.observe(m.t); });
+})();
+
 // 1b. Header becomes solid after scrolling; mobile action dock appears after the hero
 (function () {
   const dock = document.querySelector('#js-dock');
@@ -137,12 +170,48 @@ if (drawerLinks.length > 0 && drawerIcon && drawerContent) {
   triggers.forEach(function (b) { b.addEventListener('click', function () { open(b); }); });
   close.addEventListener('click', hide);
   overlay.addEventListener('click', function (e) { if (e.target === overlay) hide(); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !overlay.hidden) hide(); });
+  document.addEventListener('keydown', function (e) {
+    if (overlay.hidden) return;
+    if (e.key === 'Escape') { hide(); return; }
+    if (e.key === 'Tab') { // keep keyboard focus inside the open card
+      const f = overlay.querySelectorAll('button, [href], [tabindex]:not([tabindex="-1"])');
+      if (!f.length) return;
+      const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
   modes.forEach(function (m) {
     m.addEventListener('click', function () {
-      modes.forEach(function (x) { x.classList.remove('is-on'); });
+      modes.forEach(function (x) { x.classList.remove('is-on'); x.setAttribute('aria-pressed', 'false'); });
       m.classList.add('is-on');
+      m.setAttribute('aria-pressed', 'true');
     });
+  });
+})();
+
+// 1e2. Previous / next controls for horizontal rails ([data-rail] + [data-rail-nav="id"])
+(function () {
+  const navs = document.querySelectorAll('[data-rail-nav]');
+  navs.forEach(function (nav) {
+    const rail = document.getElementById(nav.getAttribute('data-rail-nav'));
+    if (!rail) return;
+    const prev = nav.querySelector('[data-rail-prev]');
+    const next = nav.querySelector('[data-rail-next]');
+    const step = function () { const c = rail.firstElementChild; return c ? c.getBoundingClientRect().width + 16 : rail.clientWidth * 0.8; };
+    const sync = function () {
+      const scrollable = rail.scrollWidth > rail.clientWidth + 4;
+      nav.hidden = !scrollable;
+      if (prev) prev.disabled = rail.scrollLeft <= 4;
+      if (next) next.disabled = rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 4;
+    };
+    const smooth = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    if (prev) prev.addEventListener('click', function () { rail.scrollBy({ left: -step(), behavior: smooth }); });
+    if (next) next.addEventListener('click', function () { rail.scrollBy({ left: step(), behavior: smooth }); });
+    rail.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    window.addEventListener('load', sync);
+    sync();
   });
 })();
 
@@ -150,6 +219,14 @@ if (drawerLinks.length > 0 && drawerIcon && drawerContent) {
 (function () {
   const v = document.querySelector('#js-video');
   if (!v) return;
+  const thumb = v.querySelector('img');
+  // If the thumbnail cannot load (or YouTube returns its 120px placeholder), keep a neutral panel + play button.
+  const checkThumb = function () { if (!thumb.naturalWidth || thumb.naturalWidth <= 120) v.classList.add('is-noimg'); };
+  if (thumb) {
+    thumb.addEventListener('error', function () { v.classList.add('is-noimg'); });
+    thumb.addEventListener('load', checkThumb);
+    if (thumb.complete && thumb.currentSrc) checkThumb();
+  }
   v.addEventListener('click', function () {
     const id = v.dataset.id;
     const f = document.createElement('iframe');
@@ -157,8 +234,22 @@ if (drawerLinks.length > 0 && drawerIcon && drawerContent) {
     f.title = 'SoyStories video';
     f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
     f.allowFullscreen = true;
-    v.innerHTML = '';
-    v.appendChild(f);
+    const frame = v.querySelector('.video__frame');
+    if (frame) {
+      // Replace the button with a plain container so the player is not nested inside a <button>.
+      const box = document.createElement('div');
+      box.className = v.className + ' is-playing';
+      box.id = v.id;
+      const fr = document.createElement('div');
+      fr.className = 'video__frame';
+      fr.appendChild(f);
+      box.appendChild(fr);
+      v.replaceWith(box);
+      f.focus();
+    } else {
+      v.innerHTML = '';
+      v.appendChild(f);
+    }
   }, { once: true });
 })();
 
