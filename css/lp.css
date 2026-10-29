@@ -146,6 +146,8 @@ strong { font-weight: 700; }
     border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); font-size: 19px; font-weight: 600;
 }
 .drawer__nav a::after { content: ""; width: 8px; height: 8px; border-top: 1.75px solid var(--muted); border-right: 1.75px solid var(--muted); transform: rotate(45deg); margin-right: 6px; flex: 0 0 auto; }
+.drawer__nav .drawer__ig { color: var(--brand); justify-content: flex-start; gap: 10px; font-size: 17px; }
+.drawer__nav .drawer__ig span { flex: 1; }
 .drawer__nav .drawer__ja { font-family: var(--ja); font-size: 16px; font-weight: 500; color: var(--brand); }
 .drawer__nav a:not(.drawer__ja) + .drawer__ja { margin-top: 14px; border-top: 2px solid var(--line-strong); }
 
@@ -470,19 +472,26 @@ strong { font-weight: 700; }
 .checker__list li.is-out strong { color: var(--muted); font-weight: 600; }
 .checker__note { font-size: 16px; line-height: 1.55; color: var(--ink); margin-top: 18px; max-width: 72ch; }
 .checker__note a { font-weight: 600; display: inline-block; padding: 12px 0; margin: -12px 0; }
+.checker__contact { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.btn--sm { min-height: 44px; padding: 8px 14px; font-size: 15px; }
+@media (max-width: 599px) {
+    .checker__contact { display: grid; grid-template-columns: 1fr; }
+    .checker__contact .btn { width: 100%; }
+}
 @media (min-width: 1024px) {
     .checker { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 0 56px; align-items: start; padding-top: 32px; }
     .checker__controls { position: sticky; top: calc(var(--hd-h) + 24px); }
     .checker__list { margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; border-top: 0; }
     .checker__list li:nth-child(-n+2) { border-top: 1px solid var(--line); }
-    .checker__note { grid-column: 2; }
+    .checker__note, .checker__contact { grid-column: 2; }
 }
 
 /* ---------- Seasonal ---------- */
 .sec--seasonal { background: var(--surface); }
 .seasonal { display: grid; gap: 28px; }
 .seasonal__text .sec__lead { margin-top: 14px; }
-.ig-link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 14px; font-weight: 600; font-size: 16px; color: var(--brand); }
+.ig-pill { margin-top: 18px; background: var(--page); text-align: left; justify-content: flex-start; width: 100%; max-width: 480px; }
+.ig-pill span { line-height: 1.35; }
 .seasonal__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 12px; }
 .season { margin: 0; }
 .season img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--r-photo); background: var(--page); }
@@ -603,6 +612,18 @@ strong { font-weight: 700; }
 .info a { font-weight: 600; display: inline-flex; min-height: 44px; align-items: center; margin: -10px 0; }
 .access__btns { display: grid; gap: 10px; margin-top: 20px; }
 @media (min-width: 600px) { .access__btns { display: flex; flex-wrap: wrap; } }
+.ig-connect {
+    margin-top: 20px; padding: 18px; border-radius: var(--r-panel);
+    background: var(--surface); border: 1px solid var(--line-strong);
+    display: grid; gap: 14px;
+}
+.ig-connect__head { display: flex; gap: 12px; align-items: flex-start; }
+.ig-connect__head > .ic { width: 24px; height: 24px; color: var(--brand); margin-top: 2px; }
+.ig-connect__head strong { font-size: 17px; line-height: 1.35; }
+.ig-connect__head p { font-size: 15px; line-height: 1.5; color: var(--muted); margin-top: 4px; }
+.ig-connect__head p strong { font-size: 15px; color: var(--ink); }
+.ig-connect__actions { display: grid; grid-template-columns: 1fr; gap: 8px; }
+@media (min-width: 480px) { .ig-connect__actions { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1024px) {
     .access { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: start; }
     .access__map { aspect-ratio: auto; height: 100%; min-height: 460px; }
