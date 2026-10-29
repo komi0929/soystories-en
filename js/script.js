@@ -1,3 +1,28 @@
+// 0. UI strings. English is the default; the Japanese edition (<html lang="ja">) swaps in Japanese text.
+const UI = document.documentElement.lang === 'ja' ? {
+  openNow: '営業中 · 22:00まで（L.O. 21:45）',
+  openLastOrder: '営業中 · ラストオーダーは21:45です',
+  lastOrderPassed: 'ラストオーダーは終了しました · 11:00に開店します',
+  closedNow: '営業時間外 · 毎日11:00に開店します',
+  allergenLabels: { soy: '大豆', nuts: 'アーモンド（ナッツ類）', sesame: 'ごま' },
+  allergenJoin: '・',
+  allergenIdle: '上の原材料を選ぶと、定番メニューを絞り込めます。',
+  allergenResult: function (ok, total, names) { return '全' + total + '品中、' + names + 'を含まないメニューは' + ok + '品です。'; },
+  copied: '✓ コピーしました。Googleマップやタクシーアプリ（Uber・GO）にそのまま貼り付けられます。',
+  copiedBtn: 'コピーしました'
+} : {
+  openNow: 'Open now · until 10:00 PM (L.O. 9:45 PM)',
+  openLastOrder: 'Open now · last order at 9:45 PM',
+  lastOrderPassed: 'Last order has passed · opens 11:00 AM',
+  closedNow: 'Closed now · opens daily at 11:00 AM',
+  allergenLabels: { soy: 'soy', nuts: 'tree nuts', sesame: 'sesame' },
+  allergenJoin: ' & ',
+  allergenIdle: 'Select an ingredient above to filter our regular menu items.',
+  allergenResult: function (ok, total, names) { return ok + ' of ' + total + ' items are free from ' + names + '.'; },
+  copied: '✓ Copied! Ready to paste into Google Maps, Uber, or GO Taxi.',
+  copiedBtn: 'Copied!'
+};
+
 // 1. Mobile Drawer Navigation Toggle
 const drawerIcon = document.querySelector('#js-drawer-icon');
 const drawerContent = document.querySelector('#js-drawer-content');
@@ -96,16 +121,16 @@ if (drawerIcon && drawerContent) {
     const t = h * 60 + m;
     el.classList.remove('is-closed', 'is-soon');
     if (t >= 660 && t < 1275) {
-      text.textContent = 'Open now · until 10:00 PM (L.O. 9:45 PM)';
+      text.textContent = UI.openNow;
     } else if (t >= 1275 && t < 1305) {
       el.classList.add('is-soon');
-      text.textContent = 'Open now · last order at 9:45 PM';
+      text.textContent = UI.openLastOrder;
     } else if (t >= 1305 && t < 1320) {
       el.classList.add('is-soon');
-      text.textContent = 'Last order has passed · opens 11:00 AM';
+      text.textContent = UI.lastOrderPassed;
     } else {
       el.classList.add('is-closed');
-      text.textContent = 'Closed now · opens daily at 11:00 AM';
+      text.textContent = UI.closedNow;
     }
   };
   update();
@@ -118,7 +143,7 @@ if (drawerIcon && drawerContent) {
   const items = document.querySelectorAll('#js-checker-list li');
   const result = document.querySelector('#js-checker-result');
   if (!chips.length || !items.length) return;
-  const labels = { soy: 'soy', nuts: 'tree nuts', sesame: 'sesame' };
+  const labels = UI.allergenLabels;
   const apply = function () {
     const avoid = [];
     chips.forEach(function (c) { if (c.getAttribute('aria-pressed') === 'true') avoid.push(c.dataset.avoid); });
@@ -131,9 +156,9 @@ if (drawerIcon && drawerContent) {
     });
     if (!result) return;
     if (!avoid.length) {
-      result.textContent = 'Select an ingredient above to filter our regular menu items.';
+      result.textContent = UI.allergenIdle;
     } else {
-      result.textContent = ok + ' of ' + items.length + ' items are free from ' + avoid.map(function (a) { return labels[a]; }).join(' & ') + '.';
+      result.textContent = UI.allergenResult(ok, items.length, avoid.map(function (a) { return labels[a]; }).join(UI.allergenJoin));
     }
   };
   chips.forEach(function (c) {
@@ -327,6 +352,7 @@ if (reviewsTrack) {
 // 4. Taxi Driver Card - Copy Japanese Address Button
 const copyBtn = document.querySelector('#js-copy-address');
 const copyFeedback = document.querySelector('#js-copy-feedback');
+const copyLabel = copyBtn ? copyBtn.textContent : '';
 
 if (copyBtn) {
   copyBtn.addEventListener('click', function () {
@@ -334,11 +360,11 @@ if (copyBtn) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(address).then(function () {
         if (copyFeedback) {
-          copyFeedback.textContent = '✓ Copied! Ready to paste into Google Maps, Uber, or GO Taxi.';
+          copyFeedback.textContent = UI.copied;
         }
-        copyBtn.textContent = 'Copied!';
+        copyBtn.textContent = UI.copiedBtn;
         setTimeout(function () {
-          copyBtn.textContent = 'Copy Japanese Address';
+          copyBtn.textContent = copyLabel;
         }, 3000);
       }).catch(function () {
         if (copyFeedback) {
@@ -353,7 +379,7 @@ if (copyBtn) {
       document.execCommand('copy');
       document.body.removeChild(textarea);
       if (copyFeedback) {
-        copyFeedback.textContent = '✓ Copied! Ready to paste into Google Maps, Uber, or GO Taxi.';
+        copyFeedback.textContent = UI.copied;
       }
     }
   });

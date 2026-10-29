@@ -1,0 +1,74 @@
+/* =========================================================================
+   SoyStories — Japanese edition overrides (ja.html only). Loaded after lp.css.
+   lp.css is tuned for Latin text (ch-based measures, tight leading, negative tracking);
+   Japanese needs looser leading, em-based measures and phrase-aware line breaking.
+   ========================================================================= */
+:root {
+    --serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif CJK JP", serif;
+    --sans: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+html[lang="ja"] body {
+    font-size: 16px;
+    line-height: 1.85;
+    letter-spacing: .03em;
+    line-break: strict;
+    word-break: auto-phrase;      /* Chrome/Edge: break at phrase boundaries; others fall back to line-break: strict */
+    overflow-wrap: break-word;
+    font-feature-settings: normal;
+}
+/* phrase units inside headings: never split a word, wrap only between units */
+.nb { display: inline-block; }
+
+/* headings */
+.hero__title { font-weight: 700; font-size: clamp(28px, 3.4vw + 14px, 38px); line-height: 1.4; letter-spacing: .03em; max-width: 16em; margin-bottom: 18px; }
+.sec__title { font-weight: 700; font-size: clamp(23px, 1.5vw + 18px, 36px); line-height: 1.5; letter-spacing: .04em; max-width: 20em; }
+.kicker { letter-spacing: .08em; }
+.card__title { line-height: 1.45; letter-spacing: .03em; }
+.sig .card__title { font-size: clamp(24px, 1vw + 20px, 30px); line-height: 1.4; }
+.toppings__head h3, .kitchen__badge, .story-box h3, .to-feature h3, .craft strong, .checker__q { line-height: 1.5; letter-spacing: .03em; }
+.to-feature h3 { max-width: 22em; }
+
+/* body copy: 16px / 1.9, measures in em (CJK glyph = 1em) */
+.hero__lead, .sec__lead, .card__desc, .rv p, .story-box p, .faq p, .policy-note, .checker__note,
+.to-list small, .craft small, .toppings__head p, .kitchen__policy > p, .spot p, .ig-connect__head p, .info dd { line-height: 1.9; }
+.hero__lead { font-size: 16px; max-width: 28em; }
+.sec__lead { font-size: 16px; max-width: 36em; }
+.card__desc, .rv p, .faq p, .policy-note { font-size: 16px; }
+.sig .card__desc { max-width: 34em; }
+.story-box p { font-size: 16px; max-width: 34em; }
+.kitchen__policy > p:not(.kitchen__badge) { max-width: 36em; }
+.toppings__head p { max-width: 30em; line-height: 1.7; }
+.fine { max-width: 44em; line-height: 1.8; }
+.checker__note { max-width: 42em; }
+.faq p { max-width: 40em; }
+.photo figcaption { max-width: 26em; line-height: 1.6; }
+.spot p { max-width: 28em; }
+.to-feature p:last-child { max-width: 36em; }
+.ft__tag { max-width: 28em; }
+.hero__eyebrow, .hero__status { line-height: 1.6; }
+.trust__list span, .facts small { line-height: 1.6; }
+.tags { line-height: 1.7; }
+.rv p::before { letter-spacing: 3px; }
+
+/* UI */
+.drawer__nav a { font-size: 17px; line-height: 1.5; }
+.drawer__nav .drawer__ja { font-size: 15px; }
+.faq summary { font-size: 17px; line-height: 1.6; }
+.full-menu summary { font-size: 18px; line-height: 1.5; }
+.btn { letter-spacing: .04em; line-height: 1.4; }
+.dock a { font-size: 12px; letter-spacing: .02em; }
+.fchip { letter-spacing: .03em; }
+.m-table { line-height: 1.6; }
+.m-table .m-cat { line-height: 1.6; font-size: 15px; }
+.m-table thead th { white-space: nowrap; }
+.info dt { white-space: nowrap; }
+
+/* only one action per card in the Japanese edition (no "Show staff" button): keep it full width */
+@media (max-width: 599px) {
+    .sig .card__actions, .mcard .card__actions { grid-template-columns: 1fr; }
+}
+
+/* the English-only column label that lp.css injects on phones */
+@media (max-width: 599px) {
+    .m-table td:nth-child(4)::before { content: "レシピに使用しているアレルゲン*：" !important; }
+}
