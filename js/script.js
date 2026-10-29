@@ -131,7 +131,7 @@ if (drawerIcon && drawerContent) {
     });
     if (!result) return;
     if (!avoid.length) {
-      result.textContent = 'Select an allergen to filter the list.';
+      result.textContent = 'Select an ingredient above to filter our regular menu items.';
     } else {
       result.textContent = ok + ' of ' + items.length + ' items are free from ' + avoid.map(function (a) { return labels[a]; }).join(' & ') + '.';
     }
