@@ -438,3 +438,55 @@ if (copyBtn) {
   }, { passive: true });
 })();
 
+
+// 6. Japanese-language hint: visitors whose browser is set to Japanese get a small link to the
+//    hand-written Japanese edition (otherwise the browser machine-translates the English/KO/ZH pages).
+(function () {
+  if (document.documentElement.lang === 'ja') return;
+  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || ''];
+  if (!/^ja(-|$)/i.test(langs[0] || '')) return;
+  try { if (sessionStorage.getItem('soy-ja-hint') === 'closed') return; } catch (e) {}
+
+  const css = document.createElement('style');
+  css.textContent =
+    '.ja-hint{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:70;display:flex;align-items:stretch;max-width:420px;margin:0 auto;' +
+    'background:#2E3F2F;color:#fff;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.22);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;font-size:15px;line-height:1.5}' +
+    '.ja-hint a{flex:1;display:flex;align-items:center;gap:10px;min-height:52px;padding:10px 6px 10px 16px;color:#fff;font-weight:700;text-decoration:none;letter-spacing:.03em}' +
+    '.ja-hint a small{display:block;font-weight:400;font-size:12px;opacity:.85;letter-spacing:.02em}' +
+    '.ja-hint a:hover{text-decoration:underline}' +
+    '.ja-hint button{flex:0 0 48px;border:0;background:transparent;color:#fff;font-size:22px;line-height:1;cursor:pointer;border-radius:0 10px 10px 0}' +
+    '.ja-hint a:focus-visible,.ja-hint button:focus-visible{outline:3px solid #fff;outline-offset:-3px}' +
+    '@media (min-width:1024px){.ja-hint{left:auto;right:24px;bottom:24px;margin:0;width:360px}}';
+  document.head.appendChild(css);
+
+  const box = document.createElement('div');
+  box.className = 'ja-hint';
+  box.setAttribute('lang', 'ja');
+  box.setAttribute('translate', 'no');
+  box.setAttribute('role', 'region');
+  box.setAttribute('aria-label', '日本語ページのご案内');
+  box.innerHTML = '<a href="./ja.html" lang="ja" translate="no" data-lang-switch="ja"><span>日本語のページはこちら<small>自動翻訳ではない、日本語の公式ページです</small></span></a>' +
+                  '<button type="button" aria-label="閉じる">&times;</button>';
+  box.querySelector('button').addEventListener('click', function () {
+    try { sessionStorage.setItem('soy-ja-hint', 'closed'); } catch (e) {}
+    box.remove();
+  });
+  document.body.appendChild(box);
+
+  // keep the hint clear of the bottom action dock (it slides in after the hero on phones)
+  const dock = document.querySelector('.dock');
+  if (dock) {
+    const place = function () {
+      if (window.innerWidth >= 1024) { box.style.bottom = ''; return; }
+      const top = dock.getBoundingClientRect().top;
+      const visible = top < window.innerHeight - 4;
+      box.style.bottom = visible ? (window.innerHeight - top + 10) + 'px' : '';
+    };
+    let raf = 0;
+    const queue = function () { cancelAnimationFrame(raf); raf = requestAnimationFrame(place); };
+    window.addEventListener('scroll', queue, { passive: true });
+    window.addEventListener('resize', queue);
+    dock.addEventListener('transitionend', place);
+    place();
+  }
+})();
