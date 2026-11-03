@@ -72,3 +72,6 @@ html[lang="ja"] body {
 @media (max-width: 599px) {
     .m-table td:nth-child(4)::before { content: "レシピに使用しているアレルゲン*：" !important; }
 }
+
+/* LINE (the owner's existing Japanese contact channel) spans the full row under the two Instagram buttons */
+.ig-connect__actions .btn--line { grid-column: 1 / -1; }

@@ -2,8 +2,8 @@
 const UI = document.documentElement.lang === 'ja' ? {
   openNow: '営業中 · 22:00まで（L.O. 21:45）',
   openLastOrder: '営業中 · ラストオーダーは21:45です',
-  lastOrderPassed: 'ラストオーダーは終了しました · 11:00に開店します',
-  closedNow: '営業時間外 · 毎日11:00に開店します',
+  lastOrderPassed: 'ラストオーダーは終了しました · 毎日11:00オープン',
+  closedNow: '営業時間外 · 毎日11:00オープン',
   allergenLabels: { soy: '大豆', nuts: 'アーモンド（ナッツ類）', sesame: 'ごま' },
   allergenJoin: '・',
   allergenIdle: '上の原材料を選ぶと、定番メニューを絞り込めます。',
@@ -426,6 +426,8 @@ if (copyBtn) {
       trackSoyEvent('click_directions', { link_url: href });
     } else if (href.indexOf('google.com/maps') !== -1 || href.indexOf('g.page') !== -1) {
       trackSoyEvent('open_google_maps', { link_url: href });
+    } else if (href.indexOf('lin.ee/') !== -1) {
+      trackSoyEvent('click_line', { link_url: href });
     } else if (href.indexOf('ig.me/') !== -1 || href.indexOf('instagram.com/') !== -1) {
       trackSoyEvent('click_instagram_dm', { link_url: href });
     } else if (target.classList.contains('hd__lang') || target.classList.contains('drawer__ja') || target.hasAttribute('data-lang-switch')) {
