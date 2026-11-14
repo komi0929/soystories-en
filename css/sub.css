@@ -35,9 +35,11 @@
 .phero__chips li { font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 999px; background: var(--green-l); color: var(--green-d); }
 
 .block { padding: 20px 0; }
+.block[id] { scroll-margin-top: calc(var(--hd-h) + 78px); }
 .intro { font-size: 15.5px; color: var(--ink-2); margin-bottom: 18px; max-width: 64ch; }
 .intro--after { margin: 18px 0 0; }
 .intro__ja { display: block; margin-top: 4px; font-size: 13px; }
+.fine { font-size: 13px; color: var(--ink-2); margin-top: 14px; line-height: 1.5; }
 
 /* Allergen chips */
 .alg { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
@@ -56,19 +58,24 @@
 .pitem__media figcaption { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: var(--cream); white-space: nowrap; }
 .pitem__body { padding: 18px 20px 20px; }
 .pitem .badge { margin-bottom: 10px; }
+.pitem__media--single figure { padding: 0; }
+.pitem__media--single img { max-height: 380px; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
 @media (min-width: 900px) {
     .pitem { display: grid; grid-template-columns: 1.1fr 1fr; }
+    .pitem--single { grid-template-columns: minmax(280px, 380px) 1fr; }
     .pitem__body { padding: 36px; align-self: center; }
 }
 
 /* Grid cards (2-up on phones) */
 .ggrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .ggrid--2 { grid-template-columns: 1fr 1fr; }
-@media (min-width: 700px) { .ggrid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
-@media (min-width: 1024px) { .ggrid { grid-template-columns: repeat(4, 1fr); } .ggrid--2 { grid-template-columns: repeat(2, minmax(0, 360px)); } }
+@media (min-width: 700px) { .ggrid { grid-template-columns: repeat(3, 1fr); gap: 16px; } .ggrid--2 { grid-template-columns: repeat(2, minmax(0, 380px)); } }
+@media (min-width: 1024px) { .ggrid { grid-template-columns: repeat(4, 1fr); } .ggrid--2 { grid-template-columns: repeat(2, minmax(0, 380px)); } }
 .gcard { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
 .gcard__media { aspect-ratio: 1 / 1; background: #fff; display: grid; place-items: center; padding: 8px; overflow: hidden; }
 .gcard__media img { width: 100%; height: 100%; object-fit: contain; }
+.gcard__media--cover { padding: 0; }
+.gcard__media--cover img { object-fit: cover; }
 .gcard__media--tall { aspect-ratio: 3 / 4; }
 .gcard__body { padding: 12px; display: flex; flex-direction: column; flex: 1; }
 .gcard h3 { font-family: var(--serif); font-size: 21px; font-weight: 700; line-height: 1.1; }

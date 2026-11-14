@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#FCFBF8">
     <title>SoyStories Yakuin, Fukuoka | 100% Gluten-Free &amp; Vegan Sweets Café</title>
-    <meta name="description" content="SoyStories in Yakuin, Fukuoka: a 100% gluten-free &amp; plant-based (vegan) sweets shop. Freshly baked rice-flour bubble waffles, soy milk soft serve, baked donuts &amp; craft gelato made without wheat, dairy, eggs or refined white sugar. Open daily 11:00–22:00 (L.O. 21:45).">
+    <meta name="description" content="SoyStories in Yakuin, Fukuoka: a 100% gluten-free &amp; plant-based (vegan) sweets café. Freshly baked rice-flour bubble waffles, pure soy soft serve, waffle ice &amp; whip cups, baked donuts, gluten-free dorayaki, craft gelato &amp; soy lattes — made without wheat, dairy, eggs or white sugar. Open daily 11:00–22:00.">
     <link rel="canonical" href="https://en.soystories.cafe/">
     <link rel="alternate" hreflang="en" href="https://en.soystories.cafe/">
     <link rel="alternate" hreflang="ja" href="https://en.soystories.cafe/ja.html">
@@ -109,27 +109,37 @@
             "hasMenuSection": [
               {
                 "@type": "MenuSection",
-                "name": "Signature Waffle & Soy Soft Serve / Whip",
+                "name": "Signature Waffle & Pure Soy Soft Serve",
                 "hasMenuItem": [
                   {
                     "@type": "MenuItem",
-                    "name": "Signature Rice-Flour Bubble Waffle & Pure Soy Soft Serve (ワッフル純豆乳ソフトクリーム)",
-                    "description": "Freshly baked 100% Niigata rice-flour bubble waffle paired with creamy morning-squeezed soy milk soft serve and 5 free toppings. Contains: Soybeans.",
+                    "name": "Signature Rice-Flour Bubble Waffle & Pure Soy Soft Serve (ワッフル純豆乳ソフト)",
+                    "description": "Freshly baked 100% Niigata rice-flour bubble waffle paired with creamy morning-squeezed soy milk soft serve and 5 free Japanese toppings. Contains: Soybeans.",
                     "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": [
-                      { "@type": "Offer", "name": "Full Size", "price": "900", "priceCurrency": "JPY" },
-                      { "@type": "Offer", "name": "Half Size", "price": "690", "priceCurrency": "JPY" }
+                      { "@type": "Offer", "name": "Large (Full)", "price": "900", "priceCurrency": "JPY" },
+                      { "@type": "Offer", "name": "Medium (Half)", "price": "690", "priceCurrency": "JPY" }
                     ]
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Waffle Whip Cups & Waffle Ice Cream Cups",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Waffle & Soy Whip Cup — Strawberry / Caramel Nuts (ワッフルホイップ ストロベリー・キャラメルナッツ)",
+                    "description": "Strawberry (Contains: Soybeans, Apple) or Caramel Nuts (Contains: Soybeans, Almonds, Cashew Nuts, Macadamia Nuts).",
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
+                    "offers": { "@type": "Offer", "price": "660", "priceCurrency": "JPY" }
                   },
                   {
                     "@type": "MenuItem",
-                    "name": "Rice-Flour Bubble Waffle & Soy Whipped Cream (ワッフル豆乳ホイップクリーム)",
-                    "description": "Freshly baked rice-flour bubble waffle topped with fluffy dairy-free soy whipped cream and 5 free toppings. Contains: Soybeans.",
+                    "name": "Waffle & Vegan Ice Cream Cup — 4 Flavors (ワッフルアイス ストロベリー・チョコ・抹茶・黒ゴマ)",
+                    "description": "Strawberry (Soybeans), Chocolate (Soybeans, Almonds), Matcha (Soybeans), or Black Sesame (Soybeans, Sesame).",
                     "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
-                    "offers": [
-                      { "@type": "Offer", "name": "Full Size", "price": "900", "priceCurrency": "JPY" },
-                      { "@type": "Offer", "name": "Half Size", "price": "690", "priceCurrency": "JPY" }
-                    ]
+                    "offers": { "@type": "Offer", "price": "690", "priceCurrency": "JPY" }
                   }
                 ]
               },
@@ -140,12 +150,14 @@
                   {
                     "@type": "MenuItem",
                     "name": "Plain Rice-Flour Bubble Waffle (国産米粉の焼きたてワッフル プレーン)",
+                    "description": "Contains: Soybeans. Optional takeout box +¥100.",
                     "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
-                    "offers": { "@type": "Offer", "price": "600", "priceCurrency": "JPY" }
+                    "offers": { "@type": "Offer", "price": "660", "priceCurrency": "JPY" }
                   },
                   {
                     "@type": "MenuItem",
-                    "name": "Matcha / Cocoa / Black Sesame Rice-Flour Bubble Waffle (抹茶・ココア・黒ゴマ)",
+                    "name": "Cocoa / Matcha / Black Sesame Rice-Flour Bubble Waffle (ココア・抹茶・黒ゴマ)",
+                    "description": "Cocoa & Matcha contain Soybeans; Black Sesame contains Soybeans & Sesame. Optional takeout box +¥100.",
                     "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "690", "priceCurrency": "JPY" }
                   }
@@ -153,52 +165,71 @@
               },
               {
                 "@type": "MenuSection",
-                "name": "Pure Soy Milk Soft Serve",
+                "name": "Pure Soy Milk Soft Serve & Coffee Float",
                 "hasMenuItem": [
                   {
                     "@type": "MenuItem",
-                    "name": "Pure Soy Milk Soft Serve Large (純豆乳ソフト Large)",
+                    "name": "Pure Soy Milk Soft Serve (純豆乳ソフト 中・大)",
+                    "description": "Includes 5 free Japanese toppings. Contains: Soybeans.",
                     "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
-                    "offers": { "@type": "Offer", "price": "660", "priceCurrency": "JPY" }
+                    "offers": [
+                      { "@type": "Offer", "name": "Large", "price": "690", "priceCurrency": "JPY" },
+                      { "@type": "Offer", "name": "Medium", "price": "460", "priceCurrency": "JPY" }
+                    ]
                   },
                   {
                     "@type": "MenuItem",
-                    "name": "Pure Soy Milk Soft Serve Medium (純豆乳ソフト Medium)",
+                    "name": "Organic Iced Coffee Float with Pure Soy Soft Serve (コーヒーフロート)",
+                    "description": "Organic iced coffee crowned with pure soy milk soft serve. Contains: Soybeans.",
                     "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
-                    "offers": { "@type": "Offer", "price": "390", "priceCurrency": "JPY" }
+                    "offers": { "@type": "Offer", "price": "660", "priceCurrency": "JPY" }
                   }
                 ]
               },
               {
                 "@type": "MenuSection",
-                "name": "Baked Soy Donuts & Glazed Cake Donuts",
+                "name": "Baked Donuts & Gluten-Free Rice-Flour Dorayaki",
                 "hasMenuItem": [
                   {
                     "@type": "MenuItem",
                     "name": "Baked Soy & Rice-Flour Donuts - 6 Flavors (プレーンドーナツ各種)",
-                    "description": "Cranberry, Black Sesame, Yame Matcha, Kinako, Earl Grey, Chocolat. Contains: Soybeans, Japanese Yam (plus Sesame in Black Sesame).",
+                    "description": "Cranberry, Black Sesame, Yame Matcha, Kinako, Earl Grey, Chocolat. Nut-free recipe. Contains: Soybeans, Japanese Yam (plus Sesame in Black Sesame).",
                     "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "330", "priceCurrency": "JPY" }
                   },
                   {
                     "@type": "MenuItem",
                     "name": "Glazed Almond & Rice-Flour Cake Donuts - 6 Flavors (しっとりケーキドーナツ各種)",
-                    "description": "Strawberry, Matcha, Double Chocolate, Lemon, Chocolate Mint, Coconut. Soy-free recipe, keeps ~1 week at room temperature. Contains: Almonds, Apple.",
+                    "description": "Soy-free & Macadamia-free recipe, keeps ~1 week at room temperature. Strawberry & Matcha contain Almonds, Pistachio, Apple; Double Chocolate, Lemon, Chocolate Mint & Coconut contain Almonds, Apple.",
                     "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "430", "priceCurrency": "JPY" }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Gluten-Free Rice-Flour Dorayaki - 4 Flavors (グルテンフリー米粉どら焼き 各種)",
+                    "description": "Anko & Soy Cream, Strawberry Soy Cream, Matcha Anko, Classic Red Bean Anko. Fluffy rice-flour & almond pancakes. Contains: Soybeans, Almonds.",
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
+                    "offers": { "@type": "Offer", "price": "460", "priceCurrency": "JPY" }
                   }
                 ]
               },
               {
                 "@type": "MenuSection",
-                "name": "Rice-Flour Craft Gelato",
+                "name": "Rice-Flour Craft Gelato & Plant-Based Cafe Drinks",
                 "hasMenuItem": [
                   {
                     "@type": "MenuItem",
                     "name": "Rice-Flour Craft Gelato - 8 Flavors (米粉ジェラート各種)",
-                    "description": "Berry Mix, Melting Chocolate, Vanilla Coconut, Refreshing Apple, Too Juicy Peach, Supreme Rich Matcha, Fragrant Hojicha, Juicy Dragon Fruit.",
+                    "description": "Berry Mix (free from all 29 specified allergens), Refreshing Apple & Juicy Dragon Fruit (Apple), Too Juicy Peach (Peach), Supreme Rich Matcha / Fragrant Hojicha / Vanilla Coconut (Soybeans), Melting Chocolate (Soybeans, Almonds).",
                     "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
                     "offers": { "@type": "Offer", "price": "490", "priceCurrency": "JPY" }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Plant-Based Cafe Drinks - 7 Varieties (カフェドリンク各種・セット全品¥330)",
+                    "description": "Organic Coffee (¥360, 29-allergen free), Brown Sugar Soy Latte (¥390, Soybeans), Matcha Soy Latte (¥390, Soybeans), Amazake Latte (¥390, soy-free & 29-allergen free), Lemon Squash (¥390, 29-allergen free), Mixed Berry Tea (¥390, 29-allergen free), Tropical Soda (¥360, Peach). Any drink is ¥330 when ordered as a set with sweets.",
+                    "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"],
+                    "offers": { "@type": "AggregateOffer", "lowPrice": "330", "highPrice": "390", "priceCurrency": "JPY" }
                   }
                 ]
               }
@@ -228,7 +259,7 @@
               "name": "What is your gluten-free policy? Can guests with celiac disease or wheat allergies eat here?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "All of our products are made with 100% gluten-free rice flour or almond flour, and wheat, dairy, and eggs are never brought into our kitchen (including staff personal food for wheat). However, because we handle soybeans, almonds, sesame, Japanese yam, apples, peaches, and oranges in the same kitchen (and certain seasonal/delivery items such as vegan tiramisu may use cashew nuts), complete elimination of trace allergens cannot be guaranteed. Guests with severe allergies or celiac disease are encouraged to review per-item ingredients and consult our staff before ordering."
+                "text": "All of our products are made with 100% gluten-free rice flour or almond flour, and wheat, dairy, and eggs are never brought into our kitchen (including staff personal food for wheat). However, because we handle soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam, apples, peaches, and oranges in the same kitchen (disclosed in accordance with Japan's 29 specified allergens standard), complete elimination of trace allergens cannot be guaranteed. Guests with severe allergies or celiac disease are encouraged to review per-item ingredients and consult our staff before ordering."
               }
             },
             {
@@ -236,15 +267,15 @@
               "name": "How can I check per-item ingredients and allergens?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "You can use the interactive Allergen Checker and the Complete 26-Item Menu Table on https://en.soystories.cafe/, check the allergen badges on each menu category page, view our Official FoodHug Allergy Disclosure Page (https://food-hug.com/soystoriesenglish-page/), or ask our counter staff directly."
+                "text": "You can use the interactive 6-Allergen Checker and the Complete Menu & 29-Allergen Reference Table on https://en.soystories.cafe/, check the allergen badges on each menu category page, view our Official FoodHug Allergy Disclosure Page (https://food-hug.com/soystoriesenglish-page/), or ask our counter staff directly."
               }
             },
             {
               "@type": "Question",
-              "name": "Do your products contain soy, tree nuts (almonds/cashews), sesame, or Japanese yam?",
+              "name": "Do your products contain soy, tree nuts (almonds, cashews, pistachio, macadamia), sesame, or Japanese yam?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends on the product: Soybeans are used in Bubble Waffles, Soy Soft Serve, Soy Whip, Baked Soy Donuts, and 4 Gelato flavors (Soy-free options include all 6 Glazed Cake Donuts and 4 Fruit Gelato flavors: Berry Mix, Juicy Dragon Fruit, Refreshing Apple, Too Juicy Peach). Almonds (Tree Nuts) are used in Glazed Cake Donuts and Melting Chocolate Gelato (certain seasonal/delivery items like vegan tiramisu may use cashew paste). Sesame is used in the Black Sesame Bubble Waffle and Black Sesame Soy Donut. Japanese Yam (Yamaimo) is used in the 6 Baked Soy Donuts."
+                "text": "It depends on the product (disclosed across Japan's 29 specified allergens): Soybeans are used in Bubble Waffles, Pure Soy Soft Serve, Waffle Ice & Whip Cups, Coffee Float, Baked Soy Donuts, Rice-Flour Dorayaki, 4 Gelato flavors, and Soy Lattes (Soy-free options include all 6 Glazed Cake Donuts, 4 Fruit Gelato flavors, Organic Coffee, Amazake Latte, Lemon Squash, Mixed Berry Tea, and Tropical Soda). Tree Nuts: Almonds are used in Glazed Cake Donuts, Rice-Flour Dorayaki, Chocolate Waffle Ice, Melting Chocolate Gelato, and Caramel Nuts Waffle Whip; Cashew Nuts & Macadamia Nuts are used in Caramel Nuts Waffle Whip (Cake Donuts do not use macadamia nuts); Pistachio is used as a topping on Strawberry & Matcha Glazed Cake Donuts. Sesame is used in Black Sesame Bubble Waffle, Black Sesame Waffle Ice, and Black Sesame Soy Donut. Japanese Yam is used in the 6 Baked Soy Donuts."
               }
             },
             {
@@ -284,7 +315,7 @@
               "name": "Which items are best for takeaway, and how long can I carry them?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Glazed Cake Donuts (¥430) keep for about 1 week at room temperature and are best for hotel snacks, bullet trains, and gifts. Baked Soy Donuts (¥330) are sold frozen or warmed in-store (keep refrigerated and enjoy within 3 days after thawing). Cup Craft Gelato (¥490) is sold frozen with cooler bags and ice packs available (free when buying 4 or more items). Bubble Waffles & Soy Soft Serve should be eaten immediately."
+                "text": "Glazed Cake Donuts (¥430) keep for about 1 week at room temperature and are best for hotel snacks, bullet trains, and gifts. Gluten-Free Rice-Flour Dorayaki (¥460) are handed over frozen — thaw 30–60 min at room temperature (or 1–2 hours chilled) and enjoy half-thawed like an ice-cream sandwich or fully soft! Baked Soy Donuts (¥330) are sold frozen or warmed in-store (keep refrigerated and enjoy within 3 days after thawing). Cup Craft Gelato (¥490) is sold frozen with cooler bags and ice packs available (free when buying 4 or more items). Standalone Bubble Waffles (¥660–¥690) can be packed in a takeout box (+¥100), while Bubble Waffles with Soft Serve should be eaten immediately."
               }
             },
             {
@@ -396,7 +427,7 @@
                 </p>
                 <p class="hero__eyebrow">Yakuin, Fukuoka &middot; 2–3 min walk from Yakuin-odori Stn (Exit 2)</p>
                 <h1 class="hero__title" id="hero-title">Gluten-Free &amp; Vegan Sweets in Fukuoka</h1>
-                <p class="hero__lead">Freshly baked <strong>Niigata rice-flour bubble waffles</strong>, morning-squeezed <strong>pure soy milk soft serve</strong>, baked donuts &amp; craft gelato &mdash; crafted without wheat, dairy, eggs, or refined white sugar.</p>
+                <p class="hero__lead">Freshly baked <strong>Niigata rice-flour bubble waffles</strong>, morning-squeezed <strong>pure soy milk soft serve</strong>, waffle ice &amp; whip cups, baked donuts, gluten-free dorayaki, craft gelato &amp; plant-based lattes &mdash; crafted without wheat, dairy, eggs, or refined white sugar.</p>
                 <div class="hero__cta">
                     <a href="#menu" class="btn btn--primary">See Full Menu</a>
                     <a href="https://www.google.com/maps/dir/?api=1&amp;destination=%E3%80%92810-0022+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%96%AC%E9%99%A2%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%92%EF%BC%94+%E3%83%81%E3%82%B5%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E7%AC%AC3%E5%8D%9A%E5%A4%9A+1F+Soy+Stories" class="btn btn--secondary" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Get Directions</a>
@@ -499,63 +530,114 @@
                     <div class="sig__body">
                         <p class="sig__label">Signature Dish</p>
                         <h3 class="card__title" id="item-sig">Waffle &amp; Pure Soy Soft Serve</h3>
-                        <p class="card__ja" lang="ja" translate="no">ワッフル純豆乳ソフトクリーム</p>
-                        <p class="price">Full <strong>¥900</strong> <span>/</span> Half <strong>¥690</strong> <small class="muted">(tax incl.)</small></p>
-                        <p class="card__desc">Our signature experience: a warm, crispy-outside, mochi-chewy-inside 100% Niigata rice-flour bubble waffle wrapped around rich, creamy morning-squeezed soy milk soft serve. Served with a complimentary tray of 5 Japanese toppings (Matcha, Kinako, Hojicha, Chocolate Sauce &amp; Kuromitsu). Also available with fluffy soy whipped cream.</p>
+                        <p class="card__ja" lang="ja" translate="no">ワッフル純豆乳ソフト</p>
+                        <p class="price">Medium (Half) <strong>¥690</strong> <span>/</span> Large (Full) <strong>¥900</strong> <small class="muted">(tax incl.)</small></p>
+                        <p class="card__desc">Our #1 signature sweet: a warm, crispy-outside, mochi-chewy-inside 100% Niigata rice-flour bubble waffle wrapped around rich, creamy morning-squeezed soy milk soft serve. Served with a complimentary tray of 5 Japanese toppings (Matcha, Kinako, Hojicha, Chocolate Sauce &amp; Kuromitsu). Pair with any cafe drink for +¥330.</p>
                         <ul class="tags"><li>100% Gluten-Free &amp; Vegan</li><li>Contains: Soybeans</li><li>+5 free toppings</li></ul>
                         <div class="card__actions">
-                            <a href="./waffle&amp;soft.html" class="btn btn--primary">Details &amp; Toppings</a>
-                            <button type="button" class="btn btn--secondary js-show-staff" data-ja="ワッフル純豆乳ソフトクリーム" data-en="Waffle &amp; Pure Soy Soft Serve" aria-describedby="item-sig"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
+                            <a href="./waffle&amp;soft.html" class="btn btn--primary">Sizes, Cups &amp; Toppings</a>
+                            <button type="button" class="btn btn--secondary js-show-staff" data-ja="ワッフル純豆乳ソフト" data-en="Waffle &amp; Pure Soy Soft Serve" data-variants="中サイズ ¥690::Medium / Half (¥690)|大サイズ ¥900::Large / Full (¥900)" aria-describedby="item-sig"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
                         </div>
                     </div>
                 </article>
 
                 <div class="mgrid">
+                    <article class="mcard" aria-labelledby="item-cups">
+                        <a href="./waffle&amp;soft.html#cups" class="mcard__media"><img src="./img/waffle_cup_group.webp" alt="Freshly baked bubble waffle cups topped with vegan ice cream and soy whipped cream" loading="lazy" width="1080" height="800"></a>
+                        <div class="mcard__head">
+                            <span class="mcard__eyebrow">6 Cup Varieties</span>
+                            <h3 class="card__title" id="item-cups">Waffle Ice &amp; Whip Cups</h3>
+                            <p class="card__ja" lang="ja" translate="no">ワッフルアイス（4種）・ワッフルホイップ（2種）</p>
+                            <p class="price">¥660 – <strong>¥690</strong></p>
+                        </div>
+                        <div class="mcard__body">
+                            <p class="card__desc">Warm bubble waffle cups crowned with vegan ice cream (Strawberry, Chocolate, Matcha, Black Sesame &middot; ¥690) or fluffy soy whip (Strawberry, Caramel Nuts &middot; ¥660).</p>
+                            <ul class="tags"><li>Contains: Soy (plus per-flavor nuts/sesame/apple)</li></ul>
+                            <div class="card__actions">
+                                <a href="./waffle&amp;soft.html#cups" class="link-arrow">See all 6 cups<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                                <button type="button" class="chip-btn js-show-staff" data-ja="ワッフルカップ" data-en="Waffle Ice / Whip Cup" data-variants="ワッフルアイス ストロベリー ¥690::Ice: Strawberry (¥690)|ワッフルアイス チョコ ¥690::Ice: Chocolate (¥690)|ワッフルアイス 抹茶 ¥690::Ice: Matcha (¥690)|ワッフルアイス 黒ゴマ ¥690::Ice: Black Sesame (¥690)|ワッフルホイップ ストロベリー ¥660::Whip: Strawberry (¥660)|ワッフルホイップ キャラメルナッツ ¥660::Whip: Caramel Nuts (¥660)" aria-describedby="item-cups"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
+                            </div>
+                        </div>
+                    </article>
                     <article class="mcard" aria-labelledby="item-waffle">
                         <a href="./waffle.html" class="mcard__media"><img src="./img/menu_photo2-1.webp" alt="Freshly baked rice-flour bubble waffle in a kraft sleeve" loading="lazy" width="1039" height="836"></a>
                         <div class="mcard__head">
                             <h3 class="card__title" id="item-waffle">Bubble Waffles</h3>
                             <p class="card__ja" lang="ja" translate="no">国産米粉の焼きたてワッフル</p>
-                            <p class="price">¥600 – <strong>¥690</strong></p>
+                            <p class="price">¥660 – <strong>¥690</strong></p>
                         </div>
                         <div class="mcard__body">
-                            <p class="card__desc">Baked to order with 100% Niigata rice flour &amp; soy milk. Choose Plain, Matcha, Cocoa, or Black Sesame.</p>
+                            <p class="card__desc">Baked to order with 100% Niigata rice flour &amp; soy milk: Plain (¥660), Cocoa, Matcha, or Black Sesame (¥690 each). Takeout box +¥100.</p>
                             <ul class="tags"><li>Contains: Soy (+Sesame in Black Sesame)</li></ul>
                             <div class="card__actions">
                                 <a href="./waffle.html" class="link-arrow">4 flavors<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                                <button type="button" class="chip-btn js-show-staff" data-ja="国産米粉の焼きたてワッフル" data-en="Rice-Flour Bubble Waffle" aria-describedby="item-waffle"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
+                                <button type="button" class="chip-btn js-show-staff" data-ja="国産米粉の焼きたてワッフル" data-en="Rice-Flour Bubble Waffle" data-variants="プレーン ¥660::Plain (¥660)|ココア ¥690::Cocoa (¥690)|抹茶 ¥690::Matcha (¥690)|黒ゴマ ¥690::Black Sesame (¥690)" aria-describedby="item-waffle"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
                             </div>
                         </div>
                     </article>
                     <article class="mcard" aria-labelledby="item-soft">
                         <a href="./soft.html" class="mcard__media"><img src="./img/menu_photo3-1.webp" alt="Pure soy milk soft serve in a cup" loading="lazy" width="1039" height="836"></a>
                         <div class="mcard__head">
-                            <h3 class="card__title" id="item-soft">Soy Soft Serve</h3>
-                            <p class="card__ja" lang="ja" translate="no">純豆乳ソフトクリーム</p>
-                            <p class="price">¥390 – <strong>¥660</strong></p>
+                            <h3 class="card__title" id="item-soft">Pure Soy Soft Serve</h3>
+                            <p class="card__ja" lang="ja" translate="no">純豆乳ソフト</p>
+                            <p class="price">Medium <strong>¥460</strong> <span>/</span> Large <strong>¥690</strong></p>
                         </div>
                         <div class="mcard__body">
-                            <p class="card__desc">Crafted from additive-free soy milk processed within 48 hours of pressing. Includes 5 free toppings.</p>
+                            <p class="card__desc">Crafted from additive-free soy milk processed within 48 hours of pressing. Includes 5 free Japanese toppings.</p>
                             <ul class="tags"><li>Dairy-free</li><li>Contains: Soybeans</li></ul>
                             <div class="card__actions">
-                                <a href="./soft.html" class="link-arrow">Sizes<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                                <button type="button" class="chip-btn js-show-staff" data-ja="純豆乳ソフト" data-en="Pure Soy Soft Serve" aria-describedby="item-soft"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
+                                <a href="./soft.html" class="link-arrow">Sizes &amp; drinks<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                                <button type="button" class="chip-btn js-show-staff" data-ja="純豆乳ソフト" data-en="Pure Soy Soft Serve" data-variants="中サイズ ¥460::Medium (¥460)|大サイズ ¥690::Large (¥690)" aria-describedby="item-soft"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mcard" aria-labelledby="item-float">
+                        <a href="./soft.html#float" class="mcard__media"><img src="./img/coffee_float.webp" alt="Organic iced coffee topped with pure soy milk soft serve" loading="lazy" width="800" height="800"></a>
+                        <div class="mcard__head">
+                            <span class="mcard__eyebrow">New</span>
+                            <h3 class="card__title" id="item-float">Coffee Float</h3>
+                            <p class="card__ja" lang="ja" translate="no">コーヒーフロート</p>
+                            <p class="price"><strong>¥660</strong></p>
+                        </div>
+                        <div class="mcard__body">
+                            <p class="card__desc">Aromatic organic iced coffee crowned with a generous swirl of our morning-squeezed pure soy milk soft serve.</p>
+                            <ul class="tags"><li>Dairy-free</li><li>Contains: Soybeans</li></ul>
+                            <div class="card__actions">
+                                <a href="./soft.html#float" class="link-arrow">Details<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                                <button type="button" class="chip-btn js-show-staff" data-ja="コーヒーフロート（¥660）" data-en="Coffee Float (¥660)" data-nodrinkset="1" aria-describedby="item-float"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
                             </div>
                         </div>
                     </article>
                     <article class="mcard" aria-labelledby="item-donuts">
                         <a href="./dounuts.html" class="mcard__media"><img src="./img/cake_donuts_lineup.jpg" alt="Colorful glazed cake donuts and baked soy donuts" loading="lazy" width="666" height="1000"></a>
                         <div class="mcard__head">
-                            <h3 class="card__title" id="item-donuts">Baked Donuts</h3>
+                            <h3 class="card__title" id="item-donuts">Baked Donuts (12 Flavors)</h3>
                             <p class="card__ja" lang="ja" translate="no">プレーンドーナツ / しっとりケーキドーナツ</p>
                             <p class="price">¥330 – <strong>¥430</strong></p>
                         </div>
                         <div class="mcard__body">
-                            <p class="card__desc">6 chewy Soy &amp; Yam Donuts (¥330, no almonds in recipe) and 6 Soy-Free Almond Glazed Cake Donuts (¥430).</p>
+                            <p class="card__desc">6 chewy Soy &amp; Yam Donuts (¥330, nut-free recipe) and 6 Soy-Free Almond Glazed Cake Donuts (¥430, keeps ~1 week at room temp).</p>
                             <ul class="tags"><li>Baked, never fried</li><li>Souvenir boxes</li></ul>
                             <div class="card__actions">
                                 <a href="./dounuts.html" class="link-arrow">12 flavors<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                                <button type="button" class="chip-btn js-show-staff" data-ja="ドーナツ" data-en="Baked Donuts" aria-describedby="item-donuts"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
+                                <button type="button" class="chip-btn js-show-staff" data-ja="焼きドーナツ" data-en="Baked Donuts" data-variants="プレーンドーナツ ¥330::Soy Donut (¥330)|しっとりケーキドーナツ ¥430::Glazed Cake Donut (¥430)" aria-describedby="item-donuts"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mcard" aria-labelledby="item-dorayaki">
+                        <a href="./dounuts.html#dorayaki" class="mcard__media"><img src="./img/dorayaki_4set.webp" alt="Four flavors of gluten-free rice-flour dorayaki pancakes filled with red bean and soy cream" loading="lazy" width="1200" height="800"></a>
+                        <div class="mcard__head">
+                            <span class="mcard__eyebrow">New</span>
+                            <h3 class="card__title" id="item-dorayaki">Rice-Flour Dorayaki</h3>
+                            <p class="card__ja" lang="ja" translate="no">グルテンフリー米粉どら焼き（4種）</p>
+                            <p class="price"><strong>¥460</strong> <small class="muted">each</small></p>
+                        </div>
+                        <div class="mcard__body">
+                            <p class="card__desc">Fluffy rice-flour &amp; almond pancakes filled with Hokkaido red bean paste &amp; soy cream: Anko Cream, Strawberry Cream, Matcha Anko, or Classic Anko.</p>
+                            <ul class="tags"><li>Contains: Soy, Almonds</li><li>Enjoy chilled or half-frozen</li></ul>
+                            <div class="card__actions">
+                                <a href="./dounuts.html#dorayaki" class="link-arrow">4 flavors<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                                <button type="button" class="chip-btn js-show-staff" data-ja="グルテンフリー米粉どら焼き" data-en="Gluten-Free Rice-Flour Dorayaki" data-variants="あんクリーム ¥460::Anko &amp; Soy Cream (¥460)|いちごクリーム ¥460::Strawberry Cream (¥460)|抹茶あんこ ¥460::Matcha Anko (¥460)|あんこ ¥460::Classic Anko (¥460)" aria-describedby="item-dorayaki"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
                             </div>
                         </div>
                     </article>
@@ -563,15 +645,32 @@
                         <a href="./ice.html" class="mcard__media"><img src="./img/menu_photo5-1.webp" alt="Cups of rice-flour craft gelato" loading="lazy" width="1039" height="836"></a>
                         <div class="mcard__head">
                             <h3 class="card__title" id="item-gelato">Craft Gelato</h3>
-                            <p class="card__ja" lang="ja" translate="no">米粉ジェラート</p>
+                            <p class="card__ja" lang="ja" translate="no">米粉ジェラート（8種）</p>
                             <p class="price"><strong>¥490</strong></p>
                         </div>
                         <div class="mcard__body">
-                            <p class="card__desc">8 flavors of slow-melting rice-flour gelato, including 4 fruit flavors made without soy or almonds.</p>
-                            <ul class="tags"><li>Soy-free options</li></ul>
+                            <p class="card__desc">8 flavors of slow-melting rice-flour gelato &mdash; including 4 soy- &amp; nut-free fruit flavors (Berry Mix is free from all 29 specified allergens).</p>
+                            <ul class="tags"><li>4 soy- &amp; nut-free fruit flavors</li></ul>
                             <div class="card__actions">
                                 <a href="./ice.html" class="link-arrow">8 flavors<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                                <button type="button" class="chip-btn js-show-staff" data-ja="米粉ジェラート" data-en="Rice-Flour Craft Gelato" aria-describedby="item-gelato"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
+                                <button type="button" class="chip-btn js-show-staff" data-ja="米粉ジェラート" data-en="Rice-Flour Craft Gelato" data-variants="ベリーミックス ¥490::Berry Mix (¥490)|とろけるショコラ ¥490::Melting Chocolate (¥490)|至高の濃厚抹茶 ¥490::Rich Matcha (¥490)|香ばしいほうじ茶 ¥490::Fragrant Hojicha (¥490)|バニラココナッツ ¥490::Vanilla Coconut (¥490)|爽やかりんご ¥490::Refreshing Apple (¥490)|ジューシーすぎるもも ¥490::Juicy Peach (¥490)|ジューシードラゴンフルーツ ¥490::Dragon Fruit (¥490)" aria-describedby="item-gelato"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mcard" aria-labelledby="item-drinks">
+                        <a href="./soft.html#drinks" class="mcard__media"><img src="./img/waffle_and_drinks.webp" alt="Freshly baked rice-flour bubble waffle served with iced organic coffee on a wooden tray" loading="lazy" width="1080" height="800"></a>
+                        <div class="mcard__head">
+                            <span class="mcard__eyebrow">Set Any Drink ¥330</span>
+                            <h3 class="card__title" id="item-drinks">Cafe Drinks</h3>
+                            <p class="card__ja" lang="ja" translate="no">カフェドリンク（7種・セット全品¥330）</p>
+                            <p class="price">¥360 – <strong>¥390</strong> <span>/</span> Set <strong>¥330</strong></p>
+                        </div>
+                        <div class="mcard__body">
+                            <p class="card__desc">Organic Coffee, Brown Sugar Soy Latte, Matcha Soy Latte, Soy-Free Amazake Latte, Lemon Squash, Mixed Berry Tea &amp; Tropical Soda. Any drink is <strong>¥330</strong> with sweets!</p>
+                            <ul class="tags"><li>Soy-free drinks available</li></ul>
+                            <div class="card__actions">
+                                <a href="./soft.html#drinks" class="link-arrow">All 7 drinks<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                                <button type="button" class="chip-btn js-show-staff" data-ja="ドリンク" data-en="Cafe Drink" data-nodrinkset="1" data-variants="オーガニックコーヒー HOT ¥360::Organic Coffee Hot (¥360)|オーガニックコーヒー COLD ¥360::Organic Coffee Iced (¥360)|黒糖ソイラテ HOT ¥390::Brown Sugar Soy Latte Hot (¥390)|黒糖ソイラテ COLD ¥390::Brown Sugar Soy Latte Iced (¥390)|抹茶ソイラテ HOT ¥390::Matcha Soy Latte Hot (¥390)|抹茶ソイラテ COLD ¥390::Matcha Soy Latte Iced (¥390)|甘酒ラテ ¥390::Amazake Latte Soy-Free (¥390)|レモンスカッシュ ¥390::Lemon Squash (¥390)|ミックスベリーティー ¥390::Mixed Berry Tea (¥390)|トロピカルソーダ ¥360::Tropical Soda (¥360)" aria-describedby="item-drinks"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Show staff</button>
                             </div>
                         </div>
                     </article>
@@ -580,7 +679,7 @@
                 <div class="toppings">
                     <div class="toppings__head">
                         <h3>5 Free Japanese Toppings</h3>
-                        <p>Included at no extra charge with every Waffle &amp; Soft Serve, Waffle &amp; Whip, or Soy Soft Serve.</p>
+                        <p>Included at no extra charge with every <strong>Waffle &amp; Pure Soy Soft Serve</strong> and <strong>Pure Soy Soft Serve</strong>.</p>
                     </div>
                     <ul class="toppings__list">
                         <li><img src="./img/greentea.png" alt="Matcha powder" loading="lazy" width="768" height="768"><span>Matcha<em>Green tea</em></span></li>
@@ -591,9 +690,19 @@
                     </ul>
                 </div>
 
-                <!-- Expandable Complete 26-Item HTML Menu Table -->
+                <!-- Expandable Complete Menu & 29-Allergen Reference Table -->
                 <details class="full-menu" id="full-menu-list" open>
-                    <summary>Complete In-Store Menu &amp; Allergen Reference (All 26 Items)</summary>
+                    <summary>Complete In-Store Menu &amp; 29-Allergen Reference (Sweets &amp; Drinks)</summary>
+                    <div class="mfilter" role="toolbar" aria-label="Filter menu table by category">
+                        <button type="button" class="mfilter__btn" data-mcat-btn="all" aria-pressed="true">All Menu</button>
+                        <button type="button" class="mfilter__btn" data-mcat-btn="waffle-cups" aria-pressed="false">Waffle Soft &amp; Cups</button>
+                        <button type="button" class="mfilter__btn" data-mcat-btn="waffles" aria-pressed="false">Bubble Waffles</button>
+                        <button type="button" class="mfilter__btn" data-mcat-btn="soft-float" aria-pressed="false">Soft Serve &amp; Float</button>
+                        <button type="button" class="mfilter__btn" data-mcat-btn="donuts" aria-pressed="false">Baked Donuts</button>
+                        <button type="button" class="mfilter__btn" data-mcat-btn="dorayaki" aria-pressed="false">Dorayaki</button>
+                        <button type="button" class="mfilter__btn" data-mcat-btn="gelato" aria-pressed="false">Craft Gelato</button>
+                        <button type="button" class="mfilter__btn" data-mcat-btn="drinks" aria-pressed="false">Drinks (Set ¥330)</button>
+                    </div>
                     <div class="full-menu__body" tabindex="0" role="region" aria-label="Complete in-store menu table (scrolls sideways on small screens)">
                         <table class="m-table" role="table">
                             <thead role="rowgroup">
@@ -601,104 +710,217 @@
                                     <th scope="col" role="columnheader">Item (English / Japanese)</th>
                                     <th scope="col" role="columnheader">Size / Type</th>
                                     <th scope="col" role="columnheader">Price (Tax Incl.)</th>
-                                    <th scope="col" role="columnheader">Allergens Used in Recipe*</th>
+                                    <th scope="col" role="columnheader">Allergens Used in Recipe (29 Items)*</th>
+                                    <th scope="col" role="columnheader"><span class="sr-only">Order Card</span></th>
                                 </tr>
                             </thead>
                             <tbody role="rowgroup">
-                                <tr role="row"><td colspan="4" class="m-cat" role="cell">1. Signature Bubble Waffle &amp; Soy Soft Serve / Whipped Cream (+5 Free Toppings)</td></tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Waffle &amp; Pure Soy Soft Serve</strong><span class="m-ja" lang="ja" translate="no">ワッフル純豆乳ソフトクリーム</span></th>
-                                    <td role="cell">Full / Half</td>
-                                    <td class="m-price" role="cell">¥900 / ¥690*</td>
+                                <tr role="row" id="cat-waffle-cups" data-mcat="waffle-cups"><td colspan="5" class="m-cat" role="cell">1. Signature Waffle Soft Serve, Waffle Whip Cups &amp; Waffle Ice Cups</td></tr>
+                                <tr role="row" data-mcat="waffle-cups">
+                                    <th scope="row" role="rowheader"><strong>Waffle &amp; Pure Soy Soft Serve</strong><span class="m-ja" lang="ja" translate="no">ワッフル純豆乳ソフト（無料トッピング5種付き）</span></th>
+                                    <td role="cell">Med / Large</td>
+                                    <td class="m-price" role="cell">¥690 / ¥900</td>
                                     <td role="cell">Soybeans</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="ワッフル純豆乳ソフト" data-en="Waffle &amp; Pure Soy Soft Serve" data-variants="中サイズ ¥690::Medium (¥690)|大サイズ ¥900::Large (¥900)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Waffle &amp; Soy Whipped Cream</strong><span class="m-ja" lang="ja" translate="no">ワッフル豆乳ホイップクリーム</span></th>
-                                    <td role="cell">Full / Half</td>
-                                    <td class="m-price" role="cell">¥900 / ¥690*</td>
-                                    <td role="cell">Soybeans</td>
+                                <tr role="row" data-mcat="waffle-cups">
+                                    <th scope="row" role="rowheader"><strong>Waffle Whip Cup — Strawberry</strong><span class="m-ja" lang="ja" translate="no">ワッフルホイップ（ストロベリー）</span></th>
+                                    <td role="cell">Cup</td>
+                                    <td class="m-price" role="cell">¥660</td>
+                                    <td role="cell">Soybeans, Apple</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="ワッフルホイップ（ストロベリー）" data-en="Waffle Whip Cup — Strawberry (¥660)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row"><td colspan="4" class="m-cat" role="cell">2. Freshly Baked 100% Niigata Rice-Flour Bubble Waffles (Baked to Order)</td></tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Plain Bubble Waffle</strong><span class="m-ja" lang="ja" translate="no">国産米粉の焼きたてワッフル（プレーン）</span></th>
-                                    <td role="cell">Regular</td>
-                                    <td class="m-price" role="cell">¥600</td>
-                                    <td role="cell">Soybeans</td>
+                                <tr role="row" data-mcat="waffle-cups">
+                                    <th scope="row" role="rowheader"><strong>Waffle Whip Cup — Caramel Nuts</strong><span class="m-ja" lang="ja" translate="no">ワッフルホイップ（キャラメルナッツ）</span></th>
+                                    <td role="cell">Cup</td>
+                                    <td class="m-price" role="cell">¥660</td>
+                                    <td role="cell">Soybeans, Almonds, Cashew Nuts, Macadamia Nuts</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="ワッフルホイップ（キャラメルナッツ）" data-en="Waffle Whip Cup — Caramel Nuts (¥660)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Matcha / Cocoa Bubble Waffle</strong><span class="m-ja" lang="ja" translate="no">国産米粉の焼きたてワッフル（抹茶・ココア）</span></th>
-                                    <td role="cell">Regular</td>
+                                <tr role="row" data-mcat="waffle-cups">
+                                    <th scope="row" role="rowheader"><strong>Waffle Ice Cup — Strawberry / Matcha</strong><span class="m-ja" lang="ja" translate="no">ワッフルアイス（ストロベリー・抹茶）</span></th>
+                                    <td role="cell">Cup (2 flavors)</td>
                                     <td class="m-price" role="cell">¥690 each</td>
                                     <td role="cell">Soybeans</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="ワッフルアイス" data-en="Waffle Ice Cup" data-variants="ストロベリー ¥690::Strawberry (¥690)|抹茶 ¥690::Matcha (¥690)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Black Sesame Bubble Waffle</strong><span class="m-ja" lang="ja" translate="no">国産米粉の焼きたてワッフル（黒ゴマ）</span></th>
-                                    <td role="cell">Regular</td>
+                                <tr role="row" data-mcat="waffle-cups">
+                                    <th scope="row" role="rowheader"><strong>Waffle Ice Cup — Chocolate</strong><span class="m-ja" lang="ja" translate="no">ワッフルアイス（チョコ）</span></th>
+                                    <td role="cell">Cup</td>
+                                    <td class="m-price" role="cell">¥690</td>
+                                    <td role="cell">Soybeans, Almonds</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="ワッフルアイス（チョコ）" data-en="Waffle Ice Cup — Chocolate (¥690)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+                                <tr role="row" data-mcat="waffle-cups">
+                                    <th scope="row" role="rowheader"><strong>Waffle Ice Cup — Black Sesame</strong><span class="m-ja" lang="ja" translate="no">ワッフルアイス（黒ゴマ）</span></th>
+                                    <td role="cell">Cup</td>
                                     <td class="m-price" role="cell">¥690</td>
                                     <td role="cell">Soybeans, Sesame</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="ワッフルアイス（黒ゴマ）" data-en="Waffle Ice Cup — Black Sesame (¥690)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row"><td colspan="4" class="m-cat" role="cell">3. Pure Soy Milk Soft Serve (+5 Free Toppings)</td></tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Pure Soy Milk Soft Serve — Large</strong><span class="m-ja" lang="ja" translate="no">純豆乳ソフト Large</span></th>
-                                    <td role="cell">Large</td>
+
+                                <tr role="row" id="cat-waffles" data-mcat="waffles"><td colspan="5" class="m-cat" role="cell">2. Freshly Baked 100% Niigata Rice-Flour Bubble Waffles (Takeout Box +¥100)</td></tr>
+                                <tr role="row" data-mcat="waffles">
+                                    <th scope="row" role="rowheader"><strong>Plain Bubble Waffle</strong><span class="m-ja" lang="ja" translate="no">国産米粉の焼きたてワッフル（プレーン）</span></th>
+                                    <td role="cell">1 waffle</td>
                                     <td class="m-price" role="cell">¥660</td>
                                     <td role="cell">Soybeans</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="国産米粉の焼きたてワッフル（プレーン）" data-en="Plain Bubble Waffle (¥660)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Pure Soy Milk Soft Serve — Medium</strong><span class="m-ja" lang="ja" translate="no">純豆乳ソフト Medium（ハーフ）</span></th>
-                                    <td role="cell">Medium</td>
-                                    <td class="m-price" role="cell">¥390</td>
+                                <tr role="row" data-mcat="waffles">
+                                    <th scope="row" role="rowheader"><strong>Cocoa / Matcha Bubble Waffle</strong><span class="m-ja" lang="ja" translate="no">国産米粉の焼きたてワッフル（ココア・抹茶）</span></th>
+                                    <td role="cell">1 waffle (2 flavors)</td>
+                                    <td class="m-price" role="cell">¥690 each</td>
                                     <td role="cell">Soybeans</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="国産米粉の焼きたてワッフル" data-en="Bubble Waffle" data-variants="ココア ¥690::Cocoa (¥690)|抹茶 ¥690::Matcha (¥690)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row"><td colspan="4" class="m-cat" role="cell">4. Baked Soy &amp; Rice-Flour Donuts (Sold Frozen or Warmed In-Store)</td></tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Cranberry / Yame Matcha / Kinako / Earl Grey / Chocolat</strong><span class="m-ja" lang="ja" translate="no">プレーンドーナツ（クランベリー・八女抹茶・きなこ・アールグレイ・ショコラ）</span></th>
-                                    <td role="cell">1 piece (5 flavors)</td>
+                                <tr role="row" data-mcat="waffles">
+                                    <th scope="row" role="rowheader"><strong>Black Sesame Bubble Waffle</strong><span class="m-ja" lang="ja" translate="no">国産米粉の焼きたてワッフル（黒ゴマ）</span></th>
+                                    <td role="cell">1 waffle</td>
+                                    <td class="m-price" role="cell">¥690</td>
+                                    <td role="cell">Soybeans, Sesame</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="国産米粉の焼きたてワッフル（黒ゴマ）" data-en="Black Sesame Bubble Waffle (¥690)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+
+                                <tr role="row" id="cat-soft-float" data-mcat="soft-float"><td colspan="5" class="m-cat" role="cell">3. Pure Soy Milk Soft Serve (+5 Free Toppings) &amp; Coffee Float</td></tr>
+                                <tr role="row" data-mcat="soft-float">
+                                    <th scope="row" role="rowheader"><strong>Pure Soy Milk Soft Serve</strong><span class="m-ja" lang="ja" translate="no">純豆乳ソフト（中・大／無料トッピング5種付き）</span></th>
+                                    <td role="cell">Med / Large</td>
+                                    <td class="m-price" role="cell">¥460 / ¥690</td>
+                                    <td role="cell">Soybeans</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="純豆乳ソフト" data-en="Pure Soy Milk Soft Serve" data-variants="中サイズ ¥460::Medium (¥460)|大サイズ ¥690::Large (¥690)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+                                <tr role="row" data-mcat="soft-float">
+                                    <th scope="row" role="rowheader"><strong>Organic Iced Coffee Float</strong><span class="m-ja" lang="ja" translate="no">コーヒーフロート</span></th>
+                                    <td role="cell">Iced</td>
+                                    <td class="m-price" role="cell">¥660</td>
+                                    <td role="cell">Soybeans</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="コーヒーフロート" data-en="Coffee Float (¥660)" data-nodrinkset="1"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+
+                                <tr role="row" id="cat-donuts" data-mcat="donuts"><td colspan="5" class="m-cat" role="cell">4. Baked Soy Donuts (¥330 · Nut-Free) &amp; Glazed Cake Donuts (¥430 · Soy-Free, Keeps ~1 Week)</td></tr>
+                                <tr role="row" data-mcat="donuts">
+                                    <th scope="row" role="rowheader"><strong>Baked Soy Donuts — Cranberry / Yame Matcha / Kinako / Earl Grey / Chocolat</strong><span class="m-ja" lang="ja" translate="no">プレーンドーナツ（クランベリー・八女抹茶・きなこ・アールグレイ・ショコラ）</span></th>
+                                    <td role="cell">1 pc (5 flavors)</td>
                                     <td class="m-price" role="cell">¥330 each</td>
-                                    <td role="cell">Soybeans, Japanese Yam <em>(No almonds in recipe)</em></td>
+                                    <td role="cell">Soybeans, Japanese Yam <em>(Nut-free recipe)</em></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="プレーンドーナツ" data-en="Baked Soy Donut (¥330)" data-variants="クランベリー::Cranberry|八女抹茶::Yame Matcha|きなこ::Kinako|アールグレイ::Earl Grey|ショコラ::Chocolat"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Black Sesame Soy Donut</strong><span class="m-ja" lang="ja" translate="no">プレーンドーナツ（黒ごま）</span></th>
-                                    <td role="cell">1 piece</td>
+                                <tr role="row" data-mcat="donuts">
+                                    <th scope="row" role="rowheader"><strong>Baked Soy Donut — Black Sesame</strong><span class="m-ja" lang="ja" translate="no">プレーンドーナツ（黒ごま）</span></th>
+                                    <td role="cell">1 pc</td>
                                     <td class="m-price" role="cell">¥330</td>
-                                    <td role="cell">Soybeans, Japanese Yam, Sesame</td>
+                                    <td role="cell">Soybeans, Japanese Yam, Sesame <em>(Nut-free recipe)</em></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="プレーンドーナツ（黒ごま）" data-en="Baked Soy Donut — Black Sesame (¥330)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row"><td colspan="4" class="m-cat" role="cell">5. Glazed Almond &amp; Rice-Flour Cake Donuts (Soy-Free Recipe · Keeps ~1 Week at Room Temp)</td></tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Strawberry / Matcha / Double Chocolate / Lemon / Chocolate Mint / Coconut</strong><span class="m-ja" lang="ja" translate="no">しっとりケーキドーナツ（ストロベリー・抹茶・ダブルチョコ・レモン・チョコミント・ココナッツ）</span></th>
-                                    <td role="cell">1 piece (6 flavors)</td>
+                                <tr role="row" data-mcat="donuts">
+                                    <th scope="row" role="rowheader"><strong>Glazed Cake Donuts — Strawberry / Matcha</strong><span class="m-ja" lang="ja" translate="no">しっとりケーキドーナツ（ストロベリー・抹茶）</span></th>
+                                    <td role="cell">1 pc (2 flavors)</td>
                                     <td class="m-price" role="cell">¥430 each</td>
-                                    <td role="cell">Almonds, Apple <em>(Soy-free recipe)</em></td>
+                                    <td role="cell">Almonds, Pistachio, Apple <em>(Soy-free &amp; Macadamia-free recipe)</em></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="しっとりケーキドーナツ" data-en="Glazed Cake Donut (¥430)" data-variants="ストロベリー::Strawberry|抹茶::Matcha"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row"><td colspan="4" class="m-cat" role="cell">6. Rice-Flour Craft Gelato (Cup · Dine-In or Takeout with Cooler Bag Option)</td></tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Berry Mix / Juicy Dragon Fruit</strong><span class="m-ja" lang="ja" translate="no">米粉ジェラート（ベリーミックス・ジューシードラゴンフルーツ）</span></th>
+                                <tr role="row" data-mcat="donuts">
+                                    <th scope="row" role="rowheader"><strong>Glazed Cake Donuts — Double Chocolate / Lemon / Chocolate Mint / Coconut</strong><span class="m-ja" lang="ja" translate="no">しっとりケーキドーナツ（ダブルチョコ・レモン・チョコミント・ココナッツ）</span></th>
+                                    <td role="cell">1 pc (4 flavors)</td>
+                                    <td class="m-price" role="cell">¥430 each</td>
+                                    <td role="cell">Almonds, Apple <em>(Soy-free, Pistachio-free &amp; Macadamia-free)</em></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="しっとりケーキドーナツ" data-en="Glazed Cake Donut (¥430)" data-variants="ダブルチョコ::Double Chocolate|レモン::Lemon|チョコミント::Chocolate Mint|ココナッツ::Coconut"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+
+                                <tr role="row" id="cat-dorayaki" data-mcat="dorayaki"><td colspan="5" class="m-cat" role="cell">5. Gluten-Free Rice-Flour Dorayaki (Sold Frozen · Enjoy Chilled or Half-Thawed as Ice Dorayaki)</td></tr>
+                                <tr role="row" data-mcat="dorayaki">
+                                    <th scope="row" role="rowheader"><strong>Anko &amp; Soy Cream / Strawberry Cream / Matcha Anko / Classic Anko</strong><span class="m-ja" lang="ja" translate="no">グルテンフリー米粉どら焼き（あんクリーム・いちごクリーム・抹茶あんこ・あんこ）</span></th>
+                                    <td role="cell">1 pc (4 flavors)</td>
+                                    <td class="m-price" role="cell">¥460 each</td>
+                                    <td role="cell">Soybeans, Almonds</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="グルテンフリー米粉どら焼き" data-en="Rice-Flour Dorayaki (¥460)" data-variants="あんクリーム::Anko &amp; Soy Cream|いちごクリーム::Strawberry Cream|抹茶あんこ::Matcha Anko|あんこ::Classic Anko"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+
+                                <tr role="row" id="cat-gelato" data-mcat="gelato"><td colspan="5" class="m-cat" role="cell">6. Rice-Flour Craft Gelato (Cup · Free Cooler Bag + Ice Pack with 4+ Items)</td></tr>
+                                <tr role="row" data-mcat="gelato">
+                                    <th scope="row" role="rowheader"><strong>Berry Mix</strong><span class="m-ja" lang="ja" translate="no">米粉ジェラート（ベリーミックス）</span></th>
+                                    <td role="cell">Cup</td>
+                                    <td class="m-price" role="cell">¥490</td>
+                                    <td role="cell"><span class="alg-free-pill">29-Allergen Free</span> <em>(Soy-free &amp; Nut-free)</em></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="米粉ジェラート（ベリーミックス）" data-en="Craft Gelato — Berry Mix (¥490)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+                                <tr role="row" data-mcat="gelato">
+                                    <th scope="row" role="rowheader"><strong>Refreshing Apple / Juicy Dragon Fruit</strong><span class="m-ja" lang="ja" translate="no">米粉ジェラート（爽やかりんご・ジューシードラゴンフルーツ）</span></th>
                                     <td role="cell">Cup (2 flavors)</td>
                                     <td class="m-price" role="cell">¥490 each</td>
-                                    <td role="cell">Made without the 28 specified allergen ingredients (Soy-free &amp; Almond-free recipe)</td>
+                                    <td role="cell">Apple <em>(Soy-free &amp; Nut-free)</em></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="米粉ジェラート" data-en="Craft Gelato (¥490)" data-variants="爽やかりんご::Refreshing Apple|ジューシードラゴンフルーツ::Juicy Dragon Fruit"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row">
-                                    <th scope="row" role="rowheader"><strong>Refreshing Apple / Too Juicy Peach</strong><span class="m-ja" lang="ja" translate="no">米粉ジェラート（爽やかりんご・ジューシーすぎるもも）</span></th>
-                                    <td role="cell">Cup (2 flavors)</td>
-                                    <td class="m-price" role="cell">¥490 each</td>
-                                    <td role="cell">Apple (in Apple) / Peach (in Peach) <em>(Soy-free &amp; Almond-free recipe)</em></td>
+                                <tr role="row" data-mcat="gelato">
+                                    <th scope="row" role="rowheader"><strong>Too Juicy Peach</strong><span class="m-ja" lang="ja" translate="no">米粉ジェラート（ジューシーすぎるもも）</span></th>
+                                    <td role="cell">Cup</td>
+                                    <td class="m-price" role="cell">¥490</td>
+                                    <td role="cell">Peach <em>(Soy-free &amp; Nut-free)</em></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="米粉ジェラート（ジューシーすぎるもも）" data-en="Craft Gelato — Too Juicy Peach (¥490)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row">
+                                <tr role="row" data-mcat="gelato">
                                     <th scope="row" role="rowheader"><strong>Supreme Rich Matcha / Fragrant Hojicha / Vanilla Coconut</strong><span class="m-ja" lang="ja" translate="no">米粉ジェラート（至高の濃厚抹茶・香ばしいほうじ茶・バニラココナッツ）</span></th>
                                     <td role="cell">Cup (3 flavors)</td>
                                     <td class="m-price" role="cell">¥490 each</td>
                                     <td role="cell">Soybeans</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="米粉ジェラート" data-en="Craft Gelato (¥490)" data-variants="至高の濃厚抹茶::Supreme Rich Matcha|香ばしいほうじ茶::Fragrant Hojicha|バニラココナッツ::Vanilla Coconut"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
-                                <tr role="row">
+                                <tr role="row" data-mcat="gelato">
                                     <th scope="row" role="rowheader"><strong>Melting Chocolate</strong><span class="m-ja" lang="ja" translate="no">米粉ジェラート（とろけるショコラ）</span></th>
                                     <td role="cell">Cup</td>
                                     <td class="m-price" role="cell">¥490</td>
                                     <td role="cell">Soybeans, Almonds</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="米粉ジェラート（とろけるショコラ）" data-en="Craft Gelato — Melting Chocolate (¥490)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+
+                                <tr role="row" id="cat-drinks" data-mcat="drinks"><td colspan="5" class="m-cat" role="cell">7. Plant-Based Cafe Drinks (Drink Set: Any Drink is ¥330 When Ordered with Sweets!)</td></tr>
+                                <tr role="row" data-mcat="drinks">
+                                    <th scope="row" role="rowheader"><strong>Organic Coffee</strong><span class="m-ja" lang="ja" translate="no">オーガニックコーヒー（HOT / COLD）</span></th>
+                                    <td role="cell">Hot / Iced</td>
+                                    <td class="m-price" role="cell">¥360 <em>(Set ¥330)</em></td>
+                                    <td role="cell"><span class="alg-free-pill">29-Allergen Free</span></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="オーガニックコーヒー" data-en="Organic Coffee" data-nodrinkset="1" data-variants="HOT::Hot (¥360)|COLD::Iced (¥360)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+                                <tr role="row" data-mcat="drinks">
+                                    <th scope="row" role="rowheader"><strong>Brown Sugar Soy Latte</strong><span class="m-ja" lang="ja" translate="no">黒糖ソイラテ（HOT / COLD）</span></th>
+                                    <td role="cell">Hot / Iced</td>
+                                    <td class="m-price" role="cell">¥390 <em>(Set ¥330)</em></td>
+                                    <td role="cell">Soybeans</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="黒糖ソイラテ" data-en="Brown Sugar Soy Latte" data-nodrinkset="1" data-variants="COLD::Iced (¥390)|HOT::Hot (¥390)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+                                <tr role="row" data-mcat="drinks">
+                                    <th scope="row" role="rowheader"><strong>Matcha Soy Latte</strong><span class="m-ja" lang="ja" translate="no">抹茶ソイラテ（HOT / COLD）</span></th>
+                                    <td role="cell">Hot / Iced</td>
+                                    <td class="m-price" role="cell">¥390 <em>(Set ¥330)</em></td>
+                                    <td role="cell">Soybeans</td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="抹茶ソイラテ" data-en="Matcha Soy Latte" data-nodrinkset="1" data-variants="COLD::Iced (¥390)|HOT::Hot (¥390)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+                                <tr role="row" data-mcat="drinks">
+                                    <th scope="row" role="rowheader"><strong>Amazake Latte (Fermented Rice Drink)</strong><span class="m-ja" lang="ja" translate="no">甘酒ラテ</span></th>
+                                    <td role="cell">Regular</td>
+                                    <td class="m-price" role="cell">¥390 <em>(Set ¥330)</em></td>
+                                    <td role="cell"><span class="alg-free-pill">29-Allergen Free</span> <em>(Soy-free)</em></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="甘酒ラテ" data-en="Amazake Latte (¥390)" data-nodrinkset="1"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+                                <tr role="row" data-mcat="drinks">
+                                    <th scope="row" role="rowheader"><strong>Lemon Squash / Mixed Berry Tea</strong><span class="m-ja" lang="ja" translate="no">レモンスカッシュ・ミックスベリーティー</span></th>
+                                    <td role="cell">Iced (2 drinks)</td>
+                                    <td class="m-price" role="cell">¥390 each <em>(Set ¥330)</em></td>
+                                    <td role="cell"><span class="alg-free-pill">29-Allergen Free</span></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="ドリンク" data-en="Iced Drink" data-nodrinkset="1" data-variants="レモンスカッシュ::Lemon Squash (¥390)|ミックスベリーティー::Mixed Berry Tea (¥390)"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
+                                </tr>
+                                <tr role="row" data-mcat="drinks">
+                                    <th scope="row" role="rowheader"><strong>Tropical Soda</strong><span class="m-ja" lang="ja" translate="no">トロピカルソーダ</span></th>
+                                    <td role="cell">Iced</td>
+                                    <td class="m-price" role="cell">¥360 <em>(Set ¥330)</em></td>
+                                    <td role="cell">Peach <em>(Soy-free &amp; Nut-free)</em></td>
+                                    <td class="m-act" role="cell"><button type="button" class="m-order-btn js-show-staff" data-ja="トロピカルソーダ" data-en="Tropical Soda (¥360)" data-nodrinkset="1"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Order</button></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="fine full-menu__fine">*All items are crafted without wheat, dairy, eggs, honey, gelatin, or refined white sugar. Seasonal drinks (Organic Coffee, Soy Latte, Amazake Latte, Berry Tea) and limited sweets are also available at the counter — please check current counter prices and allergen labels when ordering.</p>
+                    <p class="fine full-menu__fine">*Disclosed against Japan’s 29 specified allergens standard (9 mandatory + 20 recommended items, including Cashew Nuts, Pistachio &amp; Macadamia Nuts). Every item is crafted without wheat, dairy, eggs, honey, gelatin, or refined white sugar. Standalone bubble waffle takeout box: +¥100. Limited seasonal specials are also available at the counter.</p>
                 </details>
             </div>
         </section>
@@ -720,35 +942,52 @@
                         </ul>
                     </div>
                     <div class="policy-note" role="note">
-                        <strong>Important Notice for Guests with Severe Allergies or Celiac Disease:</strong><br>
-                        Within our kitchen, we handle <strong>soybeans, almonds, sesame, Japanese yam (yamaimo), apples, peaches, and oranges</strong> (and certain delivery/seasonal items such as vegan tiramisu may use <strong>cashew nuts</strong>, a mandatory specified allergen in Japan as of April 2026). While we take the utmost care with hygiene and equipment, <strong>complete elimination of trace cross-contact cannot be guaranteed</strong>. Guests with severe allergies or celiac disease are strongly encouraged to check the per-item list below and consult our staff in advance or at the counter.
+                        <strong>Important Notice for Guests with Severe Allergies or Celiac Disease (Japan’s 29 Specified Allergens):</strong><br>
+                        Within our kitchen, we handle <strong>soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam (yamaimo), apples, peaches, and oranges</strong> (disclosed under Japan’s <strong>29 specified allergens</strong> standard — 9 mandatory + 20 recommended items as of April 2026). While we take the utmost care with hygiene and equipment, <strong>complete elimination of trace cross-contact cannot be guaranteed</strong>. Guests with severe allergies or celiac disease are strongly encouraged to check the per-item list below and consult our staff before ordering.
                     </div>
                 </div>
 
                 <div class="checker">
                     <div class="checker__controls">
-                        <p class="checker__q" id="checker-q">Filter items by ingredients to avoid:</p>
+                        <div class="checker__head-row">
+                            <p class="checker__q" id="checker-q">Filter items by ingredients to avoid:</p>
+                            <button type="button" class="checker__reset" id="js-checker-reset" hidden>Clear filters</button>
+                        </div>
                         <div class="checker__chips" role="group" aria-labelledby="checker-q">
                             <button type="button" class="fchip" data-avoid="soy" aria-pressed="false">Soybeans</button>
-                            <button type="button" class="fchip" data-avoid="nuts" aria-pressed="false">Almonds (Tree nuts)</button>
+                            <button type="button" class="fchip" data-avoid="nuts" aria-pressed="false">Tree nuts (Almond / Cashew / Pistachio / Macadamia)</button>
                             <button type="button" class="fchip" data-avoid="sesame" aria-pressed="false">Sesame</button>
+                            <button type="button" class="fchip" data-avoid="yam" aria-pressed="false">Japanese yam</button>
+                            <button type="button" class="fchip" data-avoid="apple" aria-pressed="false">Apple</button>
+                            <button type="button" class="fchip" data-avoid="peach" aria-pressed="false">Peach</button>
                         </div>
-                        <p class="checker__result" id="js-checker-result" aria-live="polite">Select an ingredient above to filter our regular menu items.</p>
+                        <p class="checker__result" id="js-checker-result" aria-live="polite">Select any ingredients above to filter our regular menu items.</p>
                     </div>
                     <ul class="checker__list" id="js-checker-list">
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Waffle &amp; Pure Soy Soft Serve / Whip</strong><small>Contains: Soybeans.</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Bubble Waffles &mdash; Plain, Matcha, Cocoa</strong><small>Contains: Soybeans. Made without almonds or sesame in the batter.</small></div></li>
-                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Bubble Waffle &mdash; Black Sesame</strong><small>Contains: Soybeans, Sesame.</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Pure Soy Milk Soft Serve (Large / Medium)</strong><small>Contains: Soybeans.</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Baked Soy Donuts &mdash; 5 flavors</strong><small>Cranberry, Yame Matcha, Kinako, Earl Grey, Chocolat &middot; Contains: Soybeans, Japanese yam.</small></div></li>
-                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Baked Soy Donut &mdash; Black Sesame</strong><small>Contains: Soybeans, Japanese yam, Sesame.</small></div></li>
-                        <li data-contains="nuts"><span class="ok" aria-hidden="true"></span><div><strong>Glazed Cake Donuts &mdash; 6 flavors</strong><small>Soy-free recipe &middot; Contains: Almonds, Apple.</small></div></li>
-                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Berry Mix, Juicy Dragon Fruit</strong><small>Made without the 28 specified allergen ingredients in Japan (Soy-free &amp; Almond-free recipe).</small></div></li>
-                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Refreshing Apple, Too Juicy Peach</strong><small>Soy-free &amp; Almond-free recipe &middot; Contains: Apple (in Apple) / Peach (in Peach).</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Supreme Rich Matcha, Fragrant Hojicha, Vanilla Coconut</strong><small>Contains: Soybeans.</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Melting Chocolate</strong><small>Contains: Soybeans, Almonds.</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Waffle &amp; Pure Soy Soft Serve / Pure Soy Soft Serve</strong><small>Contains: Soybeans (+5 free toppings; Kinako contains soy).</small></div></li>
+                        <li data-contains="soy apple"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Whip Cup &mdash; Strawberry (¥660)</strong><small>Contains: Soybeans, Apple.</small></div></li>
+                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Whip Cup &mdash; Caramel Nuts (¥660)</strong><small>Contains: Soybeans, Almonds, Cashew Nuts, Macadamia Nuts.</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Ice Cups &mdash; Strawberry, Matcha (¥690)</strong><small>Contains: Soybeans.</small></div></li>
+                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Ice Cup &mdash; Chocolate (¥690)</strong><small>Contains: Soybeans, Almonds.</small></div></li>
+                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Ice Cup &mdash; Black Sesame (¥690)</strong><small>Contains: Soybeans, Sesame.</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Organic Iced Coffee Float (¥660)</strong><small>Contains: Soybeans.</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Bubble Waffles &mdash; Plain (¥660), Cocoa, Matcha (¥690)</strong><small>Contains: Soybeans. Made without nuts or sesame in the batter.</small></div></li>
+                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Bubble Waffle &mdash; Black Sesame (¥690)</strong><small>Contains: Soybeans, Sesame.</small></div></li>
+                        <li data-contains="soy yam"><span class="ok" aria-hidden="true"></span><div><strong>Baked Soy Donuts &mdash; 5 flavors (¥330)</strong><small>Cranberry, Yame Matcha, Kinako, Earl Grey, Chocolat &middot; Contains: Soybeans, Japanese yam (Nut-free recipe).</small></div></li>
+                        <li data-contains="soy yam sesame"><span class="ok" aria-hidden="true"></span><div><strong>Baked Soy Donut &mdash; Black Sesame (¥330)</strong><small>Contains: Soybeans, Japanese yam, Sesame (Nut-free recipe).</small></div></li>
+                        <li data-contains="nuts apple"><span class="ok" aria-hidden="true"></span><div><strong>Glazed Cake Donuts &mdash; Strawberry, Matcha (¥430)</strong><small>Soy-free &amp; Macadamia-free &middot; Contains: Almonds, Pistachio, Apple.</small></div></li>
+                        <li data-contains="nuts apple"><span class="ok" aria-hidden="true"></span><div><strong>Glazed Cake Donuts &mdash; Double Choco, Lemon, Choco Mint, Coconut (¥430)</strong><small>Soy-free, Pistachio-free &amp; Macadamia-free &middot; Contains: Almonds, Apple.</small></div></li>
+                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Gluten-Free Rice-Flour Dorayaki &mdash; All 4 flavors (¥460)</strong><small>Anko Cream, Strawberry Cream, Matcha Anko, Classic Anko &middot; Contains: Soybeans, Almonds.</small></div></li>
+                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Berry Mix (¥490)</strong><small>Free from all 29 specified allergens in Japan (Soy-free &amp; Nut-free recipe).</small></div></li>
+                        <li data-contains="apple"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Refreshing Apple, Juicy Dragon Fruit (¥490)</strong><small>Soy-free &amp; Nut-free recipe &middot; Contains: Apple.</small></div></li>
+                        <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Too Juicy Peach (¥490)</strong><small>Soy-free &amp; Nut-free recipe &middot; Contains: Peach.</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Rich Matcha, Fragrant Hojicha, Vanilla Coconut (¥490)</strong><small>Contains: Soybeans.</small></div></li>
+                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Melting Chocolate (¥490)</strong><small>Contains: Soybeans, Almonds.</small></div></li>
+                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Cafe Drinks &mdash; Organic Coffee, Amazake Latte, Lemon Squash, Mixed Berry Tea</strong><small>Free from all 29 specified allergens in Japan (Soy-free &amp; Nut-free).</small></div></li>
+                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Cafe Drinks &mdash; Brown Sugar Soy Latte, Matcha Soy Latte (¥390)</strong><small>Contains: Soybeans.</small></div></li>
+                        <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>Cafe Drink &mdash; Tropical Soda (¥360)</strong><small>Soy-free &amp; Nut-free &middot; Contains: Peach.</small></div></li>
                     </ul>
-                    <p class="checker__note">Seasonal items and drinks may use additional ingredients (such as oranges or cashew paste). Please ask our staff before ordering. <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">View Official FoodHug Allergy Page &rarr;</a></p>
+                    <p class="checker__note">Limited seasonal items may use additional ingredients (such as oranges or cashew paste). Please confirm with our staff before ordering. <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">View Official FoodHug Allergy Page &rarr;</a></p>
                     <div class="checker__contact">
                         <a class="btn btn--secondary btn--sm" href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>Questions in advance? DM @soystories_yakuin</a>
                         <a class="btn btn--secondary btn--sm" href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Official FoodHug Allergy Page<svg class="ic" aria-hidden="true"><use href="#i-external"/></svg></a>
@@ -793,10 +1032,11 @@
                     </article>
                     <div class="to-side">
                         <ul class="to-list">
-                            <li><strong>Bubble Waffles &amp; Soy Soft Serve (Best Immediately)</strong><small>Can be ordered for takeout, but because freshly baked waffles are piping hot and soft serve melts quickly, we recommend enjoying them right away in-store or outside.</small></li>
+                            <li><strong>Gluten-Free Rice-Flour Dorayaki (Chilled or Ice-Dorayaki)</strong><small>Handed over frozen (¥460 each, 4 flavors). Thaw 30–60 min at room temperature (or 1–2 hours refrigerated) — delicious half-thawed like an ice-cream sandwich or fully fluffy!</small></li>
+                            <li><strong>Bubble Waffles &amp; Soy Soft Serve (Best Immediately)</strong><small>Soft-serve waffles are best eaten right away before melting. Standalone Bubble Waffles (¥660–¥690) can also be packed in a dedicated takeout box (+¥100).</small></li>
                             <li><strong>Baked Soy Donuts (Warmed In-Store or Frozen Takeaway)</strong><small>Sold flash-frozen (¥330). Ask us to warm one up in-store to eat right away, or heat at your hotel (microwave 600W for ~1 min; or thaw naturally and keep refrigerated up to 3 days).</small></li>
                             <li><strong>Cup Craft Gelato (Cooler Bags Available)</strong><small>Sold frozen in lidded cups (¥490). Cooler bags with ice packs are available — complimentary when you purchase 4 or more items.</small></li>
-                            <li><strong>Pre-Order or Hold Specific Flavors</strong><small>Want to reserve a gift box or specific donut flavors before evening sell-outs? Send us a DM on Instagram.</small></li>
+                            <li><strong>Pre-Order or Hold Specific Flavors</strong><small>Want to reserve a gift box, dorayaki set, or specific donut flavors before evening sell-outs? Send us a DM on Instagram.</small></li>
                         </ul>
                         <a class="btn btn--secondary btn--ig" href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener">
                             <svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>
@@ -882,19 +1122,20 @@
                     </details>
                     <details>
                         <summary>2. What is your gluten-free policy? Can guests with celiac disease or wheat allergies eat here?</summary>
-                        <div><p>All of our products are made with 100% gluten-free rice flour or almond flour, and <strong>wheat, dairy, and eggs are never brought into our kitchen</strong> (including staff personal food for wheat). However, because we handle soybeans, almonds, sesame, Japanese yam, apples, peaches, and oranges in the same kitchen (and certain seasonal/delivery items such as vegan tiramisu may use cashew nuts), <strong>complete elimination of trace allergens cannot be guaranteed</strong>. Guests with severe allergies or celiac disease are encouraged to review per-item ingredients and consult our staff before ordering.</p></div>
+                        <div><p>All of our products are made with 100% gluten-free rice flour or almond flour, and <strong>wheat, dairy, and eggs are never brought into our kitchen</strong> (including staff personal food for wheat). However, because we handle soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam, apples, peaches, and oranges in the same kitchen (disclosed across Japan’s <strong>29 specified allergens</strong>), <strong>complete elimination of trace allergens cannot be guaranteed</strong>. Guests with severe allergies or celiac disease are encouraged to review per-item ingredients and consult our staff before ordering.</p></div>
                     </details>
                     <details>
                         <summary>3. How can I check per-item ingredients and allergens?</summary>
-                        <div><p>You can use the interactive <a href="#allergy">Allergen Checker</a> and the <a href="#full-menu-list">Complete 26-Item Menu Table</a> on this page, check the allergen badges on each menu category page, or view our <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Official FoodHug Allergy Disclosure Page</a>. You can also ask our counter staff directly.</p></div>
+                        <div><p>You can use the interactive <a href="#allergy">6-Allergen Checker</a> and the <a href="#full-menu-list">Complete Menu &amp; 29-Allergen Reference Table</a> on this page, check the allergen badges on each menu category page, or view our <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Official FoodHug Allergy Disclosure Page</a>. You can also ask our counter staff directly.</p></div>
                     </details>
                     <details>
-                        <summary>4. Do your products contain soy, tree nuts (almonds/cashews), sesame, or Japanese yam?</summary>
-                        <div><p>It depends on the product:<br>
-                        &bull; <strong>Soybeans:</strong> Used in Bubble Waffles, Soy Soft Serve, Soy Whip, Baked Soy Donuts, and 4 Gelato flavors. <em>Soy-free options</em> include all 6 Glazed Cake Donuts (¥430) and 4 Fruit Gelato flavors (Berry Mix, Juicy Dragon Fruit, Refreshing Apple, Too Juicy Peach).<br>
-                        &bull; <strong>Almonds (Tree Nuts):</strong> Used in Glazed Cake Donuts (¥430) and Melting Chocolate Gelato. (Note: Certain seasonal/delivery items like vegan tiramisu may use cashew paste.)<br>
-                        &bull; <strong>Sesame:</strong> Used in the Black Sesame Bubble Waffle and Black Sesame Soy Donut.<br>
-                        &bull; <strong>Japanese Yam (Yamaimo):</strong> Used in the 6 Baked Soy Donuts (¥330) for chewiness.</p></div>
+                        <summary>4. Do your products contain soy, tree nuts (almonds, cashews, pistachio, macadamia), sesame, or Japanese yam?</summary>
+                        <div><p>It depends on the product (all disclosed under Japan’s 29 specified allergens):<br>
+                        &bull; <strong>Soybeans:</strong> Used in Bubble Waffles, Pure Soy Soft Serve, Waffle Ice &amp; Whip Cups, Coffee Float, Baked Soy Donuts, Rice-Flour Dorayaki, 4 Gelato flavors, and Soy Lattes. <em>Soy-free options</em> include all 6 Glazed Cake Donuts (¥430), 4 Fruit Gelato flavors, Organic Coffee, Amazake Latte, Lemon Squash, Mixed Berry Tea, and Tropical Soda.<br>
+                        &bull; <strong>Tree Nuts:</strong> <strong>Almonds</strong> are used in Glazed Cake Donuts (¥430), Rice-Flour Dorayaki (¥460), Chocolate Waffle Ice, Melting Chocolate Gelato, and Caramel Nuts Waffle Whip. <strong>Cashew Nuts &amp; Macadamia Nuts</strong> are used in Caramel Nuts Waffle Whip (Cake Donuts do not use macadamia nuts). <strong>Pistachio</strong> is used on Strawberry &amp; Matcha Glazed Cake Donuts.<br>
+                        &bull; <strong>Sesame:</strong> Used in Black Sesame Bubble Waffle, Black Sesame Waffle Ice, and Black Sesame Soy Donut.<br>
+                        &bull; <strong>Japanese Yam (Yamaimo):</strong> Used in the 6 Baked Soy Donuts (¥330) for chewiness.<br>
+                        &bull; <strong>Apple / Peach:</strong> Apple is used in Glazed Cake Donuts, Strawberry Waffle Whip, and Refreshing Apple Gelato; Peach is used in Too Juicy Peach Gelato and Tropical Soda.</p></div>
                     </details>
                     <details>
                         <summary>5. Do you use white sugar? Are your sweets “sugar-free”?</summary>
@@ -914,8 +1155,9 @@
                     </details>
                     <details>
                         <summary>9. Which items are best for takeaway, and how long can I carry them?</summary>
-                        <div><p>&bull; <strong>Bubble Waffles &amp; Soy Soft Serve:</strong> Available for takeaway, but because warm waffles melt soft serve quickly, we strongly recommend eating them immediately in-store or right outside.<br>
+                        <div><p>&bull; <strong>Bubble Waffles &amp; Soy Soft Serve:</strong> Soft-serve waffles melt quickly and are best eaten immediately. Standalone Bubble Waffles (¥660–¥690) can be packed in a takeout box (+¥100).<br>
                         &bull; <strong>Glazed Cake Donuts (¥430):</strong> Keep for <strong>about 1 week at room temperature</strong> &mdash; our best choice for hotel snacks, bullet trains, and gifts.<br>
+                        &bull; <strong>Gluten-Free Rice-Flour Dorayaki (¥460):</strong> Handed over frozen; thaw 30–60 min at room temperature (or 1–2 hours refrigerated) to enjoy half-frozen like ice cream or soft and fluffy.<br>
                         &bull; <strong>Baked Soy Donuts (¥330):</strong> Sold frozen (or warmed in-store). If carried at room temperature, they thaw naturally; keep refrigerated and enjoy within 3 days.<br>
                         &bull; <strong>Cup Craft Gelato (¥490):</strong> Sold frozen; cooler bags with ice packs are available (free when buying 4 or more items).</p></div>
                     </details>
@@ -1013,10 +1255,10 @@
                 <p class="ft__tag">100% gluten-free &amp; plant-based sweets in Yakuin, Fukuoka. Crafted without wheat, dairy, eggs, or refined white sugar.</p>
             </div>
             <nav class="ft__nav" aria-label="Footer">
-                <a href="./waffle&amp;soft.html">Waffle &amp; Soft Serve</a>
+                <a href="./waffle&amp;soft.html">Waffle Soft &amp; Cups</a>
                 <a href="./waffle.html">Bubble Waffles</a>
-                <a href="./soft.html">Soy Soft Serve</a>
-                <a href="./dounuts.html">Baked Donuts</a>
+                <a href="./soft.html">Soft Serve &amp; Drinks</a>
+                <a href="./dounuts.html">Donuts &amp; Dorayaki</a>
                 <a href="./ice.html">Craft Gelato</a>
                 <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Allergy Policy (FoodHug) &rarr;</a>
                 <a href="https://www.instagram.com/soystories_yakuin/" target="_blank" rel="noopener">Instagram (@soystories_yakuin) &rarr;</a>
@@ -1044,7 +1286,13 @@
             <p class="staff__hint">Show this screen to our staff at the counter</p>
             <p class="staff__please" lang="ja" translate="no">これをください</p>
             <p class="staff__item" id="js-staff-item" lang="ja" translate="no"></p>
+            <p class="staff__set-line" id="js-staff-set" lang="ja" translate="no" hidden></p>
             <p class="staff__en" id="js-staff-en"></p>
+            <div class="staff__variants" id="js-staff-variants" role="group" aria-label="Choose flavor or size" hidden></div>
+            <div class="staff__addon" id="js-staff-addon">
+                <button type="button" class="staff__addon-btn" id="js-staff-addon-btn" aria-pressed="false">+ Add ¥330 Drink Set (Any Drink)</button>
+                <div class="staff__variants" id="js-staff-drinks" role="group" aria-label="Choose set drink" style="margin-top:8px;margin-bottom:0;" hidden></div>
+            </div>
             <div class="staff__mode" role="group" aria-label="Eat in or takeout">
                 <button type="button" class="is-on" data-mode="eatin" aria-pressed="true"><span lang="ja" translate="no">店内で食べます</span><small>Eat in</small></button>
                 <button type="button" data-mode="takeout" aria-pressed="false"><span lang="ja" translate="no">持ち帰りです</span><small>Takeout</small></button>

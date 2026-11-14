@@ -58,6 +58,8 @@ html[lang="ja"] body {
 .btn { letter-spacing: .04em; line-height: 1.4; }
 .dock a { font-size: 12px; letter-spacing: .02em; }
 .fchip { letter-spacing: .03em; }
+.mfilter__btn { letter-spacing: .02em; }
+.mcard__eyebrow { letter-spacing: .04em; text-transform: none; }
 .m-table { line-height: 1.6; }
 .m-table .m-cat { line-height: 1.6; font-size: 15px; }
 .m-table thead th { white-space: nowrap; }

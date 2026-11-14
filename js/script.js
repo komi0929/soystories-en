@@ -1,26 +1,97 @@
-// 0. UI strings. English is the default; the Japanese edition (<html lang="ja">) swaps in Japanese text.
-const UI = document.documentElement.lang === 'ja' ? {
+// 0. UI strings across English (default), Japanese, Korean, and Traditional Chinese.
+const PAGE_LANG = (document.documentElement.lang || 'en').toLowerCase();
+const UI = PAGE_LANG === 'ja' ? {
   openNow: '営業中 · 22:00まで（L.O. 21:45）',
   openLastOrder: '営業中 · ラストオーダーは21:45です',
   lastOrderPassed: 'ラストオーダーは終了しました · 毎日11:00オープン',
   closedNow: '営業時間外 · 毎日11:00オープン',
-  allergenLabels: { soy: '大豆', nuts: 'アーモンド（ナッツ類）', sesame: 'ごま' },
+  allergenLabels: { soy: '大豆', nuts: 'ナッツ類', sesame: 'ごま', yam: 'やまいも', apple: 'りんご', peach: 'もも' },
   allergenJoin: '・',
   allergenIdle: '上の原材料を選ぶと、定番メニューを絞り込めます。',
-  allergenResult: function (ok, total, names) { return '全' + total + '品中、' + names + 'を含まないメニューは' + ok + '品です。'; },
+  allergenResult: function (ok, total, names) { return '全' + total + '区分中、' + names + 'を含まないメニューは ' + ok + ' 区分です。'; },
   copied: '✓ コピーしました。Googleマップやタクシーアプリ（Uber・GO）にそのまま貼り付けられます。',
-  copiedBtn: 'コピーしました'
+  copiedBtn: 'コピーしました',
+  setDrinks: [
+    ['オーガニックコーヒー（HOT）', 'オーガニックコーヒー HOT'],
+    ['オーガニックコーヒー（COLD）', 'オーガニックコーヒー COLD'],
+    ['黒糖ソイラテ（HOT）', '黒糖ソイラテ HOT'],
+    ['黒糖ソイラテ（COLD）', '黒糖ソイラテ COLD'],
+    ['抹茶ソイラテ（HOT）', '抹茶ソイラテ HOT'],
+    ['抹茶ソイラテ（COLD）', '抹茶ソイラテ COLD'],
+    ['甘酒ラテ', '甘酒ラテ（大豆不使用）'],
+    ['レモンスカッシュ', 'レモンスカッシュ'],
+    ['ミックスベリーティー', 'ミックスベリーティー'],
+    ['トロピカルソーダ', 'トロピカルソーダ']
+  ]
+} : PAGE_LANG === 'ko' ? {
+  openNow: '영업 중 · 22:00까지 (라스트오더 21:45)',
+  openLastOrder: '영업 중 · 라스트오더 21:45',
+  lastOrderPassed: '라스트오더 마감 · 매일 11:00 오픈',
+  closedNow: '영업 준비 중 · 매일 11:00 오픈',
+  allergenLabels: { soy: '대두(콩)', nuts: '견과류(아몬드·캐슈넛·피스타치오·마카다미아)', sesame: '참깨(검은깨)', yam: '참마(야마이모)', apple: '사과', peach: '복숭아' },
+  allergenJoin: ' · ',
+  allergenIdle: '피하고 싶은 원재료를 선택하면 먹을 수 있는 메뉴만 남습니다.',
+  allergenResult: function (ok, total, names) { return '전체 ' + total + '개 항목 중 ' + names + ' 미포함 메뉴는 ' + ok + '개입니다.'; },
+  copied: '✓ 복사되었습니다! 구글 맵이나 택시 앱(Uber·GO)에 바로 붙여넣으세요.',
+  copiedBtn: '복사 완료!',
+  setDrinks: [
+    ['オーガニックコーヒー（HOT）', '유기농 커피 HOT'],
+    ['オーガニックコーヒー（COLD）', '유기농 커피 ICE'],
+    ['黒糖ソイラテ（HOT）', '흑당 소이라떼 HOT'],
+    ['黒糖ソイラテ（COLD）', '흑당 소이라떼 ICE'],
+    ['抹茶ソイラテ（HOT）', '말차 소이라떼 HOT'],
+    ['抹茶ソイラテ（COLD）', '말차 소이라떼 ICE'],
+    ['甘酒ラテ', '아마자케 라떼 (대두 무첨가)'],
+    ['レモンスカッシュ', '레몬 스쿼시'],
+    ['ミックスベリーティー', '믹스베리 티'],
+    ['トロピカルソーダ', '트로피컬 소다 (복숭아 함유)']
+  ]
+} : PAGE_LANG.indexOf('zh') === 0 ? {
+  openNow: '營業中 · 至 22:00（最後點餐 21:45）',
+  openLastOrder: '營業中 · 最後點餐 21:45',
+  lastOrderPassed: '最後點餐已結束 · 每日 11:00 營業',
+  closedNow: '休息中 · 每日 11:00 營業',
+  allergenLabels: { soy: '大豆', nuts: '堅果類（杏仁・腰果・開心果・夏威夷豆）', sesame: '芝麻', yam: '山藥', apple: '蘋果', peach: '水蜜桃' },
+  allergenJoin: '、',
+  allergenIdle: '點擊上方想避開的食材，即可篩選適合您的常設餐點。',
+  allergenResult: function (ok, total, names) { return '共 ' + total + ' 項分類中，不含' + names + '的餐點有 ' + ok + ' 項。'; },
+  copied: '✓ 已複製！可直接貼上至 Google Maps 或計程車 App（Uber・GO）。',
+  copiedBtn: '已複製！',
+  setDrinks: [
+    ['オーガニックコーヒー（HOT）', '有機咖啡 HOT'],
+    ['オーガニックコーヒー（COLD）', '有機咖啡 ICE'],
+    ['黒糖ソイラテ（HOT）', '黑糖豆乳拿鐵 HOT'],
+    ['黒糖ソイラテ（COLD）', '黑糖豆乳拿鐵 ICE'],
+    ['抹茶ソイラテ（HOT）', '抹茶豆乳拿鐵 HOT'],
+    ['抹茶ソイラテ（COLD）', '抹茶豆乳拿鐵 ICE'],
+    ['甘酒ラテ', '甘酒拿鐵（不含大豆）'],
+    ['レモンスカッシュ', '檸檬氣泡飲'],
+    ['ミックスベリーティー', '綜合莓果茶'],
+    ['トロピカルソーダ', '熱帶水果氣泡飲（含水蜜桃）']
+  ]
 } : {
   openNow: 'Open now · until 10:00 PM (L.O. 9:45 PM)',
   openLastOrder: 'Open now · last order at 9:45 PM',
   lastOrderPassed: 'Last order has passed · opens 11:00 AM',
   closedNow: 'Closed now · opens daily at 11:00 AM',
-  allergenLabels: { soy: 'soy', nuts: 'tree nuts', sesame: 'sesame' },
-  allergenJoin: ' & ',
-  allergenIdle: 'Select an ingredient above to filter our regular menu items.',
-  allergenResult: function (ok, total, names) { return ok + ' of ' + total + ' items are free from ' + names + '.'; },
+  allergenLabels: { soy: 'soybeans', nuts: 'tree nuts', sesame: 'sesame', yam: 'Japanese yam', apple: 'apple', peach: 'peach' },
+  allergenJoin: ', ',
+  allergenIdle: 'Select any ingredients above to filter our regular menu items.',
+  allergenResult: function (ok, total, names) { return ok + ' of ' + total + ' menu groups are made without ' + names + '.'; },
   copied: '✓ Copied! Ready to paste into Google Maps, Uber, or GO Taxi.',
-  copiedBtn: 'Copied!'
+  copiedBtn: 'Copied!',
+  setDrinks: [
+    ['オーガニックコーヒー（HOT）', 'Organic Coffee (Hot)'],
+    ['オーガニックコーヒー（COLD）', 'Organic Coffee (Iced)'],
+    ['黒糖ソイラテ（HOT）', 'Brown Sugar Soy Latte (Hot)'],
+    ['黒糖ソイラテ（COLD）', 'Brown Sugar Soy Latte (Iced)'],
+    ['抹茶ソイラテ（HOT）', 'Matcha Soy Latte (Hot)'],
+    ['抹茶ソイラテ（COLD）', 'Matcha Soy Latte (Iced)'],
+    ['甘酒ラテ', 'Amazake Latte (Soy-free)'],
+    ['レモンスカッシュ', 'Lemon Squash'],
+    ['ミックスベリーティー', 'Mixed Berry Tea'],
+    ['トロピカルソーダ', 'Tropical Soda (Peach)']
+  ]
 };
 
 // 1. Mobile Drawer Navigation Toggle
@@ -137,11 +208,12 @@ if (drawerIcon && drawerContent) {
   setInterval(update, 60000);
 })();
 
-// 1d. Allergen checker
+// 1d. Allergen checker (6-allergen multi-filter + instant reset)
 (function () {
   const chips = document.querySelectorAll('.fchip');
   const items = document.querySelectorAll('#js-checker-list li');
   const result = document.querySelector('#js-checker-result');
+  const resetBtn = document.querySelector('#js-checker-reset');
   if (!chips.length || !items.length) return;
   const labels = UI.allergenLabels;
   const apply = function () {
@@ -154,11 +226,12 @@ if (drawerIcon && drawerContent) {
       li.classList.toggle('is-out', out);
       if (!out) ok++;
     });
+    if (resetBtn) resetBtn.hidden = avoid.length === 0;
     if (!result) return;
     if (!avoid.length) {
       result.textContent = UI.allergenIdle;
     } else {
-      result.textContent = UI.allergenResult(ok, items.length, avoid.map(function (a) { return labels[a]; }).join(UI.allergenJoin));
+      result.textContent = UI.allergenResult(ok, items.length, avoid.map(function (a) { return labels[a] || a; }).join(UI.allergenJoin));
     }
   };
   chips.forEach(function (c) {
@@ -167,39 +240,200 @@ if (drawerIcon && drawerContent) {
       apply();
     });
   });
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function () {
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+      apply();
+    });
+  }
 })();
 
-// 1e. "Show staff" ordering card
+// 1d2. Complete menu category filter pills (.mfilter) & smooth #cat-* anchor jump
+(function () {
+  const filterBars = document.querySelectorAll('.mfilter');
+  const setCategory = function (container, cat) {
+    const btns = container.querySelectorAll('[data-mcat-btn]');
+    const rows = container.querySelectorAll('tr[data-mcat]');
+    btns.forEach(function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-mcat-btn') === cat ? 'true' : 'false');
+    });
+    rows.forEach(function (r) {
+      const match = (cat === 'all' || r.getAttribute('data-mcat') === cat);
+      r.classList.toggle('is-hidden-row', !match);
+    });
+  };
+
+  filterBars.forEach(function (bar) {
+    const container = bar.closest('.full-menu') || document;
+    bar.addEventListener('click', function (e) {
+      const btn = e.target.closest('[data-mcat-btn]');
+      if (!btn) return;
+      setCategory(container, btn.getAttribute('data-mcat-btn') || 'all');
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    const link = e.target.closest('a[href^="#cat-"], a[href="#full-menu-list"]');
+    if (!link) return;
+    const hash = link.getAttribute('href');
+    const target = document.getElementById(hash.slice(1));
+    if (!target) return;
+    const details = target.closest('details.full-menu') || (target.matches('details.full-menu') ? target : null);
+    if (details && !details.open) details.open = true;
+    if (details && hash.indexOf('#cat-') === 0) {
+      setCategory(details, 'all');
+    }
+    e.preventDefault();
+    const smooth = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    target.scrollIntoView({ behavior: smooth, block: 'start' });
+    if (hash.indexOf('#cat-') === 0) {
+      target.classList.remove('is-highlight');
+      void target.offsetWidth;
+      target.classList.add('is-highlight');
+    }
+  });
+})();
+
+// 1e. Smart "Show staff" ordering card (supports flavor/size variants + ¥330 drink set selector)
 (function () {
   const overlay = document.querySelector('#js-staff');
-  const triggers = document.querySelectorAll('.js-show-staff');
-  if (!overlay || !triggers.length) return;
+  if (!overlay) return;
   const item = overlay.querySelector('#js-staff-item');
   const en = overlay.querySelector('#js-staff-en');
+  const setLine = overlay.querySelector('#js-staff-set');
+  const variantsBox = overlay.querySelector('#js-staff-variants');
+  const addonWrap = overlay.querySelector('#js-staff-addon');
+  const addonBtn = overlay.querySelector('#js-staff-addon-btn');
+  const drinksBox = overlay.querySelector('#js-staff-drinks');
   const close = overlay.querySelector('#js-staff-close');
   const modes = overlay.querySelectorAll('[data-mode]');
+
   let lastFocus = null;
+  let baseJa = '';
+  let baseEn = '';
+  let curVarJa = '';
+  let curVarLocal = '';
+  let setOn = false;
+  let curDrinkJa = UI.setDrinks[3][0]; // Default: Iced Brown Sugar Soy Latte
+
+  const renderText = function () {
+    item.textContent = curVarJa ? (baseJa + '（' + curVarJa + '）') : baseJa;
+    en.textContent = curVarLocal ? (baseEn + ' — ' + curVarLocal) : baseEn;
+    if (setLine) {
+      if (setOn) {
+        setLine.hidden = false;
+        setLine.textContent = '＋ドリンクセット：' + curDrinkJa + '（¥330）';
+      } else {
+        setLine.hidden = true;
+        setLine.textContent = '';
+      }
+    }
+  };
+
+  if (drinksBox && UI.setDrinks && UI.setDrinks.length) {
+    UI.setDrinks.forEach(function (pair, idx) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'staff__vbtn' + (idx === 3 ? ' is-on' : '');
+      b.setAttribute('aria-pressed', idx === 3 ? 'true' : 'false');
+      b.textContent = pair[1];
+      b.addEventListener('click', function () {
+        curDrinkJa = pair[0];
+        drinksBox.querySelectorAll('.staff__vbtn').forEach(function (x) {
+          x.classList.remove('is-on');
+          x.setAttribute('aria-pressed', 'false');
+        });
+        b.classList.add('is-on');
+        b.setAttribute('aria-pressed', 'true');
+        renderText();
+      });
+      drinksBox.appendChild(b);
+    });
+  }
+
+  if (addonBtn) {
+    addonBtn.addEventListener('click', function () {
+      setOn = !setOn;
+      addonBtn.classList.toggle('is-on', setOn);
+      addonBtn.setAttribute('aria-pressed', setOn ? 'true' : 'false');
+      if (drinksBox) drinksBox.hidden = !setOn;
+      renderText();
+    });
+  }
+
   const open = function (btn) {
     lastFocus = btn;
-    item.textContent = btn.dataset.ja || '';
-    en.textContent = btn.dataset.en || '';
+    baseJa = btn.dataset.ja || '';
+    baseEn = btn.dataset.en || '';
+    curVarJa = '';
+    curVarLocal = '';
+    setOn = false;
+    if (addonBtn) {
+      addonBtn.classList.remove('is-on');
+      addonBtn.setAttribute('aria-pressed', 'false');
+    }
+    if (drinksBox) drinksBox.hidden = true;
+    if (addonWrap) addonWrap.hidden = btn.dataset.nodrinkset === '1';
+
+    if (variantsBox) {
+      variantsBox.innerHTML = '';
+      const raw = (btn.dataset.variants || '').trim();
+      if (raw) {
+        const list = raw.split('|').filter(Boolean);
+        list.forEach(function (entry, idx) {
+          const parts = entry.split('::');
+          const vJa = parts[0].trim();
+          const vLocal = (parts[1] || parts[0]).trim();
+          if (idx === 0) { curVarJa = vJa; curVarLocal = vLocal; }
+          const vb = document.createElement('button');
+          vb.type = 'button';
+          vb.className = 'staff__vbtn' + (idx === 0 ? ' is-on' : '');
+          vb.setAttribute('aria-pressed', idx === 0 ? 'true' : 'false');
+          vb.textContent = vLocal;
+          vb.addEventListener('click', function () {
+            curVarJa = vJa;
+            curVarLocal = vLocal;
+            variantsBox.querySelectorAll('.staff__vbtn').forEach(function (x) {
+              x.classList.remove('is-on');
+              x.setAttribute('aria-pressed', 'false');
+            });
+            vb.classList.add('is-on');
+            vb.setAttribute('aria-pressed', 'true');
+            renderText();
+          });
+          variantsBox.appendChild(vb);
+        });
+        variantsBox.hidden = false;
+      } else {
+        variantsBox.hidden = true;
+      }
+    }
+
+    renderText();
     overlay.hidden = false;
     document.body.style.overflow = 'hidden';
-    close.focus();
+    if (close) close.focus();
   };
+
   const hide = function () {
     overlay.hidden = true;
     document.body.style.overflow = '';
     if (lastFocus) lastFocus.focus();
   };
-  triggers.forEach(function (b) { b.addEventListener('click', function () { open(b); }); });
-  close.addEventListener('click', hide);
+
+  document.addEventListener('click', function (e) {
+    const btn = e.target.closest('.js-show-staff');
+    if (btn) open(btn);
+  });
+  if (close) close.addEventListener('click', hide);
   overlay.addEventListener('click', function (e) { if (e.target === overlay) hide(); });
   document.addEventListener('keydown', function (e) {
     if (overlay.hidden) return;
     if (e.key === 'Escape') { hide(); return; }
-    if (e.key === 'Tab') { // keep keyboard focus inside the open card
-      const f = overlay.querySelectorAll('button, [href], [tabindex]:not([tabindex="-1"])');
+    if (e.key === 'Tab') {
+      const f = Array.prototype.slice.call(overlay.querySelectorAll('button, [href], [tabindex]:not([tabindex="-1"])')).filter(function (el) {
+        return !el.closest('[hidden]');
+      });
       if (!f.length) return;
       const first = f[0], last = f[f.length - 1];
       if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }

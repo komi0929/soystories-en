@@ -16,45 +16,65 @@
 - **Seating & Facilities**: Compact dine-in space (4 main seats + wooden cube stools) and full takeaway. Strollers and suitcases welcome; no minimum order; sharing welcome.
 - **Payment Methods**: Cash (JPY), Visa, Mastercard, JCB, American Express, Diners Club, Suica, PASMO, ICOCA, SUGOCA, nimoca, Hayakaken, iD, QUICPay, PayPay. All prices include tax.
 
-## Kitchen & Allergen Policy
+## Kitchen & Allergen Policy (Japan's 29 Specified Allergens / 特定原材料等29品目)
+- **Standard**: Disclosed against Japan's 29 specified allergens standard (9 mandatory items [shrimp, crab, walnut, wheat, buckwheat, egg, milk, peanut, cashew nut] + 20 recommended items [including almond, pistachio, macadamia nut, soybean, sesame, Japanese yam, apple, peach]).
 - **Never brought into the kitchen**: Wheat / gluten (including staff personal meals for wheat), dairy, eggs, meat, fish, honey, gelatin, refined white sugar.
-- **Handled in the same kitchen**: Soybeans, almonds, sesame, Japanese yam (yamaimo), apples, peaches, and oranges (and certain seasonal/delivery items such as vegan tiramisu may use cashew nuts).
+- **Handled in the same kitchen**: Soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam (yamaimo), apples, and peaches.
 - **Cross-contact notice**: While strict hygiene and equipment care are practiced, complete elimination of trace cross-contact cannot be guaranteed. Guests with severe allergies or celiac disease should review per-item ingredients and consult staff before ordering.
 - **Official Allergy Disclosure (FoodHug)**: https://food-hug.com/soystoriesenglish-page/
 
-## Regular Menu & Tax-Included Prices (26 Items)
+## Regular Menu & Tax-Included Prices (42 Items + ¥330 Drink Set)
 
-### 1. Signature Waffle & Soy Soft Serve / Whip (+5 Free Japanese Toppings)
-- **Waffle & Pure Soy Soft Serve (ワッフル純豆乳ソフトクリーム)**: Full ¥900 / Half ¥690 — Allergens: Soybeans. Detail page: https://en.soystories.cafe/waffle&soft.html
-- **Waffle & Soy Whipped Cream (ワッフル豆乳ホイップクリーム)**: Full ¥900 / Half ¥690 — Allergens: Soybeans.
-- **5 Complimentary Toppings**: Matcha (green tea), Kinako (roasted soy flour, contains soy), Hojicha (roasted tea), Vegan Chocolate Sauce, Kuromitsu (black sugar syrup).
+### 1. Signature Waffle Soft & Waffle Cups (`https://en.soystories.cafe/waffle&soft.html`)
+- **Waffle & Pure Soy Soft Serve (ワッフル純豆乳ソフト)**: Medium ¥690 / Large ¥900 (+5 free Japanese toppings) — Allergens: Soybeans (Kinako topping contains soybeans).
+- **Waffle & Vegan Ice Cream Cups (ワッフルアイス 4種)**: ¥690 each
+  - **Strawberry (ストロベリー)**: Soybeans (Nut-free recipe).
+  - **Chocolate (チョコ)**: Soybeans, Almond.
+  - **Matcha (抹茶)**: Soybeans (Nut-free recipe).
+  - **Black Sesame (黒ゴマ)**: Soybeans, Sesame (Nut-free recipe).
+- **Waffle & Soy Whip Cups (ワッフルホイップ 2種)**: ¥660 each
+  - **Strawberry (ストロベリー)**: Soybeans, Apple (Nut-free recipe).
+  - **Caramel Nuts (キャラメルナッツ)**: Soybeans, Almond, Cashew nuts, Macadamia nuts.
+- **5 Complimentary Japanese Toppings** (for Waffle & Pure Soy Soft Serve and Pure Soy Soft Serve): Matcha, Kinako (roasted soy flour — contains soy), Hojicha, Vegan Chocolate Sauce, Kuromitsu (black sugar syrup).
 
-### 2. Freshly Baked 100% Niigata Rice-Flour Bubble Waffles
-- Detail page: https://en.soystories.cafe/waffle.html
-- **Plain Bubble Waffle (プレーン)**: ¥600 — Allergens: Soybeans.
-- **Matcha / Cocoa Bubble Waffle (抹茶・ココア)**: ¥690 each — Allergens: Soybeans.
-- **Black Sesame Bubble Waffle (黒ゴマ)**: ¥690 — Allergens: Soybeans, Sesame.
+### 2. Freshly Baked 100% Niigata Rice-Flour Bubble Waffles (`https://en.soystories.cafe/waffle.html`)
+- **Plain Bubble Waffle (国産米粉の焼きたてワッフル プレーン)**: ¥660 — Allergens: Soybeans (Nut-free batter).
+- **Cocoa / Matcha Bubble Waffle (ココア・抹茶)**: ¥690 each — Allergens: Soybeans (Nut-free batter).
+- **Black Sesame Bubble Waffle (黒ゴマ)**: ¥690 — Allergens: Soybeans, Sesame (Nut-free batter).
+- *Takeout box available for +¥100 (箱代+100円).*
 
-### 3. Pure Soy Milk Soft Serve (+5 Free Toppings)
-- Detail page: https://en.soystories.cafe/soft.html
-- **Pure Soy Milk Soft Serve Large (純豆乳ソフト Large)**: ¥660 — Allergens: Soybeans.
-- **Pure Soy Milk Soft Serve Medium (純豆乳ソフト Medium)**: ¥390 — Allergens: Soybeans.
+### 3. Pure Soy Milk Soft Serve & Iced Coffee Float (`https://en.soystories.cafe/soft.html`)
+- **Pure Soy Milk Soft Serve (純豆乳ソフト)**: Medium ¥460 / Large ¥690 (+5 free Japanese toppings) — Allergens: Soybeans.
+- **Organic Iced Coffee Float (コーヒーフロート)**: ¥660 — Allergens: Soybeans (100% dairy-free & nut-free).
 
-### 4. Baked Soy & Rice-Flour Donuts (Sold Frozen or Warmed In-Store)
-- Detail page: https://en.soystories.cafe/dounuts.html
-- **Cranberry / Yame Matcha / Kinako / Earl Grey / Chocolat (プレーンドーナツ 5種)**: ¥330 each — Allergens: Soybeans, Japanese Yam (Almond-free recipe).
-- **Black Sesame Soy Donut (プレーンドーナツ 黒ごま)**: ¥330 — Allergens: Soybeans, Japanese Yam, Sesame.
+### 4. Baked Soy Donuts & Soy-Free Glazed Cake Donuts (`https://en.soystories.cafe/dounuts.html`)
+- **Baked Soy & Rice-Flour Donuts (プレーンドーナツ 6種 · Sold Frozen or Warmed In-Store)**: ¥330 each
+  - **Cranberry / Yame Matcha / Kinako / Earl Grey / Chocolat**: Soybeans, Japanese Yam (Nut-free recipe).
+  - **Black Sesame (黒ごま)**: Soybeans, Japanese Yam, Sesame (Nut-free recipe).
+- **Glazed Almond & Rice-Flour Cake Donuts (しっとりケーキドーナツ 6種 · Soy-Free & Macadamia-Free · Keeps ~1 Week at Room Temp)**: ¥430 each
+  - **Strawberry / Matcha (ストロベリー・抹茶)**: Almond, Pistachio, Apple (Soy-free & macadamia-free recipe).
+  - **Double Chocolate / Lemon / Chocolate Mint / Coconut (ダブルチョコ・レモン・チョコミント・ココナッツ)**: Almond, Apple (Soy-, pistachio- & macadamia-free recipe).
 
-### 5. Glazed Almond & Rice-Flour Cake Donuts (Soy-Free Recipe · Keeps ~1 Week at Room Temp)
-- Detail page: https://en.soystories.cafe/dounuts.html
-- **Strawberry / Matcha / Double Chocolate / Lemon / Chocolate Mint / Coconut (しっとりケーキドーナツ 6種)**: ¥430 each — Allergens: Almonds, Apple (Soy-free recipe). Best choice for hotel snacks, bullet trains, and travel souvenirs.
+### 5. Gluten-Free Rice-Flour Dorayaki (`https://en.soystories.cafe/dounuts.html#dorayaki`)
+- **Anko & Soy Cream / Strawberry Soy Cream / Matcha Anko / Classic Red Bean Anko (グルテンフリー米粉どら焼き 全4種: あんクリーム・いちごクリーム・抹茶あんこ・あんこ)**: ¥460 each — Allergens: Soybeans, Almond (all 4 flavors). Handed over frozen; thaw 30–60 min at room temperature (1–2 hrs in refrigerator) or enjoy half-frozen as an ice-cream dorayaki.
 
-### 6. Rice-Flour Craft Gelato (Cup · 8 Flavors)
-- Detail page: https://en.soystories.cafe/ice.html
-- **Berry Mix / Juicy Dragon Fruit**: ¥490 each — Made without the 28 specified allergen ingredients in Japan (Soy-free & Almond-free recipe).
-- **Refreshing Apple / Too Juicy Peach**: ¥490 each — Allergens: Apple (in Apple) / Peach (in Peach) (Soy-free & Almond-free recipe).
-- **Supreme Rich Matcha / Fragrant Hojicha / Vanilla Coconut**: ¥490 each — Allergens: Soybeans.
-- **Melting Chocolate**: ¥490 — Allergens: Soybeans, Almonds.
+### 6. Rice-Flour Craft Gelato (`https://en.soystories.cafe/ice.html`)
+- *Free insulated cooler bag + ice pack with purchase of 4 or more cups.*
+- **Berry Mix**: ¥490 — Made without all 29 specified allergens in Japan (Soy-free & Nut-free recipe).
+- **Refreshing Apple / Juicy Dragon Fruit**: ¥490 each — Allergens: Apple (Soy-free & Nut-free recipe).
+- **Too Juicy Peach**: ¥490 — Allergens: Peach (Soy-free & Nut-free recipe).
+- **Supreme Rich Matcha / Fragrant Hojicha / Vanilla Coconut**: ¥490 each — Allergens: Soybeans (Nut-free recipe).
+- **Melting Chocolate**: ¥490 — Allergens: Soybeans, Almond.
+
+### 7. Plant-Based Cafe Drinks & ¥330 Sweet Set (`https://en.soystories.cafe/soft.html#drinks`)
+- *Order any sweet and add any drink below as a set for **¥330** (`スイーツとセットでドリンク全品330円`).*
+- **Organic Coffee (オーガニックコーヒー HOT / COLD)**: ¥360 (Set ¥330) — Made without all 29 specified allergens.
+- **Brown Sugar Soy Latte (黒糖ソイラテ HOT / COLD)**: ¥390 (Set ¥330) — Allergens: Soybeans.
+- **Matcha Soy Latte (抹茶ソイラテ HOT / COLD)**: ¥390 (Set ¥330) — Allergens: Soybeans.
+- **Amazake Latte (甘酒ラテ · Fermented Koji Rice Sweet Drink)**: ¥390 (Set ¥330) — Made without all 29 specified allergens (**Soy-free**).
+- **Lemon Squash (レモンスカッシュ)**: ¥390 (Set ¥330) — Made without all 29 specified allergens.
+- **Mixed Berry Tea (ミックスベリーティー)**: ¥390 (Set ¥330) — Made without all 29 specified allergens.
+- **Tropical Soda (トロピカルソーダ)**: ¥360 (Set ¥330) — Allergens: Peach (Soy-free & Nut-free).
 
 ## Official Profiles & Links
 - **Instagram**: https://www.instagram.com/soystories_yakuin/
