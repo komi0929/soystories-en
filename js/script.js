@@ -5,10 +5,14 @@ const UI = PAGE_LANG === 'ja' ? {
   openLastOrder: '営業中 · ラストオーダーは21:45です',
   lastOrderPassed: 'ラストオーダーは終了しました · 毎日11:00オープン',
   closedNow: '営業時間外 · 毎日11:00オープン',
-  allergenLabels: { soy: '大豆', nuts: 'ナッツ類', sesame: 'ごま', yam: 'やまいも', apple: 'りんご', peach: 'もも' },
+  allergenLabels: { soy: '大豆', almond: 'アーモンド', pistachio: 'ピスタチオ', cashew: 'カシューナッツ', macadamia: 'マカダミアナッツ', nuts: 'ナッツ類', sesame: 'ごま', yam: 'やまいも', apple: 'りんご', peach: 'もも' },
   allergenJoin: '・',
-  allergenIdle: '上の原材料を選ぶと、定番メニューを絞り込めます。',
-  allergenResult: function (ok, total, names) { return '全' + total + '区分中、' + names + 'を含まないメニューは ' + ok + ' 区分です。'; },
+  allergenIdle: '上の原材料ボタンをタップすると、お召し上がり可能なメニューがその場で表示されます。',
+  allergenResult: function (ok, total, names) { return '✓ ' + names + 'を含まないお召し上がり可能メニュー：' + ok + ' / ' + total + ' 区分'; },
+  expandList: function (n) { return '全' + n + '区分の内訳を見る ＋'; },
+  collapseList: '一覧を閉じる －',
+  reviewsMore: 'さらにクチコミを見る（＋4件）',
+  reviewsLess: 'クチコミを折りたたむ －',
   copied: '✓ コピーしました。Googleマップやタクシーアプリ（Uber・GO）にそのまま貼り付けられます。',
   copiedBtn: 'コピーしました',
   setDrinks: [
@@ -28,10 +32,14 @@ const UI = PAGE_LANG === 'ja' ? {
   openLastOrder: '영업 중 · 라스트오더 21:45',
   lastOrderPassed: '라스트오더 마감 · 매일 11:00 오픈',
   closedNow: '영업 준비 중 · 매일 11:00 오픈',
-  allergenLabels: { soy: '대두(콩)', nuts: '견과류(아몬드·캐슈넛·피스타치오·마카다미아)', sesame: '참깨(검은깨)', yam: '참마(야마이모)', apple: '사과', peach: '복숭아' },
+  allergenLabels: { soy: '대두(콩)', almond: '아몬드', pistachio: '피스타치오', cashew: '캐슈넛', macadamia: '마카다미아넛', nuts: '견과류', sesame: '참깨(검은깨)', yam: '참마(야마이모)', apple: '사과', peach: '복숭아' },
   allergenJoin: ' · ',
-  allergenIdle: '피하고 싶은 원재료를 선택하면 먹을 수 있는 메뉴만 남습니다.',
-  allergenResult: function (ok, total, names) { return '전체 ' + total + '개 항목 중 ' + names + ' 미포함 메뉴는 ' + ok + '개입니다.'; },
+  allergenIdle: '피하고 싶은 원재료를 선택하면 드실 수 있는 메뉴만 바로 펼쳐집니다.',
+  allergenResult: function (ok, total, names) { return '✓ ' + names + ' 미포함 추천 메뉴: ' + ok + ' / ' + total + '개 그룹'; },
+  expandList: function (n) { return '전체 ' + n + '개 항목 보기 ＋'; },
+  collapseList: '목록 접기 －',
+  reviewsMore: '리뷰 더 보기 (＋4)',
+  reviewsLess: '리뷰 접기 －',
   copied: '✓ 복사되었습니다! 구글 맵이나 택시 앱(Uber·GO)에 바로 붙여넣으세요.',
   copiedBtn: '복사 완료!',
   setDrinks: [
@@ -51,10 +59,14 @@ const UI = PAGE_LANG === 'ja' ? {
   openLastOrder: '營業中 · 最後點餐 21:45',
   lastOrderPassed: '最後點餐已結束 · 每日 11:00 營業',
   closedNow: '休息中 · 每日 11:00 營業',
-  allergenLabels: { soy: '大豆', nuts: '堅果類（杏仁・腰果・開心果・夏威夷豆）', sesame: '芝麻', yam: '山藥', apple: '蘋果', peach: '水蜜桃' },
+  allergenLabels: { soy: '大豆', almond: '杏仁', pistachio: '開心果', cashew: '腰果', macadamia: '夏威夷豆', nuts: '堅果類', sesame: '芝麻', yam: '山藥', apple: '蘋果', peach: '水蜜桃' },
   allergenJoin: '、',
-  allergenIdle: '點擊上方想避開的食材，即可篩選適合您的常設餐點。',
-  allergenResult: function (ok, total, names) { return '共 ' + total + ' 項分類中，不含' + names + '的餐點有 ' + ok + ' 項。'; },
+  allergenIdle: '點擊上方想避開的食材，系統會立即展開您可安心享用的餐點。',
+  allergenResult: function (ok, total, names) { return '✓ 不含' + names + '的可享用餐點：' + ok + ' / ' + total + ' 組'; },
+  expandList: function (n) { return '查看全部 ' + n + ' 組明細 ＋'; },
+  collapseList: '收合明細 －',
+  reviewsMore: '查看更多旅客評價（＋4）',
+  reviewsLess: '收合評價 －',
   copied: '✓ 已複製！可直接貼上至 Google Maps 或計程車 App（Uber・GO）。',
   copiedBtn: '已複製！',
   setDrinks: [
@@ -74,10 +86,14 @@ const UI = PAGE_LANG === 'ja' ? {
   openLastOrder: 'Open now · last order at 9:45 PM',
   lastOrderPassed: 'Last order has passed · opens 11:00 AM',
   closedNow: 'Closed now · opens daily at 11:00 AM',
-  allergenLabels: { soy: 'soybeans', nuts: 'tree nuts', sesame: 'sesame', yam: 'Japanese yam', apple: 'apple', peach: 'peach' },
+  allergenLabels: { soy: 'soybeans', almond: 'almonds', pistachio: 'pistachio', cashew: 'cashew nuts', macadamia: 'macadamia nuts', nuts: 'tree nuts', sesame: 'sesame', yam: 'Japanese yam', apple: 'apple', peach: 'peach' },
   allergenJoin: ', ',
-  allergenIdle: 'Select any ingredients above to filter our regular menu items.',
-  allergenResult: function (ok, total, names) { return ok + ' of ' + total + ' menu groups are made without ' + names + '.'; },
+  allergenIdle: 'Tap any ingredients above to instantly reveal matching menu options.',
+  allergenResult: function (ok, total, names) { return '✓ ' + ok + ' of ' + total + ' menu groups are made without ' + names; },
+  expandList: function (n) { return 'View all ' + n + ' menu groups +'; },
+  collapseList: 'Hide list −',
+  reviewsMore: 'Read 4 more traveler reviews +',
+  reviewsLess: 'Show fewer reviews −',
   copied: '✓ Copied! Ready to paste into Google Maps, Uber, or GO Taxi.',
   copiedBtn: 'Copied!',
   setDrinks: [
@@ -157,12 +173,13 @@ if (drawerIcon && drawerContent) {
 // 1b. Header becomes solid after scrolling; mobile action dock appears after the hero
 (function () {
   const dock = document.querySelector('#js-dock');
-  const hero = document.querySelector('.hero');
+  const hero = document.querySelector('.hero, .phero');
+  const keepSolid = siteHeader && siteHeader.classList.contains('is-solid') && !document.querySelector('.hero');
   const onScroll = function () {
     const y = window.scrollY || window.pageYOffset;
-    if (siteHeader && hero) siteHeader.classList.toggle('is-solid', y > 40);
+    if (siteHeader && hero && !keepSolid) siteHeader.classList.toggle('is-solid', y > 40);
     if (dock && hero) {
-      dock.classList.toggle('is-visible', y > hero.offsetHeight * 0.6);
+      dock.classList.toggle('is-visible', y > hero.offsetHeight * 0.55);
     }
   };
   if (siteHeader || dock) {
@@ -208,52 +225,118 @@ if (drawerIcon && drawerContent) {
   setInterval(update, 60000);
 })();
 
-// 1d. Allergen checker (6-allergen multi-filter + instant reset)
+// 1d. Progressive Disclosure Allergen Checker (9-allergen multi-filter + tree-nut preset + auto-expanding drawer)
 (function () {
   const chips = document.querySelectorAll('.fchip');
+  const listEl = document.querySelector('#js-checker-list');
   const items = document.querySelectorAll('#js-checker-list li');
   const result = document.querySelector('#js-checker-result');
   const resetBtn = document.querySelector('#js-checker-reset');
+  const nutsBtn = document.querySelector('#js-checker-nuts');
+  const hideOutToggle = document.querySelector('#js-checker-hide-out');
+  const drawer = document.querySelector('#js-checker-drawer');
+  const expandBtn = document.querySelector('#js-checker-expand');
   if (!chips.length || !items.length) return;
+
   const labels = UI.allergenLabels;
+  const nutKeys = ['almond', 'pistachio', 'cashew', 'macadamia'];
+  let manuallyOpened = false;
+
+  const syncDrawer = function (activeCount) {
+    if (!drawer) return;
+    const isOpen = activeCount > 0 || manuallyOpened;
+    drawer.classList.toggle('is-open', isOpen);
+    if (expandBtn) {
+      expandBtn.hidden = activeCount > 0;
+      expandBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      expandBtn.textContent = isOpen ? UI.collapseList : UI.expandList(items.length);
+    }
+  };
+
   const apply = function () {
     const avoid = [];
     chips.forEach(function (c) { if (c.getAttribute('aria-pressed') === 'true') avoid.push(c.dataset.avoid); });
     let ok = 0;
     items.forEach(function (li) {
       const contains = (li.dataset.contains || '').split(' ').filter(Boolean);
-      const out = avoid.some(function (a) { return contains.indexOf(a) !== -1; });
+      const out = avoid.some(function (a) {
+        if (a === 'nuts') {
+          return contains.indexOf('nuts') !== -1 || nutKeys.some(function (nk) { return contains.indexOf(nk) !== -1; });
+        }
+        return contains.indexOf(a) !== -1;
+      });
       li.classList.toggle('is-out', out);
+      li.classList.toggle('is-safe', avoid.length > 0 && !out);
       if (!out) ok++;
     });
-    if (resetBtn) resetBtn.hidden = avoid.length === 0;
-    if (!result) return;
-    if (!avoid.length) {
-      result.textContent = UI.allergenIdle;
-    } else {
-      result.textContent = UI.allergenResult(ok, items.length, avoid.map(function (a) { return labels[a] || a; }).join(UI.allergenJoin));
+
+    if (listEl) {
+      const shouldHideOut = avoid.length > 0 && (!hideOutToggle || hideOutToggle.checked);
+      listEl.classList.toggle('hide-out', shouldHideOut);
     }
+    if (nutsBtn) {
+      const nutChips = Array.prototype.filter.call(chips, function (c) { return nutKeys.indexOf(c.dataset.avoid) !== -1; });
+      const allNutsOn = nutChips.length > 0 && nutChips.every(function (c) { return c.getAttribute('aria-pressed') === 'true'; });
+      nutsBtn.classList.toggle('is-active', allNutsOn);
+      nutsBtn.setAttribute('aria-pressed', allNutsOn ? 'true' : 'false');
+    }
+    if (resetBtn) resetBtn.hidden = avoid.length === 0;
+    if (result) {
+      if (!avoid.length) {
+        result.textContent = UI.allergenIdle;
+      } else {
+        result.textContent = UI.allergenResult(ok, items.length, avoid.map(function (a) { return labels[a] || a; }).join(UI.allergenJoin));
+      }
+    }
+    syncDrawer(avoid.length);
   };
+
   chips.forEach(function (c) {
     c.addEventListener('click', function () {
       c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
       apply();
     });
   });
-  if (resetBtn) {
-    resetBtn.addEventListener('click', function () {
-      chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+
+  if (nutsBtn) {
+    nutsBtn.addEventListener('click', function () {
+      const nutChips = Array.prototype.filter.call(chips, function (c) { return nutKeys.indexOf(c.dataset.avoid) !== -1; });
+      const allOn = nutChips.every(function (c) { return c.getAttribute('aria-pressed') === 'true'; });
+      nutChips.forEach(function (c) { c.setAttribute('aria-pressed', allOn ? 'false' : 'true'); });
       apply();
     });
   }
+
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function () {
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+      manuallyOpened = false;
+      apply();
+    });
+  }
+
+  if (expandBtn) {
+    expandBtn.addEventListener('click', function () {
+      manuallyOpened = !manuallyOpened;
+      syncDrawer(0);
+    });
+  }
+
+  if (hideOutToggle) {
+    hideOutToggle.addEventListener('change', apply);
+  }
+
+  apply();
 })();
 
-// 1d2. Complete menu category filter pills (.mfilter) & smooth #cat-* anchor jump
+// 1d2. Complete menu category filter pills (.mfilter) & auto-expanding #full-menu-list
 (function () {
+  const fullMenu = document.querySelector('#full-menu-list');
   const filterBars = document.querySelectorAll('.mfilter');
-  const setCategory = function (container, cat) {
-    const btns = container.querySelectorAll('[data-mcat-btn]');
-    const rows = container.querySelectorAll('tr[data-mcat]');
+  const setCategory = function (cat, autoOpen) {
+    const scope = fullMenu ? (fullMenu.closest('.sec--menu') || document) : document;
+    const btns = scope.querySelectorAll('[data-mcat-btn]');
+    const rows = (fullMenu || scope).querySelectorAll('tr[data-mcat]');
     btns.forEach(function (b) {
       b.setAttribute('aria-pressed', b.getAttribute('data-mcat-btn') === cat ? 'true' : 'false');
     });
@@ -261,16 +344,31 @@ if (drawerIcon && drawerContent) {
       const match = (cat === 'all' || r.getAttribute('data-mcat') === cat);
       r.classList.toggle('is-hidden-row', !match);
     });
+    if (autoOpen && fullMenu && fullMenu.tagName === 'DETAILS' && !fullMenu.open) {
+      fullMenu.open = true;
+    }
   };
 
   filterBars.forEach(function (bar) {
-    const container = bar.closest('.full-menu') || document;
     bar.addEventListener('click', function (e) {
       const btn = e.target.closest('[data-mcat-btn]');
       if (!btn) return;
-      setCategory(container, btn.getAttribute('data-mcat-btn') || 'all');
+      setCategory(btn.getAttribute('data-mcat-btn') || 'all', true);
     });
   });
+
+  if (fullMenu && fullMenu.tagName === 'DETAILS') {
+    fullMenu.addEventListener('toggle', function () {
+      const scope = fullMenu.closest('.sec--menu') || document;
+      const btns = scope.querySelectorAll('[data-mcat-btn]');
+      if (!fullMenu.open) {
+        btns.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+      } else {
+        const anyActive = Array.prototype.some.call(btns, function (b) { return b.getAttribute('aria-pressed') === 'true'; });
+        if (!anyActive) setCategory('all', false);
+      }
+    });
+  }
 
   document.addEventListener('click', function (e) {
     const link = e.target.closest('a[href^="#cat-"], a[href="#full-menu-list"]');
@@ -281,16 +379,49 @@ if (drawerIcon && drawerContent) {
     const details = target.closest('details.full-menu') || (target.matches('details.full-menu') ? target : null);
     if (details && !details.open) details.open = true;
     if (details && hash.indexOf('#cat-') === 0) {
-      setCategory(details, 'all');
+      const catAttr = target.getAttribute('data-mcat') || 'all';
+      setCategory(catAttr, false);
     }
     e.preventDefault();
     const smooth = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
-    target.scrollIntoView({ behavior: smooth, block: 'start' });
+    (details || target).scrollIntoView({ behavior: smooth, block: 'start' });
     if (hash.indexOf('#cat-') === 0) {
       target.classList.remove('is-highlight');
       void target.offsetWidth;
       target.classList.add('is-highlight');
     }
+  });
+})();
+
+// 1d3. FAQ Topic Filter Pills (.faq-filter)
+(function () {
+  const bar = document.querySelector('.faq-filter');
+  const items = document.querySelectorAll('.faq details[data-faq-cat]');
+  if (!bar || !items.length) return;
+  const btns = bar.querySelectorAll('[data-faq-btn]');
+  bar.addEventListener('click', function (e) {
+    const btn = e.target.closest('[data-faq-btn]');
+    if (!btn) return;
+    const cat = btn.getAttribute('data-faq-btn') || 'all';
+    btns.forEach(function (b) {
+      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+    });
+    items.forEach(function (d) {
+      const match = (cat === 'all' || (d.getAttribute('data-faq-cat') || '').indexOf(cat) !== -1);
+      d.hidden = !match;
+    });
+  });
+})();
+
+// 1d4. Desktop Reviews Progressive Disclosure (#js-reviews-more)
+(function () {
+  const btn = document.querySelector('#js-reviews-more');
+  const rail = document.querySelector('#js-review-rail');
+  if (!btn || !rail) return;
+  btn.addEventListener('click', function () {
+    const expanded = rail.classList.toggle('is-expanded');
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    btn.textContent = expanded ? UI.reviewsLess : UI.reviewsMore;
   });
 })();
 

@@ -26,16 +26,24 @@
 .tabs__track a.is-current { background: var(--green); border-color: var(--green); color: #fff; }
 .tabs__track a.is-current span { color: rgba(255,255,255,.85); }
 
-/* Page hero */
-.phero { padding: 20px 0 8px; }
-.back { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; font-weight: 700; text-decoration: none; color: var(--ink-2); }
-.phero__title { font-family: var(--serif); font-weight: 700; font-size: clamp(40px, 11vw, 64px); line-height: 1; letter-spacing: -.01em; margin: 2px 0 8px; }
-.phero__sub { font-size: 16px; color: var(--ink-2); margin-bottom: 14px; }
+/* Page hero (compact so product photos appear immediately above the fold) */
+.phero { padding: 14px 0 8px; }
+.back { display: inline-flex; align-items: center; min-height: 36px; font-size: 13.5px; font-weight: 700; text-decoration: none; color: var(--ink-2); }
+.phero__title { font-family: var(--serif); font-weight: 700; font-size: clamp(30px, 7.5vw, 48px); line-height: 1.05; letter-spacing: -.01em; margin: 2px 0 6px; }
+.phero__sub { font-size: 15px; color: var(--ink-2); margin-bottom: 10px; max-width: 62ch; }
 .phero__chips { display: flex; flex-wrap: wrap; gap: 6px; }
-.phero__chips li { font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 999px; background: var(--green-l); color: var(--green-d); }
+.phero__chips li { font-size: 12.5px; font-weight: 700; padding: 5px 11px; border-radius: 999px; background: var(--green-l); color: var(--green-d); }
+.sub-jump-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.sub-jump-pills a {
+    display: inline-flex; align-items: center; gap: 4px; min-height: 34px; padding: 4px 13px;
+    border-radius: 999px; border: 1.5px solid var(--green); background: #fff;
+    color: var(--green-d); font-size: 13px; font-weight: 700; text-decoration: none;
+    transition: background .15s, color .15s;
+}
+.sub-jump-pills a:hover, .sub-jump-pills a:active { background: var(--green); color: #fff; }
 
-.block { padding: 20px 0; }
-.block[id] { scroll-margin-top: calc(var(--hd-h) + 78px); }
+.block { padding: 16px 0; }
+.block[id], .sec[id] { scroll-margin-top: calc(var(--hd-h) + 74px); }
 .intro { font-size: 15.5px; color: var(--ink-2); margin-bottom: 18px; max-width: 64ch; }
 .intro--after { margin: 18px 0 0; }
 .intro__ja { display: block; margin-top: 4px; font-size: 13px; }

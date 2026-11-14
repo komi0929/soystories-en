@@ -266,7 +266,7 @@
               "name": "商品ごとの原材料やアレルゲンは、どこで確認できますか？",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "このページの6品目アレルギー絞り込みと店内メニュー全品・特定原材料等29品目一覧表、またはFoodHugのアレルギー情報ページでご確認いただけます。カウンターのスタッフにお尋ねいただくこともできます。"
+                "text": "このページの9品目アレルギー絞り込みと店内メニュー全品・特定原材料等29品目一覧表、またはFoodHugのアレルギー情報ページでご確認いただけます。カウンターのスタッフにお尋ねいただくこともできます。"
               }
             },
             {
@@ -405,6 +405,13 @@
                 </button>
             </div>
         </div>
+        <nav class="quick-nav" aria-label="クイックナビゲーション">
+            <a href="#menu">メニュー</a>
+            <a href="#allergy">29品目検索</a>
+            <a href="#takeout">お土産</a>
+            <a href="#qa">Q&amp;A</a>
+            <a href="#access">アクセス</a>
+        </nav>
         <div class="drawer" id="js-drawer-content">
             <nav class="drawer__nav" aria-label="モバイルメニュー">
                 <a href="#inside" class="drawer-content__link">店内のご紹介</a>
@@ -679,11 +686,14 @@
                     </ul>
                 </div>
 
-                <!-- Expandable Complete Menu & 29-Allergen Reference Table -->
-                <details class="full-menu" id="full-menu-list" open>
-                    <summary>店内メニュー全品と特定原材料等29品目一覧（スイーツ・ドリンク全品）</summary>
+                <!-- Quick Category Finder & Collapsible Complete Menu / 29-Allergen Reference Table -->
+                <div class="menu-quick-finder">
+                    <div class="menu-quick-finder__head">
+                        <h3 class="menu-quick-finder__title">カテゴリーから価格・29品目をすぐ探す</h3>
+                        <span class="menu-quick-finder__sub">ボタンをタップすると該当カテゴリーの一覧がすぐに開きます</span>
+                    </div>
                     <div class="mfilter" role="toolbar" aria-label="カテゴリーでメニュー表を絞り込む">
-                        <button type="button" class="mfilter__btn" data-mcat-btn="all" aria-pressed="true">すべて表示</button>
+                        <button type="button" class="mfilter__btn" data-mcat-btn="all" aria-pressed="false">すべて表示</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="waffle-cups" aria-pressed="false">ワッフルソフト・カップ</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="waffles" aria-pressed="false">焼きたてワッフル</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="soft-float" aria-pressed="false">ソフト・フロート</button>
@@ -692,6 +702,9 @@
                         <button type="button" class="mfilter__btn" data-mcat-btn="gelato" aria-pressed="false">米粉ジェラート</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="drinks" aria-pressed="false">ドリンク（セット¥330）</button>
                     </div>
+                </div>
+                <details class="full-menu" id="full-menu-list">
+                    <summary>店内メニュー全品と特定原材料等29品目一覧（スイーツ・ドリンク全品）</summary>
                     <div class="full-menu__body" tabindex="0" role="region" aria-label="メニュー一覧表（スマートフォンでは縦並びで表示されます）">
                         <table class="m-table" role="table">
                             <thead role="rowgroup">
@@ -902,56 +915,72 @@
                             <li>小麦・グルテン不使用</li><li>乳不使用</li><li>卵不使用</li><li>はちみつ不使用</li><li>ゼラチン不使用</li><li>白砂糖不使用</li>
                         </ul>
                     </div>
-                    <div class="policy-note" role="note">
-                        <strong>重度のアレルギーやセリアック病の方へ（特定原材料等29品目対応・大切なお知らせ）</strong><br>
-                        当店の厨房では、<strong>大豆、アーモンド、カシューナッツ、ピスタチオ、マカダミアナッツ、ごま、やまいも、りんご、もも、オレンジ</strong>を取り扱っています（2026年4月改正の<strong>特定原材料等29品目</strong>［義務表示9品目＋推奨表示20品目］に基づき表示しています）。衛生管理や器具の扱いには細心の注意を払っていますが、<strong>微量のコンタミネーション（混入）を完全になくすことはできません</strong>。重度のアレルギーやセリアック病の方は、下の商品別リストをご確認のうえ、ご注文前にスタッフへご相談ください。
-                    </div>
+                    <details class="policy-details">
+                        <summary>重度のアレルギーやセリアック病の方へ（特定原材料等29品目・微量混入に関する大切なお知らせ）</summary>
+                        <div class="policy-details__body">
+                            当店の厨房では、<strong>大豆、アーモンド、カシューナッツ、ピスタチオ、マカダミアナッツ、ごま、やまいも、りんご、もも、オレンジ</strong>を取り扱っています（2026年4月改正の<strong>特定原材料等29品目</strong>［義務表示9品目＋推奨表示20品目］に基づき表示しています）。衛生管理や器具の扱いには細心の注意を払っていますが、<strong>微量のコンタミネーション（混入）を完全になくすことはできません</strong>。重度のアレルギーやセリアック病の方は、下の商品別リストをご確認のうえ、ご注文前にスタッフへご相談ください。
+                        </div>
+                    </details>
                 </div>
 
                 <div class="checker">
                     <div class="checker__controls">
                         <div class="checker__head-row">
-                            <p class="checker__q" id="checker-q">避けたい原材料で絞り込む：</p>
-                            <button type="button" class="checker__reset" id="js-checker-reset" hidden>選択をリセット</button>
+                            <p class="checker__q" id="checker-q">避けたい原材料をタップして絞り込む（9品目対応）：</p>
+                            <div class="checker__util-btns">
+                                <button type="button" class="checker__preset" id="js-checker-nuts" aria-pressed="false">ナッツ類4種をまとめて選択</button>
+                                <button type="button" class="checker__reset" id="js-checker-reset" hidden>選択をリセット</button>
+                            </div>
                         </div>
                         <div class="checker__chips" role="group" aria-labelledby="checker-q">
                             <button type="button" class="fchip" data-avoid="soy" aria-pressed="false">大豆</button>
-                            <button type="button" class="fchip" data-avoid="nuts" aria-pressed="false">ナッツ類（アーモンド・カシュー・ピスタチオ・マカダミア）</button>
+                            <button type="button" class="fchip" data-avoid="almond" aria-pressed="false">アーモンド</button>
+                            <button type="button" class="fchip" data-avoid="pistachio" aria-pressed="false">ピスタチオ</button>
+                            <button type="button" class="fchip" data-avoid="cashew" aria-pressed="false">カシューナッツ</button>
+                            <button type="button" class="fchip" data-avoid="macadamia" aria-pressed="false">マカダミアナッツ</button>
                             <button type="button" class="fchip" data-avoid="sesame" aria-pressed="false">ごま</button>
                             <button type="button" class="fchip" data-avoid="yam" aria-pressed="false">やまいも</button>
                             <button type="button" class="fchip" data-avoid="apple" aria-pressed="false">りんご</button>
                             <button type="button" class="fchip" data-avoid="peach" aria-pressed="false">もも</button>
                         </div>
-                        <p class="checker__result" id="js-checker-result" aria-live="polite">上の原材料を選ぶと、定番メニューを絞り込めます。</p>
+                        <div class="checker__summary-bar">
+                            <p class="checker__result" id="js-checker-result" aria-live="polite">上の原材料ボタンをタップすると、お召し上がり可能なメニューがその場で表示されます。</p>
+                            <div class="checker__summary-actions">
+                                <button type="button" class="checker__expand-btn" id="js-checker-expand" aria-expanded="false" aria-controls="js-checker-drawer">全22区分の内訳を見る ＋</button>
+                                <label class="checker__hide-toggle"><input type="checkbox" id="js-checker-hide-out" checked><span>該当メニューのみ表示</span></label>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="checker__list" id="js-checker-list">
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>ワッフル純豆乳ソフト／純豆乳ソフト</strong><small>含む：大豆（無料トッピング5種付き・きな粉も大豆を含みます）。</small></div></li>
-                        <li data-contains="soy apple"><span class="ok" aria-hidden="true"></span><div><strong>ワッフルホイップ — ストロベリー（¥660）</strong><small>含む：大豆、りんご。</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>ワッフルホイップ — キャラメルナッツ（¥660）</strong><small>含む：大豆、アーモンド、カシューナッツ、マカダミアナッツ。</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>ワッフルアイス — ストロベリー・抹茶（各¥690）</strong><small>含む：大豆。</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>ワッフルアイス — チョコ（¥690）</strong><small>含む：大豆、アーモンド。</small></div></li>
-                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>ワッフルアイス — 黒ゴマ（¥690）</strong><small>含む：大豆、ごま。</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>コーヒーフロート（¥660）</strong><small>含む：大豆。</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>焼きたてワッフル — プレーン（¥660）・ココア・抹茶（各¥690）</strong><small>含む：大豆。生地にナッツ類やごまは使っていません。</small></div></li>
-                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>焼きたてワッフル — 黒ゴマ（¥690）</strong><small>含む：大豆、ごま。</small></div></li>
-                        <li data-contains="soy yam"><span class="ok" aria-hidden="true"></span><div><strong>プレーンドーナツ — 5種類（各¥330）</strong><small>クランベリー、八女抹茶、きなこ、アールグレイ、ショコラ &middot; 含む：大豆、やまいも（ナッツ類不使用）。</small></div></li>
-                        <li data-contains="soy yam sesame"><span class="ok" aria-hidden="true"></span><div><strong>プレーンドーナツ — 黒ごま（¥330）</strong><small>含む：大豆、やまいも、ごま（ナッツ類不使用）。</small></div></li>
-                        <li data-contains="nuts apple"><span class="ok" aria-hidden="true"></span><div><strong>しっとりケーキドーナツ — ストロベリー・抹茶（各¥430）</strong><small>大豆・マカダミアナッツ不使用 &middot; 含む：アーモンド、ピスタチオ、りんご。</small></div></li>
-                        <li data-contains="nuts apple"><span class="ok" aria-hidden="true"></span><div><strong>しっとりケーキドーナツ — ダブルチョコ・レモン・チョコミント・ココナッツ（各¥430）</strong><small>大豆・ピスタチオ・マカダミアナッツ不使用 &middot; 含む：アーモンド、りんご。</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>グルテンフリー米粉どら焼き — 全4種（各¥460）</strong><small>あんクリーム、いちごクリーム、抹茶あんこ、あんこ &middot; 含む：大豆、アーモンド。</small></div></li>
-                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>米粉ジェラート — ベリーミックス（¥490）</strong><small>特定原材料等29品目を使用していません（大豆・ナッツ類不使用）。</small></div></li>
-                        <li data-contains="apple"><span class="ok" aria-hidden="true"></span><div><strong>米粉ジェラート — 爽やかりんご、ジューシードラゴンフルーツ（各¥490）</strong><small>大豆・ナッツ類不使用 &middot; 含む：りんご。</small></div></li>
-                        <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>米粉ジェラート — ジューシーすぎるもも（¥490）</strong><small>大豆・ナッツ類不使用 &middot; 含む：もも。</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>米粉ジェラート — 至高の濃厚抹茶、香ばしいほうじ茶、バニラココナッツ（各¥490）</strong><small>含む：大豆。</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>米粉ジェラート — とろけるショコラ（¥490）</strong><small>含む：大豆、アーモンド。</small></div></li>
-                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>カフェドリンク — オーガニックコーヒー、甘酒ラテ、レモンスカッシュ、ミックスベリーティー</strong><small>特定原材料等29品目を使用していません（大豆・ナッツ類不使用）。</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>カフェドリンク — 黒糖ソイラテ、抹茶ソイラテ（各¥390）</strong><small>含む：大豆。</small></div></li>
-                        <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>カフェドリンク — トロピカルソーダ（¥360）</strong><small>大豆・ナッツ類不使用 &middot; 含む：もも。</small></div></li>
-                    </ul>
-                    <p class="checker__note">季節限定メニューには、オレンジやカシューペーストなど、ほかの原材料を使う場合があります。ご注文の前にスタッフへお尋ねください。<a href="https://food-hug.com/soystories" target="_blank" rel="noopener">FoodHugのアレルギー情報ページを見る &rarr;</a></p>
-                    <div class="checker__contact">
-                        <a class="btn btn--secondary btn--sm" href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>事前のご質問はInstagram DMへ</a>
-                        <a class="btn btn--secondary btn--sm" href="https://food-hug.com/soystories" target="_blank" rel="noopener">FoodHugのアレルギー情報ページ<svg class="ic" aria-hidden="true"><use href="#i-external"/></svg></a>
+                    <div class="checker__drawer" id="js-checker-drawer">
+                        <ul class="checker__list" id="js-checker-list">
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>ワッフル純豆乳ソフト／純豆乳ソフト</strong><small>含む：大豆（無料トッピング5種付き・きな粉も大豆を含みます）。</small></div></li>
+                            <li data-contains="soy apple"><span class="ok" aria-hidden="true"></span><div><strong>ワッフルホイップ — ストロベリー（¥660）</strong><small>含む：大豆、りんご。</small></div></li>
+                            <li data-contains="soy almond cashew macadamia"><span class="ok" aria-hidden="true"></span><div><strong>ワッフルホイップ — キャラメルナッツ（¥660）</strong><small>含む：大豆、アーモンド、カシューナッツ、マカダミアナッツ。</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>ワッフルアイス — ストロベリー・抹茶（各¥690）</strong><small>含む：大豆。</small></div></li>
+                            <li data-contains="soy almond"><span class="ok" aria-hidden="true"></span><div><strong>ワッフルアイス — チョコ（¥690）</strong><small>含む：大豆、アーモンド。</small></div></li>
+                            <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>ワッフルアイス — 黒ゴマ（¥690）</strong><small>含む：大豆、ごま。</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>コーヒーフロート（¥660）</strong><small>含む：大豆。</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>焼きたてワッフル — プレーン（¥660）・ココア・抹茶（各¥690）</strong><small>含む：大豆。生地にナッツ類やごまは使っていません。</small></div></li>
+                            <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>焼きたてワッフル — 黒ゴマ（¥690）</strong><small>含む：大豆、ごま。</small></div></li>
+                            <li data-contains="soy yam"><span class="ok" aria-hidden="true"></span><div><strong>プレーンドーナツ — 5種類（各¥330）</strong><small>クランベリー、八女抹茶、きなこ、アールグレイ、ショコラ &middot; 含む：大豆、やまいも（ナッツ類不使用）。</small></div></li>
+                            <li data-contains="soy yam sesame"><span class="ok" aria-hidden="true"></span><div><strong>プレーンドーナツ — 黒ごま（¥330）</strong><small>含む：大豆、やまいも、ごま（ナッツ類不使用）。</small></div></li>
+                            <li data-contains="almond pistachio apple"><span class="ok" aria-hidden="true"></span><div><strong>しっとりケーキドーナツ — ストロベリー・抹茶（各¥430）</strong><small>大豆・マカダミアナッツ不使用 &middot; 含む：アーモンド、ピスタチオ、りんご。</small></div></li>
+                            <li data-contains="almond apple"><span class="ok" aria-hidden="true"></span><div><strong>しっとりケーキドーナツ — ダブルチョコ・レモン・チョコミント・ココナッツ（各¥430）</strong><small>大豆・ピスタチオ・マカダミアナッツ不使用 &middot; 含む：アーモンド、りんご。</small></div></li>
+                            <li data-contains="soy almond"><span class="ok" aria-hidden="true"></span><div><strong>グルテンフリー米粉どら焼き — 全4種（各¥460）</strong><small>あんクリーム、いちごクリーム、抹茶あんこ、あんこ &middot; 含む：大豆、アーモンド。</small></div></li>
+                            <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>米粉ジェラート — ベリーミックス（¥490）</strong><small>特定原材料等29品目を使用していません（大豆・ナッツ類不使用）。</small></div></li>
+                            <li data-contains="apple"><span class="ok" aria-hidden="true"></span><div><strong>米粉ジェラート — 爽やかりんご、ジューシードラゴンフルーツ（各¥490）</strong><small>大豆・ナッツ類不使用 &middot; 含む：りんご。</small></div></li>
+                            <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>米粉ジェラート — ジューシーすぎるもも（¥490）</strong><small>大豆・ナッツ類不使用 &middot; 含む：もも。</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>米粉ジェラート — 至高の濃厚抹茶、香ばしいほうじ茶、バニラココナッツ（各¥490）</strong><small>含む：大豆。</small></div></li>
+                            <li data-contains="soy almond"><span class="ok" aria-hidden="true"></span><div><strong>米粉ジェラート — とろけるショコラ（¥490）</strong><small>含む：大豆、アーモンド。</small></div></li>
+                            <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>カフェドリンク — オーガニックコーヒー、甘酒ラテ、レモンスカッシュ、ミックスベリーティー</strong><small>特定原材料等29品目を使用していません（大豆・ナッツ類不使用）。</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>カフェドリンク — 黒糖ソイラテ、抹茶ソイラテ（各¥390）</strong><small>含む：大豆。</small></div></li>
+                            <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>カフェドリンク — トロピカルソーダ（¥360）</strong><small>大豆・ナッツ類不使用 &middot; 含む：もも。</small></div></li>
+                        </ul>
+                        <p class="checker__note">季節限定メニューには、オレンジやカシューペーストなど、ほかの原材料を使う場合があります。ご注文の前にスタッフへお尋ねください。<a href="https://food-hug.com/soystories" target="_blank" rel="noopener">FoodHugのアレルギー情報ページを見る &rarr;</a></p>
+                        <div class="checker__contact">
+                            <a class="btn btn--secondary btn--sm" href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>事前のご質問はInstagram DMへ</a>
+                            <a class="btn btn--secondary btn--sm" href="https://food-hug.com/soystories" target="_blank" rel="noopener">FoodHugのアレルギー情報ページ<svg class="ic" aria-hidden="true"><use href="#i-external"/></svg></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1043,6 +1072,9 @@
                     <button type="button" class="rail-nav__btn" data-rail-prev aria-controls="js-review-rail" aria-label="前の口コミ"><svg class="ic" aria-hidden="true"><use href="#i-prev"/></svg></button>
                     <button type="button" class="rail-nav__btn" data-rail-next aria-controls="js-review-rail" aria-label="次の口コミ"><svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></button>
                 </div>
+                <div class="reviews__more-wrap">
+                    <button type="button" class="btn btn--secondary btn--sm" id="js-reviews-more" aria-expanded="false">さらにクチコミを見る（＋4件）</button>
+                </div>
                 <p class="fine">GoogleマップとHappyCowに投稿された旅行者の口コミから抜粋し、日本語に訳したものです（原文は英語）。個人の感想です。アレルギーのある方は、必ず商品ごとの原材料をご確認ください。</p>
             </div>
         </section>
@@ -1076,72 +1108,80 @@
                     <p class="kicker">よくあるご質問</p>
                     <h2 class="sec__title" id="faq-title"><span class="nb">ご来店前に</span><span class="nb">知っておきたいこと</span></h2>
                 </div>
-                <div class="faq">
-                    <details>
-                        <summary>1. すべての商品は100%ヴィーガン（植物性）ですか？</summary>
-                        <div><p>はい。SoyStories 薬院店のスイーツとドリンクは、すべて100%植物性（ヴィーガン）です。肉、魚、乳、卵、はちみつ、ゼラチンは、どの商品にも使用していません。</p></div>
-                    </details>
-                    <details>
-                        <summary>2. グルテンフリーについての方針を教えてください。セリアック病や小麦アレルギーの方も食べられますか？</summary>
-                        <div><p>当店の商品はすべて、グルテンフリーの米粉またはアーモンドプードルでつくっており、<strong>小麦、乳、卵は厨房に持ち込みません</strong>（小麦は、スタッフ個人の食事も含みます）。ただし、同じ厨房で大豆、アーモンド、カシューナッツ、ピスタチオ、マカダミアナッツ、ごま、やまいも、りんご、もも、オレンジを取り扱っているため（特定原材料等29品目基準で開示）、<strong>微量のアレルゲンの混入を完全になくすことはできません</strong>。重度のアレルギーやセリアック病の方は、商品ごとの原材料をご確認のうえ、ご注文の前にスタッフへご相談ください。</p></div>
-                    </details>
-                    <details>
-                        <summary>3. 商品ごとの原材料やアレルゲンは、どこで確認できますか？</summary>
-                        <div><p>このページの<a href="#allergy">6品目アレルギー絞り込み</a>と<a href="#full-menu-list">店内メニュー全品・特定原材料等29品目一覧表</a>、または<a href="https://food-hug.com/soystories" target="_blank" rel="noopener">FoodHugのアレルギー情報ページ</a>でご確認いただけます。カウンターのスタッフにお尋ねいただくこともできます。</p></div>
-                    </details>
-                    <details>
-                        <summary>4. 大豆、ナッツ類（アーモンド・カシューナッツ・ピスタチオ・マカダミアナッツ）、ごま、やまいもは使っていますか？</summary>
-                        <div><p>商品によって異なります（日本の<strong>特定原材料等29品目</strong>に対応して表示しています）。<br>
-                        &bull; <strong>大豆：</strong>バブルワッフル、純豆乳ソフト、ワッフルアイス・ホイップ、コーヒーフロート、プレーンドーナツ、米粉どら焼き、ジェラート4種類、ソイラテ2種類に使用しています。<em>大豆不使用</em>なのは、しっとりケーキドーナツ6種類（430円）、フルーツ系ジェラート4種類、オーガニックコーヒー、甘酒ラテ、レモンスカッシュ、ミックスベリーティー、トロピカルソーダです。<br>
-                        &bull; <strong>ナッツ類：</strong><strong>アーモンド</strong>はしっとりケーキドーナツ（430円）、米粉どら焼き（460円）、ワッフルアイス（チョコ）、ジェラート（とろけるショコラ）、ワッフルホイップ（キャラメルナッツ）に使用。<strong>カシューナッツ・マカダミアナッツ</strong>はワッフルホイップ（キャラメルナッツ）に使用（ケーキドーナツはマカダミアナッツ不使用）。<strong>ピスタチオ</strong>はしっとりケーキドーナツのストロベリー・抹茶に使用しています。<br>
-                        &bull; <strong>ごま：</strong>黒ゴマの焼きたてワッフル、ワッフルアイス（黒ゴマ）、プレーンドーナツ（黒ごま）に使用しています。<br>
-                        &bull; <strong>やまいも：</strong>もちもちの食感を出すために、プレーンドーナツ6種類（330円）に使用しています。<br>
-                        &bull; <strong>りんご・もも：</strong>りんごはケーキドーナツ・ワッフルホイップ（ストロベリー）・ジェラート（爽やかりんご）に、ももはジェラート（ジューシーすぎるもも）・トロピカルソーダに使用しています。</p></div>
-                    </details>
-                    <details>
-                        <summary>5. 白砂糖は使っていますか？「シュガーフリー」ですか？</summary>
-                        <div><p><strong>白砂糖は使用していません</strong>。商品に応じて、てんさい糖、オーガニックのアガベやメープル、天然の植物由来の甘味料でやさしく甘みをつけています。白砂糖を使用していないという意味で、糖分ゼロ（シュガーフリー）という意味では<strong>ありません</strong>のでご注意ください。</p></div>
-                    </details>
-                    <details>
-                        <summary>6. 営業時間、ラストオーダー、定休日を教えてください。</summary>
-                        <div><p>毎日<strong>11:00〜22:00</strong>の営業で、<strong>ラストオーダーは21:45</strong>です。定休日はありません。営業時間の臨時変更や特別な休業日は、<a href="https://www.instagram.com/soystories_yakuin/" target="_blank" rel="noopener">Instagram（@soystories_yakuin）</a>でお知らせします。</p></div>
-                    </details>
-                    <details>
-                        <summary>7. 売り切れることはありますか？お取り置きや予約はできますか？</summary>
-                        <div><p>バブルワッフルとソフトクリームは、ラストオーダー（21:45）まで、ご注文のたびにおつくりします。ドーナツやジェラートの一部の味は、夜遅い時間に売り切れることがあります。特定の味やギフトボックスをご希望の場合は、<a href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener">Instagram（@soystories_yakuin）</a>のDMでご連絡ください。</p></div>
-                    </details>
-                    <details>
-                        <summary>8. イートインスペースはありますか？ベビーカーやスーツケースは持ち込めますか？</summary>
-                        <div><p>店内はコンパクトで、メイン席が4席、ほかに木のキューブスツールがあります。ベビーカーやスーツケースも店内にお持ち込みいただけます。お一人様あたりの最低注文はなく、シェアも歓迎です。</p></div>
-                    </details>
-                    <details>
-                        <summary>9. テイクアウトにおすすめの商品と、持ち歩ける時間の目安を教えてください。</summary>
-                        <div><p>&bull; <strong>バブルワッフル＆ソフトクリーム：</strong>ソフトクリームをのせたワッフルはすぐに溶けてしまうため、イートインか店のすぐ外で、できたてをお召し上がりください。焼きたてワッフル単品（660〜690円）は箱でのお持ち帰りも可能です（箱代+100円）。<br>
-                        &bull; <strong>しっとりケーキドーナツ（430円）：</strong><strong>常温で約1週間</strong>保存できます。ホテルでのおやつや新幹線の中、手土産にいちばんおすすめです。<br>
-                        &bull; <strong>グルテンフリー米粉どら焼き（460円）：</strong>冷凍でお渡しします。常温30分〜1時間（冷蔵1〜2時間）解凍してお召し上がりください。半解凍でどら焼きアイスのように楽しむのもおすすめです。<br>
-                        &bull; <strong>プレーンドーナツ（330円）：</strong>急速冷凍（または店内で温めて）お渡しします。常温で持ち歩くと自然解凍されますので、冷蔵で保管して3日以内にお召し上がりください。<br>
-                        &bull; <strong>カップの米粉ジェラート（490円）：</strong>冷凍でお渡しします。保冷剤入りの保冷バッグもご用意しています（4点以上のご購入で無料）。</p></div>
-                    </details>
-                    <details>
-                        <summary>10. 冷凍のプレーンドーナツは、どうやって食べればいいですか？</summary>
-                        <div><p>焼きたてのおいしさそのままに急速冷凍したドーナツを販売しています。その場で食べたい場合は、<strong>店内で温めてご提供しますので、スタッフにお声がけください</strong>。ホテルやご自宅へ持ち帰る場合は、<strong>電子レンジ（600W）で1分ほど</strong>温めてお召し上がりください（自然解凍後に軽くトーストしても）。焼きたてのような、もちもちの食感になります。</p></div>
-                    </details>
-                    <details>
-                        <summary>11. 支払い方法は何が使えますか？</summary>
-                        <div><p>現金、主要なクレジットカード（Visa、Mastercard、JCB、American Express、Diners Club）、交通系ICカード（Suica、PASMO、ICOCA、SUGOCA、nimoca、はやかけん）、iD、QUICPay、PayPayをご利用いただけます。メニューの価格はすべて税込です。</p></div>
-                    </details>
-                    <details>
-                        <summary>12. 薬院大通駅、天神、博多駅からの行き方を教えてください。</summary>
-                        <div><p>福岡市地下鉄<strong>七隈線</strong>の<strong>薬院大通駅</strong>で降りて、<strong>2番出口</strong>から薬院六つ角方面へ徒歩2〜3分（約160m）です。天神南駅からは地下鉄で約4分、博多駅からは約9分です。ソフトクリームの光る看板が目印の、1階のお店をお探しください。</p></div>
-                    </details>
-                    <details>
-                        <summary>13. 英語のメニューはありますか？日本語が話せなくても大丈夫ですか？</summary>
-                        <div><p>カウンターに、英語の紙のメニューをご用意しています。<a href="./index.html">英語ページ</a>では、各商品の<strong>「Show staff」</strong>ボタンを押すと、日本語の注文画面（店内／テイクアウトの切り替え付き）がスマートフォンに表示されます。</p></div>
-                    </details>
-                    <details>
-                        <summary>14. 駐車場はありますか？</summary>
-                        <div><p>駐車場はございません。お近くのパーキングをご利用ください。</p></div>
-                    </details>
+                <div>
+                    <div class="faq-filter" role="toolbar" aria-label="トピックでQ&amp;Aを絞り込む">
+                        <button type="button" class="faq-filter__btn" data-faq-btn="all" aria-pressed="true">すべて（14件）</button>
+                        <button type="button" class="faq-filter__btn" data-faq-btn="diet" aria-pressed="false">アレルギー・ヴィーガン</button>
+                        <button type="button" class="faq-filter__btn" data-faq-btn="menu" aria-pressed="false">テイクアウト・日持ち</button>
+                        <button type="button" class="faq-filter__btn" data-faq-btn="visit" aria-pressed="false">営業時間・アクセス・決済</button>
+                    </div>
+                    <div class="faq">
+                        <details data-faq-cat="diet">
+                            <summary>1. すべての商品は100%ヴィーガン（植物性）ですか？</summary>
+                            <div><p>はい。SoyStories 薬院店のスイーツとドリンクは、すべて100%植物性（ヴィーガン）です。肉、魚、乳、卵、はちみつ、ゼラチンは、どの商品にも使用していません。</p></div>
+                        </details>
+                        <details data-faq-cat="diet">
+                            <summary>2. グルテンフリーについての方針を教えてください。セリアック病や小麦アレルギーの方も食べられますか？</summary>
+                            <div><p>当店の商品はすべて、グルテンフリーの米粉またはアーモンドプードルでつくっており、<strong>小麦、乳、卵は厨房に持ち込みません</strong>（小麦は、スタッフ個人の食事も含みます）。ただし、同じ厨房で大豆、アーモンド、カシューナッツ、ピスタチオ、マカダミアナッツ、ごま、やまいも、りんご、もも、オレンジを取り扱っているため（特定原材料等29品目基準で開示）、<strong>微量のアレルゲンの混入を完全になくすことはできません</strong>。重度のアレルギーやセリアック病の方は、商品ごとの原材料をご確認のうえ、ご注文の前にスタッフへご相談ください。</p></div>
+                        </details>
+                        <details data-faq-cat="diet">
+                            <summary>3. 商品ごとの原材料やアレルゲンは、どこで確認できますか？</summary>
+                            <div><p>このページの<a href="#allergy">9品目アレルギー絞り込み</a>と<a href="#full-menu-list">店内メニュー全品・特定原材料等29品目一覧表</a>、または<a href="https://food-hug.com/soystories" target="_blank" rel="noopener">FoodHugのアレルギー情報ページ</a>でご確認いただけます。カウンターのスタッフにお尋ねいただくこともできます。</p></div>
+                        </details>
+                        <details data-faq-cat="diet">
+                            <summary>4. 大豆、ナッツ類（アーモンド・カシューナッツ・ピスタチオ・マカダミアナッツ）、ごま、やまいもは使っていますか？</summary>
+                            <div><p>商品によって異なります（日本の<strong>特定原材料等29品目</strong>に対応して表示しています）。<br>
+                            &bull; <strong>大豆：</strong>バブルワッフル、純豆乳ソフト、ワッフルアイス・ホイップ、コーヒーフロート、プレーンドーナツ、米粉どら焼き、ジェラート4種類、ソイラテ2種類に使用しています。<em>大豆不使用</em>なのは、しっとりケーキドーナツ6種類（430円）、フルーツ系ジェラート4種類、オーガニックコーヒー、甘酒ラテ、レモンスカッシュ、ミックスベリーティー、トロピカルソーダです。<br>
+                            &bull; <strong>ナッツ類：</strong><strong>アーモンド</strong>はしっとりケーキドーナツ（430円）、米粉どら焼き（460円）、ワッフルアイス（チョコ）、ジェラート（とろけるショコラ）、ワッフルホイップ（キャラメルナッツ）に使用。<strong>カシューナッツ・マカダミアナッツ</strong>はワッフルホイップ（キャラメルナッツ）に使用（ケーキドーナツはマカダミアナッツ不使用）。<strong>ピスタチオ</strong>はしっとりケーキドーナツのストロベリー・抹茶に使用しています。<br>
+                            &bull; <strong>ごま：</strong>黒ゴマの焼きたてワッフル、ワッフルアイス（黒ゴマ）、プレーンドーナツ（黒ごま）に使用しています。<br>
+                            &bull; <strong>やまいも：</strong>もちもちの食感を出すために、プレーンドーナツ6種類（330円）に使用しています。<br>
+                            &bull; <strong>りんご・もも：</strong>りんごはケーキドーナツ・ワッフルホイップ（ストロベリー）・ジェラート（爽やかりんご）に、ももはジェラート（ジューシーすぎるもも）・トロピカルソーダに使用しています。</p></div>
+                        </details>
+                        <details data-faq-cat="diet">
+                            <summary>5. 白砂糖は使っていますか？「シュガーフリー」ですか？</summary>
+                            <div><p><strong>白砂糖は使用していません</strong>。商品に応じて、てんさい糖、オーガニックのアガベやメープル、天然の植物由来の甘味料でやさしく甘みをつけています。白砂糖を使用していないという意味で、糖分ゼロ（シュガーフリー）という意味では<strong>ありません</strong>のでご注意ください。</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>6. 営業時間、ラストオーダー、定休日を教えてください。</summary>
+                            <div><p>毎日<strong>11:00〜22:00</strong>の営業で、<strong>ラストオーダーは21:45</strong>です。定休日はありません。営業時間の臨時変更や特別な休業日は、<a href="https://www.instagram.com/soystories_yakuin/" target="_blank" rel="noopener">Instagram（@soystories_yakuin）</a>でお知らせします。</p></div>
+                        </details>
+                        <details data-faq-cat="menu">
+                            <summary>7. 売り切れることはありますか？お取り置きや予約はできますか？</summary>
+                            <div><p>バブルワッフルとソフトクリームは、ラストオーダー（21:45）まで、ご注文のたびにおつくりします。ドーナツやジェラートの一部の味は、夜遅い時間に売り切れることがあります。特定の味やギフトボックスをご希望の場合は、<a href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener">Instagram（@soystories_yakuin）</a>のDMでご連絡ください。</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>8. イートインスペースはありますか？ベビーカーやスーツケースは持ち込めますか？</summary>
+                            <div><p>店内はコンパクトで、メイン席が4席、ほかに木のキューブスツールがあります。ベビーカーやスーツケースも店内にお持ち込みいただけます。お一人様あたりの最低注文はなく、シェアも歓迎です。</p></div>
+                        </details>
+                        <details data-faq-cat="menu">
+                            <summary>9. テイクアウトにおすすめの商品と、持ち歩ける時間の目安を教えてください。</summary>
+                            <div><p>&bull; <strong>バブルワッフル＆ソフトクリーム：</strong>ソフトクリームをのせたワッフルはすぐに溶けてしまうため、イートインか店のすぐ外で、できたてをお召し上がりください。焼きたてワッフル単品（660〜690円）は箱でのお持ち帰りも可能です（箱代+100円）。<br>
+                            &bull; <strong>しっとりケーキドーナツ（430円）：</strong><strong>常温で約1週間</strong>保存できます。ホテルでのおやつや新幹線の中、手土産にいちばんおすすめです。<br>
+                            &bull; <strong>グルテンフリー米粉どら焼き（460円）：</strong>冷凍でお渡しします。常温30分〜1時間（冷蔵1〜2時間）解凍してお召し上がりください。半解凍でどら焼きアイスのように楽しむのもおすすめです。<br>
+                            &bull; <strong>プレーンドーナツ（330円）：</strong>急速冷凍（または店内で温めて）お渡しします。常温で持ち歩くと自然解凍されますので、冷蔵で保管して3日以内にお召し上がりください。<br>
+                            &bull; <strong>カップの米粉ジェラート（490円）：</strong>冷凍でお渡しします。保冷剤入りの保冷バッグもご用意しています（4点以上のご購入で無料）。</p></div>
+                        </details>
+                        <details data-faq-cat="menu">
+                            <summary>10. 冷凍のプレーンドーナツは、どうやって食べればいいですか？</summary>
+                            <div><p>焼きたてのおいしさそのままに急速冷凍したドーナツを販売しています。その場で食べたい場合は、<strong>店内で温めてご提供しますので、スタッフにお声がけください</strong>。ホテルやご自宅へ持ち帰る場合は、<strong>電子レンジ（600W）で1分ほど</strong>温めてお召し上がりください（自然解凍後に軽くトーストしても）。焼きたてのような、もちもちの食感になります。</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>11. 支払い方法は何が使えますか？</summary>
+                            <div><p>現金、主要なクレジットカード（Visa、Mastercard、JCB、American Express、Diners Club）、交通系ICカード（Suica、PASMO、ICOCA、SUGOCA、nimoca、はやかけん）、iD、QUICPay、PayPayをご利用いただけます。メニューの価格はすべて税込です。</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>12. 薬院大通駅、天神、博多駅からの行き方を教えてください。</summary>
+                            <div><p>福岡市地下鉄<strong>七隈線</strong>の<strong>薬院大通駅</strong>で降りて、<strong>2番出口</strong>から薬院六つ角方面へ徒歩2〜3分（約160m）です。天神南駅からは地下鉄で約4分、博多駅からは約9分です。ソフトクリームの光る看板が目印の、1階のお店をお探しください。</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>13. 英語のメニューはありますか？日本語が話せなくても大丈夫ですか？</summary>
+                            <div><p>カウンターに、英語の紙のメニューをご用意しています。<a href="./index.html">英語ページ</a>では、各商品の<strong>「Show staff」</strong>ボタンを押すと、日本語の注文画面（店内／テイクアウトの切り替え付き）がスマートフォンに表示されます。</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>14. 駐車場はありますか？</summary>
+                            <div><p>駐車場はございません。お近くのパーキングをご利用ください。</p></div>
+                        </details>
+                    </div>
                 </div>
             </div>
         </section>

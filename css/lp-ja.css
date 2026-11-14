@@ -53,8 +53,10 @@ html[lang="ja"] body {
 /* UI */
 .drawer__nav a { font-size: 17px; line-height: 1.5; }
 .drawer__nav .drawer__ja { font-size: 15px; }
-.faq summary { font-size: 17px; line-height: 1.6; }
-.full-menu summary { font-size: 18px; line-height: 1.5; }
+.faq summary { font-size: 16.5px; line-height: 1.6; }
+.full-menu summary { font-size: 14.5px; line-height: 1.45; }
+.policy-details summary { font-size: 15px; line-height: 1.5; }
+.policy-details__body { font-size: 15px; line-height: 1.85; }
 .btn { letter-spacing: .04em; line-height: 1.4; }
 .dock a { font-size: 12px; letter-spacing: .02em; }
 .fchip { letter-spacing: .03em; }

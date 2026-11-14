@@ -110,6 +110,12 @@
                     <li>設有內用座位（4主席＋木方凳）＆全品項可外帶</li>
                     <li>支援信用卡・交通IC卡（Suica等）・PayPay・現金</li>
                 </ul>
+                <nav class="sub-jump-pills" aria-label="快速跳轉">
+                    <a href="#menu">人氣菜單 ＆ 價目表 ↓</a>
+                    <a href="#allergy">29項過敏原篩選 ↓</a>
+                    <a href="#qa">外帶・伴手禮保存 ↓</a>
+                    <a href="#access">交通・計程車卡 ↓</a>
+                </nav>
             </div>
         </section>
 
@@ -137,9 +143,72 @@
                     </div>
                 </article>
 
-                <div class="full-menu" id="full-menu-list" style="margin-top: 24px;">
+                <!-- 6大分類視覺照片卡 -->
+                <div class="mgrid-guide">
+                    <article class="g-mcard">
+                        <img src="./img/waffle_cup_group.webp" alt="鬆餅冰淇淋杯與鬆餅鮮奶油杯 6 種口味" class="g-mcard__img" loading="lazy" width="1080" height="800">
+                        <div class="g-mcard__body">
+                            <h3 class="g-mcard__title">鬆餅冰淇淋・鮮奶油杯 (6種)</h3>
+                            <p class="g-mcard__price">¥660 – ¥690</p>
+                            <p class="g-mcard__desc">純素冰淇淋杯 4 種（草莓・巧克力・抹茶・黑芝麻 ¥690）＆ 豆乳鮮奶油杯 2 種（草莓・焦糖堅果 ¥660）。</p>
+                            <button type="button" class="chip-btn js-show-staff" data-ja="ワッフルカップ" data-en="鬆餅冰淇淋/鮮奶油杯" data-variants="ワッフルアイス ストロベリー ¥690::冰淇淋：草莓 (¥690)|ワッフルアイス チョコ ¥690::冰淇淋：巧克力 (¥690)|ワッフルアイス 抹茶 ¥690::冰淇淋：抹茶 (¥690)|ワッフルアイス 黒ゴマ ¥690::冰淇淋：黑芝麻 (¥690)|ワッフルホイップ ストロベリー ¥660::鮮奶油：草莓 (¥660)|ワッフルホイップ キャラメルナッツ ¥660::鮮奶油：焦糖堅果 (¥660)">出示給店員看</button>
+                        </div>
+                    </article>
+                    <article class="g-mcard">
+                        <img src="./img/menu_photo2-1.webp" alt="現烤新潟米粉雞蛋仔鬆餅" class="g-mcard__img" loading="lazy" width="1039" height="836">
+                        <div class="g-mcard__body">
+                            <h3 class="g-mcard__title">現烤新潟米粉雞蛋仔鬆餅</h3>
+                            <p class="g-mcard__price">¥660 – ¥690</p>
+                            <p class="g-mcard__desc">現點現烤 100% 新潟米粉鬆餅，外酥內Q：原味（¥660）、可可・抹茶・黑芝麻（各 ¥690）。外帶盒 +¥100。</p>
+                            <button type="button" class="chip-btn js-show-staff" data-ja="国産米粉の焼きたてワッフル" data-en="現烤新潟米粉鬆餅" data-variants="プレーン ¥660::原味 (¥660)|ココア ¥690::可可 (¥690)|抹茶 ¥690::抹茶 (¥690)|黒ゴマ ¥690::黑芝麻 (¥690)">出示給店員看</button>
+                        </div>
+                    </article>
+                    <article class="g-mcard">
+                        <img src="./img/coffee_float.webp" alt="純豆乳霜淇淋與有機漂浮冰咖啡" class="g-mcard__img" loading="lazy" width="800" height="800">
+                        <div class="g-mcard__body">
+                            <h3 class="g-mcard__title">純豆乳霜淇淋 ＆ 漂浮咖啡</h3>
+                            <p class="g-mcard__price">¥460 – ¥690</p>
+                            <p class="g-mcard__desc">鮮榨無添加純豆乳霜淇淋（¥460/¥690，附 5 種免費配料）與有機漂浮冰咖啡（¥660）。</p>
+                            <button type="button" class="chip-btn js-show-staff" data-ja="純豆乳ソフト・フロート" data-en="純豆乳霜淇淋 / 漂浮冰咖啡" data-variants="純豆乳ソフト 中 ¥460::霜淇淋 Medium (¥460)|純豆乳ソフト 大 ¥690::霜淇淋 Large (¥690)|コーヒーフロート ¥660::有機漂浮冰咖啡 (¥660)">出示給店員看</button>
+                        </div>
+                    </article>
+                    <article class="g-mcard">
+                        <img src="./img/cake_donuts_lineup.jpg" alt="烘焙甜甜圈全 12 種口味" class="g-mcard__img" loading="lazy" width="666" height="1000">
+                        <div class="g-mcard__body">
+                            <h3 class="g-mcard__title">烘焙甜甜圈（全 12 種）</h3>
+                            <p class="g-mcard__price">¥330 – ¥430</p>
+                            <p class="g-mcard__desc">無堅果 Q 彈豆乳甜甜圈 6 種（¥330）＆ 常溫可保存約 1 週的無大豆・無夏威夷豆糖霜蛋糕甜甜圈 6 種（¥430）。</p>
+                            <button type="button" class="chip-btn js-show-staff" data-ja="焼きドーナツ" data-en="烘焙甜甜圈" data-variants="プレーンドーナツ ¥330::豆乳甜甜圈 (¥330)|しっとりケーキドーナツ ¥430::糖霜蛋糕甜甜圈 (¥430)">出示給店員看</button>
+                        </div>
+                    </article>
+                    <article class="g-mcard">
+                        <img src="./img/dorayaki_4set.webp" alt="無麩質米粉銅鑼燒 4 種口味" class="g-mcard__img" loading="lazy" width="1200" height="800">
+                        <div class="g-mcard__body">
+                            <h3 class="g-mcard__title">無麩質米粉銅鑼燒</h3>
+                            <p class="g-mcard__price">各 ¥460（4種）</p>
+                            <p class="g-mcard__desc">鬆軟米粉與杏仁餅皮夾入北海道紅豆餡與豆乳鮮奶油。半解凍像銅鑼燒冰淇淋般享用超美味！</p>
+                            <button type="button" class="chip-btn js-show-staff" data-ja="グルテンフリー米粉どら焼き" data-en="無麩質米粉銅鑼燒 (¥460)" data-variants="あんクリーム::紅豆鮮奶油|いちごクリーム::草莓鮮奶油|抹茶あんこ::抹茶紅豆|あんこ::經典紅豆">出示給店員看</button>
+                        </div>
+                    </article>
+                    <article class="g-mcard">
+                        <img src="./img/waffle_and_drinks.webp" alt="米粉義式冰淇淋與套餐飲品" class="g-mcard__img" loading="lazy" width="1080" height="800">
+                        <div class="g-mcard__body">
+                            <h3 class="g-mcard__title">義式冰淇淋 ＆ 套餐飲品</h3>
+                            <p class="g-mcard__price">冰淇淋 ¥490 · 飲品套餐 ¥330</p>
+                            <p class="g-mcard__desc">8 種米粉義式冰淇淋（含 4 種無大豆・無堅果水果口味），點甜點加購任一飲品均一價 ¥330！</p>
+                            <button type="button" class="chip-btn js-show-staff" data-ja="ドリンク" data-en="咖啡廳飲品（套餐 ¥330）" data-nodrinkset="1" data-variants="オーガニックコーヒー COLD::有機冰咖啡|オーガニックコーヒー HOT::有機熱咖啡|黒糖ソイラテ COLD::黑糖冰豆乳拿鐵|抹茶ソイラテ COLD::抹茶冰豆乳拿鐵|甘酒ラテ::甘酒拿鐵（無大豆）|レモンスカッシュ::檸檬氣泡飲|ミックスベリーティー::綜合莓果茶|トロピカルソーダ::熱帶水果氣泡飲">飲品點餐卡</button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 快速分類查詢 ＆ 可收合完整價目表 -->
+                <div class="menu-quick-finder">
+                    <div class="menu-quick-finder__head">
+                        <h3 class="menu-quick-finder__title">依分類快速查詢價格 ＆ 日本 29 項過敏原</h3>
+                        <span class="menu-quick-finder__sub">點擊任一分類按鈕即可自動展開對應價目表與點餐卡</span>
+                    </div>
                     <div class="mfilter" role="toolbar" aria-label="依分類篩選菜單">
-                        <button type="button" class="mfilter__btn" data-mcat-btn="all" aria-pressed="true">全部餐點</button>
+                        <button type="button" class="mfilter__btn" data-mcat-btn="all" aria-pressed="false">全部餐點</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="waffle-cups" aria-pressed="false">鬆餅霜淇淋・鬆餅杯</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="waffles" aria-pressed="false">現烤鬆餅單點</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="soft-float" aria-pressed="false">霜淇淋・漂浮咖啡</button>
@@ -148,6 +217,9 @@
                         <button type="button" class="mfilter__btn" data-mcat-btn="gelato" aria-pressed="false">義式冰淇淋</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="drinks" aria-pressed="false">飲品（套餐 ¥330）</button>
                     </div>
+                </div>
+                <details class="full-menu" id="full-menu-list">
+                    <summary>展開店內完整菜單價目 ＆ 日本 29 項特定過敏原一覽表</summary>
                     <div class="full-menu__body">
                         <table class="m-table">
                             <thead>
@@ -358,7 +430,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
+                </details>
             </div>
         </section>
 
@@ -370,45 +442,61 @@
                 <div class="kitchen">
                     <p class="kitchen__badge">不攜入小麥・乳製品・雞蛋之廚房</p>
                     <p>SoyStories 的所有餐點皆為 <strong>100% 植物性（純素 Vegan，不含五葷）</strong>且 <strong>無麩質（Gluten-Free）</strong>。廚房內絕不攜入小麥、乳製品、雞蛋、蜂蜜與吉利丁，並以甜菜糖等天然植物甜味劑取代精製白砂糖（注意：並非無糖／零糖產品）。</p>
-                    <div class="policy-note">
-                        <strong>給嚴重食物過敏或乳糜瀉（Celiac）旅客的重要提醒（對應日本特定原材料等29品項）：</strong><br>
-                        本店同一廚房內有使用 <strong>大豆、杏仁、腰果、開心果、夏威夷豆、黑芝麻、山藥、蘋果、水蜜桃、柳橙</strong>（依據 2026 年 4 月日本食品標示基準之 <strong>29 項特定過敏原</strong>完整揭露）。雖然我們徹底落實衛生與器具管理，但<strong>無法保證完全排除極微量的交叉接觸</strong>。若有嚴重過敏症狀，請務必透過右側篩選器確認各品項過敏原並於點餐前向店員洽詢。
-                    </div>
+                    <details class="policy-details">
+                        <summary>嚴重過敏與乳糜瀉（Celiac）旅客重要提醒（對應日本特定原材料等29品項・微量交叉接觸說明）</summary>
+                        <div class="policy-details__body">
+                            本店同一廚房內有使用 <strong>大豆、杏仁、腰果、開心果、夏威夷豆、黑芝麻、山藥、蘋果、水蜜桃、柳橙</strong>（依據 2026 年 4 月日本食品標示基準之 <strong>29 項特定過敏原</strong>完整揭露）。雖然我們徹底落實衛生與器具管理，但<strong>無法保證完全排除極微量的交叉接觸</strong>。若有嚴重過敏症狀，請務必透過篩選器確認各品項過敏原並於點餐前向店員洽詢。
+                        </div>
+                    </details>
                 </div>
                 <div class="checker">
                     <div class="checker__head-row">
-                        <p class="checker__q" id="checker-q">點擊想避開的食材進行篩選：</p>
-                        <button type="button" class="checker__reset" id="js-checker-reset" hidden>重設篩選</button>
+                        <p class="checker__q" id="checker-q">點擊想避開的食材進行篩選（9項個別篩選）：</p>
+                        <div class="checker__util-btns">
+                            <button type="button" class="checker__preset" id="js-checker-nuts" aria-pressed="false">一鍵全選 4 種堅果</button>
+                            <button type="button" class="checker__reset" id="js-checker-reset" hidden>重設篩選</button>
+                        </div>
                     </div>
                     <div class="checker__chips" role="group" aria-labelledby="checker-q">
                         <button type="button" class="fchip" data-avoid="soy" aria-pressed="false">大豆</button>
-                        <button type="button" class="fchip" data-avoid="nuts" aria-pressed="false">堅果類（杏仁・腰果・開心果・夏威夷豆）</button>
+                        <button type="button" class="fchip" data-avoid="almond" aria-pressed="false">杏仁</button>
+                        <button type="button" class="fchip" data-avoid="pistachio" aria-pressed="false">開心果</button>
+                        <button type="button" class="fchip" data-avoid="cashew" aria-pressed="false">腰果</button>
+                        <button type="button" class="fchip" data-avoid="macadamia" aria-pressed="false">夏威夷豆</button>
                         <button type="button" class="fchip" data-avoid="sesame" aria-pressed="false">芝麻</button>
                         <button type="button" class="fchip" data-avoid="yam" aria-pressed="false">山藥</button>
                         <button type="button" class="fchip" data-avoid="apple" aria-pressed="false">蘋果</button>
                         <button type="button" class="fchip" data-avoid="peach" aria-pressed="false">水蜜桃</button>
                     </div>
-                    <p class="checker__result" id="js-checker-result" aria-live="polite">點擊上方想避開的食材，即可篩選適合您的常設餐點。</p>
-                    <ul class="checker__list" id="js-checker-list">
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>米粉鬆餅霜淇淋 / 純豆乳霜淇淋 / 漂浮冰咖啡</strong><small>含大豆（附5種免費配料，其中黃豆粉含大豆）。</small></div></li>
-                        <li data-contains="soy apple"><span class="ok" aria-hidden="true"></span><div><strong>鬆餅豆乳鮮奶油杯 — 草莓 (¥660)</strong><small>含大豆、蘋果。</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>鬆餅豆乳鮮奶油杯 — 焦糖堅果 (¥660)</strong><small>含大豆、杏仁、腰果、夏威夷豆。</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>鬆餅冰淇淋杯 — 草莓、抹茶 (¥690)</strong><small>含大豆。</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>鬆餅冰淇淋杯 — 巧克力 (¥690)</strong><small>含大豆、杏仁。</small></div></li>
-                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>鬆餅冰淇淋杯 / 現烤鬆餅 — 黑芝麻 (¥690)</strong><small>含大豆、芝麻。</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>現烤鬆餅單點 — 原味(¥660)、可可、抹茶(¥690)</strong><small>含大豆（不含堅果與芝麻）。</small></div></li>
-                        <li data-contains="soy yam"><span class="ok" aria-hidden="true"></span><div><strong>烘焙豆乳甜甜圈 — 5種口味 (¥330)</strong><small>含大豆、山藥（無堅果配方）。</small></div></li>
-                        <li data-contains="soy yam sesame"><span class="ok" aria-hidden="true"></span><div><strong>烘焙豆乳甜甜圈 — 黑芝麻 (¥330)</strong><small>含大豆、山藥、芝麻（無堅果配方）。</small></div></li>
-                        <li data-contains="nuts apple"><span class="ok" aria-hidden="true"></span><div><strong>濕潤糖霜蛋糕甜甜圈 — 草莓、抹茶 (¥430)</strong><small>無大豆・無夏威夷豆 · 含杏仁、開心果、蘋果。</small></div></li>
-                        <li data-contains="nuts apple"><span class="ok" aria-hidden="true"></span><div><strong>濕潤糖霜蛋糕甜甜圈 — 雙重巧克力、檸檬、薄荷巧克力、椰子 (¥430)</strong><small>無大豆・無開心果・無夏威夷豆 · 含杏仁、蘋果。</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>無麩質米粉銅鑼燒 — 全4種口味 (¥460)</strong><small>含大豆、杏仁。</small></div></li>
-                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>米粉義式冰淇淋 — 綜合莓果 (¥490)</strong><small>不含日本特定原材料等29品項（無大豆・無堅果）。</small></div></li>
-                        <li data-contains="apple"><span class="ok" aria-hidden="true"></span><div><strong>米粉義式冰淇淋 — 清爽蘋果、多汁火龍果 (¥490)</strong><small>無大豆・無堅果 · 含蘋果。</small></div></li>
-                        <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>米粉義式冰淇淋 — 多汁白桃 (¥490) / 熱帶水果氣泡飲 (¥360)</strong><small>無大豆・無堅果 · 含水蜜桃。</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>米粉義式冰淇淋 — 抹茶、焙茶、香草椰奶 / 豆乳拿鐵 2種</strong><small>含大豆。</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>米粉義式冰淇淋 — 入口即化生巧克力 (¥490)</strong><small>含大豆、杏仁。</small></div></li>
-                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>飲品 — 有機咖啡、甘酒拿鐵、檸檬氣泡飲、綜合莓果茶</strong><small>不含日本特定原材料等29品項（無大豆・無堅果）。</small></div></li>
-                    </ul>
+                    <div class="checker__summary-bar">
+                        <p class="checker__result" id="js-checker-result" aria-live="polite">點擊上方想避開的食材，系統會立即展開您可安心享用的餐點。</p>
+                        <div class="checker__summary-actions">
+                            <button type="button" class="checker__expand-btn" id="js-checker-expand" aria-expanded="false" aria-controls="js-checker-drawer">查看全部 18 組明細 ＋</button>
+                            <label class="checker__hide-toggle"><input type="checkbox" id="js-checker-hide-out" checked><span>僅顯示可享用餐點</span></label>
+                        </div>
+                    </div>
+                    <div class="checker__drawer" id="js-checker-drawer">
+                        <ul class="checker__list" id="js-checker-list">
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>米粉鬆餅霜淇淋 / 純豆乳霜淇淋 / 漂浮冰咖啡</strong><small>含大豆（附5種免費配料，其中黃豆粉含大豆）。</small></div></li>
+                            <li data-contains="soy apple"><span class="ok" aria-hidden="true"></span><div><strong>鬆餅豆乳鮮奶油杯 — 草莓 (¥660)</strong><small>含大豆、蘋果。</small></div></li>
+                            <li data-contains="soy almond cashew macadamia"><span class="ok" aria-hidden="true"></span><div><strong>鬆餅豆乳鮮奶油杯 — 焦糖堅果 (¥660)</strong><small>含大豆、杏仁、腰果、夏威夷豆。</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>鬆餅冰淇淋杯 — 草莓、抹茶 (¥690)</strong><small>含大豆。</small></div></li>
+                            <li data-contains="soy almond"><span class="ok" aria-hidden="true"></span><div><strong>鬆餅冰淇淋杯 — 巧克力 (¥690)</strong><small>含大豆、杏仁。</small></div></li>
+                            <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>鬆餅冰淇淋杯 / 現烤鬆餅 — 黑芝麻 (¥690)</strong><small>含大豆、芝麻。</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>現烤鬆餅單點 — 原味(¥660)、可可、抹茶(¥690)</strong><small>含大豆（不含堅果與芝麻）。</small></div></li>
+                            <li data-contains="soy yam"><span class="ok" aria-hidden="true"></span><div><strong>烘焙豆乳甜甜圈 — 5種口味 (¥330)</strong><small>含大豆、山藥（無堅果配方）。</small></div></li>
+                            <li data-contains="soy yam sesame"><span class="ok" aria-hidden="true"></span><div><strong>烘焙豆乳甜甜圈 — 黑芝麻 (¥330)</strong><small>含大豆、山藥、芝麻（無堅果配方）。</small></div></li>
+                            <li data-contains="almond pistachio apple"><span class="ok" aria-hidden="true"></span><div><strong>濕潤糖霜蛋糕甜甜圈 — 草莓、抹茶 (¥430)</strong><small>無大豆・無夏威夷豆 · 含杏仁、開心果、蘋果。</small></div></li>
+                            <li data-contains="almond apple"><span class="ok" aria-hidden="true"></span><div><strong>濕潤糖霜蛋糕甜甜圈 — 雙重巧克力、檸檬、薄荷巧克力、椰子 (¥430)</strong><small>無大豆・無開心果・無夏威夷豆 · 含杏仁、蘋果。</small></div></li>
+                            <li data-contains="soy almond"><span class="ok" aria-hidden="true"></span><div><strong>無麩質米粉銅鑼燒 — 全4種口味 (¥460)</strong><small>含大豆、杏仁。</small></div></li>
+                            <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>米粉義式冰淇淋 — 綜合莓果 (¥490)</strong><small>不含日本特定原材料等29品項（無大豆・無堅果）。</small></div></li>
+                            <li data-contains="apple"><span class="ok" aria-hidden="true"></span><div><strong>米粉義式冰淇淋 — 清爽蘋果、多汁火龍果 (¥490)</strong><small>無大豆・無堅果 · 含蘋果。</small></div></li>
+                            <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>米粉義式冰淇淋 — 多汁白桃 (¥490) / 熱帶水果氣泡飲 (¥360)</strong><small>無大豆・無堅果 · 含水蜜桃。</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>米粉義式冰淇淋 — 抹茶、焙茶、香草椰奶 / 豆乳拿鐵 2種</strong><small>含大豆。</small></div></li>
+                            <li data-contains="soy almond"><span class="ok" aria-hidden="true"></span><div><strong>米粉義式冰淇淋 — 入口即化生巧克力 (¥490)</strong><small>含大豆、杏仁。</small></div></li>
+                            <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>飲品 — 有機咖啡、甘酒拿鐵、檸檬氣泡飲、綜合莓果茶</strong><small>不含日本特定原材料等29品項（無大豆・無堅果）。</small></div></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -420,13 +508,16 @@
                 <p class="kicker">FAQ &amp; Takeout</p>
                 <h2 class="sec__title">外帶・常溫伴手禮與常見問題</h2>
                 <div class="faq">
-                    <details open>
+                    <details>
                         <summary>哪些甜點適合外帶回飯店或帶回國當伴手禮？</summary>
-                        <div><p>&bull; <strong>現烤米粉鬆餅＆純豆乳霜淇淋：</strong>霜淇淋鬆餅融化較快，建議在店內或店門口立即享用；單點米粉鬆餅（¥660～¥690）可加價 +¥100 使用專屬外帶紙盒。<br>
-                        &bull; <strong>濕潤糖霜蛋糕甜甜圈（¥430）：</strong><strong>常溫可保存約 1 週</strong>，禮盒包裝非常適合帶回飯店或作為伴手禮。<br>
-                        &bull; <strong>無麩質米粉銅鑼燒（¥460）：</strong>冷凍交付，常溫解凍 30～60 分鐘（冷藏 1～2 小時）即可享用；半解凍狀態像銅鑼燒冰淇淋般享用也超級美味！<br>
-                        &bull; <strong>烘焙豆乳甜甜圈（¥330）：</strong>以急速冷凍狀態販售。若想現場吃，<strong>可請店員為您微波加熱</strong>；外帶回飯店可用 600W 微波爐加熱約 1 分鐘（或自然解凍後冷藏保存，3 天內享用）。<br>
-                        &bull; <strong>杯裝米粉義式冰淇淋（¥490）：</strong>購買 4 杯以上免費附贈保冷袋與保冷劑。</p></div>
+                        <div>
+                            <div class="storage-grid">
+                                <div class="storage-card"><strong>濕潤糖霜蛋糕甜甜圈（¥430 · 伴手禮首選）</strong><span><strong>常溫可保存約 1 週</strong>，禮盒包裝非常適合帶回飯店、搭乘新幹線或帶回國作為伴手禮。</span></div>
+                                <div class="storage-card"><strong>無麩質米粉銅鑼燒（¥460）</strong><span>冷凍交付，常溫解凍 30～60 分鐘（冷藏 1～2 小時）即可享用；半解凍狀態像銅鑼燒冰淇淋般享用超美味！</span></div>
+                                <div class="storage-card"><strong>烘焙豆乳甜甜圈（¥330）</strong><span>急速冷凍販售。現場吃<strong>可請店員為您微波加熱</strong>；外帶回飯店可用 600W 微波約 1 分鐘（或解凍後冷藏保存 3 天內享用）。</span></div>
+                                <div class="storage-card"><strong>現烤米粉鬆餅 ＆ 義式冰淇淋</strong><span>霜淇淋鬆餅建議立即享用；單點米粉鬆餅（¥660～¥690）可加價 +¥100 紙盒外帶。杯裝冰淇淋（¥490）買 4 杯以上免費贈保冷袋＋保冷劑。</span></div>
+                            </div>
+                        </div>
                     </details>
                     <details>
                         <summary>營業時間、最後點餐時間與預訂方式？</summary>
@@ -472,6 +563,13 @@
             <small class="ft__copy">&copy; 2024–2026 SoyStories Yakuin</small>
         </div>
     </footer>
+
+    <nav class="dock" id="js-dock" aria-label="快速功能列">
+        <a href="#menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>菜單</span></a>
+        <a href="#allergy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span>過敏原</span></a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=%E3%80%92810-0022+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%96%AC%E9%99%A2%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%92%EF%BC%94+%E3%83%81%E3%82%B5%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E7%AC%AC3%E5%8D%9A%E5%A4%9A+1F+Soy+Stories" target="_blank" rel="noopener" class="dock__primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Google導航</span></a>
+        <a href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/></svg><span>IG預訂</span></a>
+    </nav>
 
     <div class="staff" id="js-staff" role="dialog" aria-modal="true" aria-labelledby="js-staff-item" hidden>
         <div class="staff__card">

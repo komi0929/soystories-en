@@ -267,7 +267,7 @@
               "name": "How can I check per-item ingredients and allergens?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "You can use the interactive 6-Allergen Checker and the Complete Menu & 29-Allergen Reference Table on https://en.soystories.cafe/, check the allergen badges on each menu category page, view our Official FoodHug Allergy Disclosure Page (https://food-hug.com/soystoriesenglish-page/), or ask our counter staff directly."
+                "text": "You can use the interactive 9-Allergen Checker and the Complete Menu & 29-Allergen Reference Table on https://en.soystories.cafe/, check the allergen badges on each menu category page, view our Official FoodHug Allergy Disclosure Page (https://food-hug.com/soystoriesenglish-page/), or ask our counter staff directly."
               }
             },
             {
@@ -398,6 +398,13 @@
                 </button>
             </div>
         </div>
+        <nav class="quick-nav" aria-label="Quick section jump">
+            <a href="#menu">Menu</a>
+            <a href="#allergy">29 Allergens</a>
+            <a href="#takeout">Takeout</a>
+            <a href="#qa">FAQ</a>
+            <a href="#access">Access &amp; Map</a>
+        </nav>
         <div class="drawer" id="js-drawer-content">
             <nav class="drawer__nav" aria-label="Mobile">
                 <a href="#inside" class="drawer-content__link">Inside the café</a>
@@ -690,11 +697,14 @@
                     </ul>
                 </div>
 
-                <!-- Expandable Complete Menu & 29-Allergen Reference Table -->
-                <details class="full-menu" id="full-menu-list" open>
-                    <summary>Complete In-Store Menu &amp; 29-Allergen Reference (Sweets &amp; Drinks)</summary>
+                <!-- Quick Category Finder & Collapsible Complete Menu / 29-Allergen Reference Table -->
+                <div class="menu-quick-finder">
+                    <div class="menu-quick-finder__head">
+                        <h3 class="menu-quick-finder__title">Quick Price &amp; 29-Allergen Finder</h3>
+                        <span class="menu-quick-finder__sub">Tap any category to jump straight to prices &amp; ordering cards</span>
+                    </div>
                     <div class="mfilter" role="toolbar" aria-label="Filter menu table by category">
-                        <button type="button" class="mfilter__btn" data-mcat-btn="all" aria-pressed="true">All Menu</button>
+                        <button type="button" class="mfilter__btn" data-mcat-btn="all" aria-pressed="false">All Menu</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="waffle-cups" aria-pressed="false">Waffle Soft &amp; Cups</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="waffles" aria-pressed="false">Bubble Waffles</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="soft-float" aria-pressed="false">Soft Serve &amp; Float</button>
@@ -703,6 +713,9 @@
                         <button type="button" class="mfilter__btn" data-mcat-btn="gelato" aria-pressed="false">Craft Gelato</button>
                         <button type="button" class="mfilter__btn" data-mcat-btn="drinks" aria-pressed="false">Drinks (Set ¥330)</button>
                     </div>
+                </div>
+                <details class="full-menu" id="full-menu-list">
+                    <summary>Complete In-Store Menu &amp; 29-Allergen Reference (Sweets &amp; Drinks)</summary>
                     <div class="full-menu__body" tabindex="0" role="region" aria-label="Complete in-store menu table (scrolls sideways on small screens)">
                         <table class="m-table" role="table">
                             <thead role="rowgroup">
@@ -941,56 +954,72 @@
                             <li>No wheat / gluten</li><li>No dairy</li><li>No eggs</li><li>No honey</li><li>No gelatin</li><li>No white sugar</li>
                         </ul>
                     </div>
-                    <div class="policy-note" role="note">
-                        <strong>Important Notice for Guests with Severe Allergies or Celiac Disease (Japan’s 29 Specified Allergens):</strong><br>
-                        Within our kitchen, we handle <strong>soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam (yamaimo), apples, peaches, and oranges</strong> (disclosed under Japan’s <strong>29 specified allergens</strong> standard — 9 mandatory + 20 recommended items as of April 2026). While we take the utmost care with hygiene and equipment, <strong>complete elimination of trace cross-contact cannot be guaranteed</strong>. Guests with severe allergies or celiac disease are strongly encouraged to check the per-item list below and consult our staff before ordering.
-                    </div>
+                    <details class="policy-details">
+                        <summary>Important Notice for Severe Allergies &amp; Celiac Disease (Japan’s 29 Specified Allergens)</summary>
+                        <div class="policy-details__body">
+                            Within our kitchen, we handle <strong>soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam (yamaimo), apples, peaches, and oranges</strong> (disclosed under Japan’s <strong>29 specified allergens</strong> standard — 9 mandatory + 20 recommended items as of April 2026). While we take the utmost care with hygiene and equipment, <strong>complete elimination of trace cross-contact cannot be guaranteed</strong>. Guests with severe allergies or celiac disease are strongly encouraged to check the per-item list below and consult our staff before ordering.
+                        </div>
+                    </details>
                 </div>
 
                 <div class="checker">
                     <div class="checker__controls">
                         <div class="checker__head-row">
-                            <p class="checker__q" id="checker-q">Filter items by ingredients to avoid:</p>
-                            <button type="button" class="checker__reset" id="js-checker-reset" hidden>Clear filters</button>
+                            <p class="checker__q" id="checker-q">Tap any ingredients you want to avoid (9 items):</p>
+                            <div class="checker__util-btns">
+                                <button type="button" class="checker__preset" id="js-checker-nuts" aria-pressed="false">Select all 4 tree nuts</button>
+                                <button type="button" class="checker__reset" id="js-checker-reset" hidden>Clear filters</button>
+                            </div>
                         </div>
                         <div class="checker__chips" role="group" aria-labelledby="checker-q">
                             <button type="button" class="fchip" data-avoid="soy" aria-pressed="false">Soybeans</button>
-                            <button type="button" class="fchip" data-avoid="nuts" aria-pressed="false">Tree nuts (Almond / Cashew / Pistachio / Macadamia)</button>
+                            <button type="button" class="fchip" data-avoid="almond" aria-pressed="false">Almonds</button>
+                            <button type="button" class="fchip" data-avoid="pistachio" aria-pressed="false">Pistachio</button>
+                            <button type="button" class="fchip" data-avoid="cashew" aria-pressed="false">Cashew Nuts</button>
+                            <button type="button" class="fchip" data-avoid="macadamia" aria-pressed="false">Macadamia Nuts</button>
                             <button type="button" class="fchip" data-avoid="sesame" aria-pressed="false">Sesame</button>
-                            <button type="button" class="fchip" data-avoid="yam" aria-pressed="false">Japanese yam</button>
+                            <button type="button" class="fchip" data-avoid="yam" aria-pressed="false">Japanese Yam</button>
                             <button type="button" class="fchip" data-avoid="apple" aria-pressed="false">Apple</button>
                             <button type="button" class="fchip" data-avoid="peach" aria-pressed="false">Peach</button>
                         </div>
-                        <p class="checker__result" id="js-checker-result" aria-live="polite">Select any ingredients above to filter our regular menu items.</p>
+                        <div class="checker__summary-bar">
+                            <p class="checker__result" id="js-checker-result" aria-live="polite">Tap any ingredients above to instantly reveal matching menu options.</p>
+                            <div class="checker__summary-actions">
+                                <button type="button" class="checker__expand-btn" id="js-checker-expand" aria-expanded="false" aria-controls="js-checker-drawer">View all 22 menu groups +</button>
+                                <label class="checker__hide-toggle"><input type="checkbox" id="js-checker-hide-out" checked><span>Show matching items only</span></label>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="checker__list" id="js-checker-list">
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Waffle &amp; Pure Soy Soft Serve / Pure Soy Soft Serve</strong><small>Contains: Soybeans (+5 free toppings; Kinako contains soy).</small></div></li>
-                        <li data-contains="soy apple"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Whip Cup &mdash; Strawberry (¥660)</strong><small>Contains: Soybeans, Apple.</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Whip Cup &mdash; Caramel Nuts (¥660)</strong><small>Contains: Soybeans, Almonds, Cashew Nuts, Macadamia Nuts.</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Ice Cups &mdash; Strawberry, Matcha (¥690)</strong><small>Contains: Soybeans.</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Ice Cup &mdash; Chocolate (¥690)</strong><small>Contains: Soybeans, Almonds.</small></div></li>
-                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Ice Cup &mdash; Black Sesame (¥690)</strong><small>Contains: Soybeans, Sesame.</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Organic Iced Coffee Float (¥660)</strong><small>Contains: Soybeans.</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Bubble Waffles &mdash; Plain (¥660), Cocoa, Matcha (¥690)</strong><small>Contains: Soybeans. Made without nuts or sesame in the batter.</small></div></li>
-                        <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Bubble Waffle &mdash; Black Sesame (¥690)</strong><small>Contains: Soybeans, Sesame.</small></div></li>
-                        <li data-contains="soy yam"><span class="ok" aria-hidden="true"></span><div><strong>Baked Soy Donuts &mdash; 5 flavors (¥330)</strong><small>Cranberry, Yame Matcha, Kinako, Earl Grey, Chocolat &middot; Contains: Soybeans, Japanese yam (Nut-free recipe).</small></div></li>
-                        <li data-contains="soy yam sesame"><span class="ok" aria-hidden="true"></span><div><strong>Baked Soy Donut &mdash; Black Sesame (¥330)</strong><small>Contains: Soybeans, Japanese yam, Sesame (Nut-free recipe).</small></div></li>
-                        <li data-contains="nuts apple"><span class="ok" aria-hidden="true"></span><div><strong>Glazed Cake Donuts &mdash; Strawberry, Matcha (¥430)</strong><small>Soy-free &amp; Macadamia-free &middot; Contains: Almonds, Pistachio, Apple.</small></div></li>
-                        <li data-contains="nuts apple"><span class="ok" aria-hidden="true"></span><div><strong>Glazed Cake Donuts &mdash; Double Choco, Lemon, Choco Mint, Coconut (¥430)</strong><small>Soy-free, Pistachio-free &amp; Macadamia-free &middot; Contains: Almonds, Apple.</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Gluten-Free Rice-Flour Dorayaki &mdash; All 4 flavors (¥460)</strong><small>Anko Cream, Strawberry Cream, Matcha Anko, Classic Anko &middot; Contains: Soybeans, Almonds.</small></div></li>
-                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Berry Mix (¥490)</strong><small>Free from all 29 specified allergens in Japan (Soy-free &amp; Nut-free recipe).</small></div></li>
-                        <li data-contains="apple"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Refreshing Apple, Juicy Dragon Fruit (¥490)</strong><small>Soy-free &amp; Nut-free recipe &middot; Contains: Apple.</small></div></li>
-                        <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Too Juicy Peach (¥490)</strong><small>Soy-free &amp; Nut-free recipe &middot; Contains: Peach.</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Rich Matcha, Fragrant Hojicha, Vanilla Coconut (¥490)</strong><small>Contains: Soybeans.</small></div></li>
-                        <li data-contains="soy nuts"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Melting Chocolate (¥490)</strong><small>Contains: Soybeans, Almonds.</small></div></li>
-                        <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Cafe Drinks &mdash; Organic Coffee, Amazake Latte, Lemon Squash, Mixed Berry Tea</strong><small>Free from all 29 specified allergens in Japan (Soy-free &amp; Nut-free).</small></div></li>
-                        <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Cafe Drinks &mdash; Brown Sugar Soy Latte, Matcha Soy Latte (¥390)</strong><small>Contains: Soybeans.</small></div></li>
-                        <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>Cafe Drink &mdash; Tropical Soda (¥360)</strong><small>Soy-free &amp; Nut-free &middot; Contains: Peach.</small></div></li>
-                    </ul>
-                    <p class="checker__note">Limited seasonal items may use additional ingredients (such as oranges or cashew paste). Please confirm with our staff before ordering. <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">View Official FoodHug Allergy Page &rarr;</a></p>
-                    <div class="checker__contact">
-                        <a class="btn btn--secondary btn--sm" href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>Questions in advance? DM @soystories_yakuin</a>
-                        <a class="btn btn--secondary btn--sm" href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Official FoodHug Allergy Page<svg class="ic" aria-hidden="true"><use href="#i-external"/></svg></a>
+                    <div class="checker__drawer" id="js-checker-drawer">
+                        <ul class="checker__list" id="js-checker-list">
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Waffle &amp; Pure Soy Soft Serve / Pure Soy Soft Serve</strong><small>Contains: Soybeans (+5 free toppings; Kinako contains soy).</small></div></li>
+                            <li data-contains="soy apple"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Whip Cup &mdash; Strawberry (¥660)</strong><small>Contains: Soybeans, Apple.</small></div></li>
+                            <li data-contains="soy almond cashew macadamia"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Whip Cup &mdash; Caramel Nuts (¥660)</strong><small>Contains: Soybeans, Almonds, Cashew Nuts, Macadamia Nuts.</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Ice Cups &mdash; Strawberry, Matcha (¥690)</strong><small>Contains: Soybeans.</small></div></li>
+                            <li data-contains="soy almond"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Ice Cup &mdash; Chocolate (¥690)</strong><small>Contains: Soybeans, Almonds.</small></div></li>
+                            <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Waffle Ice Cup &mdash; Black Sesame (¥690)</strong><small>Contains: Soybeans, Sesame.</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Organic Iced Coffee Float (¥660)</strong><small>Contains: Soybeans.</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Bubble Waffles &mdash; Plain (¥660), Cocoa, Matcha (¥690)</strong><small>Contains: Soybeans. Made without nuts or sesame in the batter.</small></div></li>
+                            <li data-contains="soy sesame"><span class="ok" aria-hidden="true"></span><div><strong>Bubble Waffle &mdash; Black Sesame (¥690)</strong><small>Contains: Soybeans, Sesame.</small></div></li>
+                            <li data-contains="soy yam"><span class="ok" aria-hidden="true"></span><div><strong>Baked Soy Donuts &mdash; 5 flavors (¥330)</strong><small>Cranberry, Yame Matcha, Kinako, Earl Grey, Chocolat &middot; Contains: Soybeans, Japanese yam (Nut-free recipe).</small></div></li>
+                            <li data-contains="soy yam sesame"><span class="ok" aria-hidden="true"></span><div><strong>Baked Soy Donut &mdash; Black Sesame (¥330)</strong><small>Contains: Soybeans, Japanese yam, Sesame (Nut-free recipe).</small></div></li>
+                            <li data-contains="almond pistachio apple"><span class="ok" aria-hidden="true"></span><div><strong>Glazed Cake Donuts &mdash; Strawberry, Matcha (¥430)</strong><small>Soy-free &amp; Macadamia-free &middot; Contains: Almonds, Pistachio, Apple.</small></div></li>
+                            <li data-contains="almond apple"><span class="ok" aria-hidden="true"></span><div><strong>Glazed Cake Donuts &mdash; Double Choco, Lemon, Choco Mint, Coconut (¥430)</strong><small>Soy-free, Pistachio-free &amp; Macadamia-free &middot; Contains: Almonds, Apple.</small></div></li>
+                            <li data-contains="soy almond"><span class="ok" aria-hidden="true"></span><div><strong>Gluten-Free Rice-Flour Dorayaki &mdash; All 4 flavors (¥460)</strong><small>Anko Cream, Strawberry Cream, Matcha Anko, Classic Anko &middot; Contains: Soybeans, Almonds.</small></div></li>
+                            <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Berry Mix (¥490)</strong><small>Free from all 29 specified allergens in Japan (Soy-free &amp; Nut-free recipe).</small></div></li>
+                            <li data-contains="apple"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Refreshing Apple, Juicy Dragon Fruit (¥490)</strong><small>Soy-free &amp; Nut-free recipe &middot; Contains: Apple.</small></div></li>
+                            <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Too Juicy Peach (¥490)</strong><small>Soy-free &amp; Nut-free recipe &middot; Contains: Peach.</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Rich Matcha, Fragrant Hojicha, Vanilla Coconut (¥490)</strong><small>Contains: Soybeans.</small></div></li>
+                            <li data-contains="soy almond"><span class="ok" aria-hidden="true"></span><div><strong>Craft Gelato &mdash; Melting Chocolate (¥490)</strong><small>Contains: Soybeans, Almonds.</small></div></li>
+                            <li data-contains=""><span class="ok" aria-hidden="true"></span><div><strong>Cafe Drinks &mdash; Organic Coffee, Amazake Latte, Lemon Squash, Mixed Berry Tea</strong><small>Free from all 29 specified allergens in Japan (Soy-free &amp; Nut-free).</small></div></li>
+                            <li data-contains="soy"><span class="ok" aria-hidden="true"></span><div><strong>Cafe Drinks &mdash; Brown Sugar Soy Latte, Matcha Soy Latte (¥390)</strong><small>Contains: Soybeans.</small></div></li>
+                            <li data-contains="peach"><span class="ok" aria-hidden="true"></span><div><strong>Cafe Drink &mdash; Tropical Soda (¥360)</strong><small>Soy-free &amp; Nut-free &middot; Contains: Peach.</small></div></li>
+                        </ul>
+                        <p class="checker__note">Limited seasonal items may use additional ingredients (such as oranges or cashew paste). Please confirm with our staff before ordering. <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">View Official FoodHug Allergy Page &rarr;</a></p>
+                        <div class="checker__contact">
+                            <a class="btn btn--secondary btn--sm" href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>Questions in advance? DM @soystories_yakuin</a>
+                            <a class="btn btn--secondary btn--sm" href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Official FoodHug Allergy Page<svg class="ic" aria-hidden="true"><use href="#i-external"/></svg></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1082,6 +1111,9 @@
                     <button type="button" class="rail-nav__btn" data-rail-prev aria-controls="js-review-rail" aria-label="Previous reviews"><svg class="ic" aria-hidden="true"><use href="#i-prev"/></svg></button>
                     <button type="button" class="rail-nav__btn" data-rail-next aria-controls="js-review-rail" aria-label="Next reviews"><svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></button>
                 </div>
+                <div class="reviews__more-wrap">
+                    <button type="button" class="btn btn--secondary btn--sm" id="js-reviews-more" aria-expanded="false">Read 4 more traveler reviews +</button>
+                </div>
                 <p class="fine">Verbatim excerpts from public traveler reviews on Google Maps and HappyCow (individual experiences; please always verify per-item ingredients for allergies).</p>
             </div>
         </section>
@@ -1115,68 +1147,76 @@
                     <p class="kicker">Frequently Asked Questions</p>
                     <h2 class="sec__title" id="faq-title">Everything you need to know before visiting</h2>
                 </div>
-                <div class="faq">
-                    <details>
-                        <summary>1. Are all products 100% vegan (plant-based)?</summary>
-                        <div><p>Yes. Every single sweet and drink at SoyStories Yakuin is 100% plant-based (vegan). We never use meat, fish, dairy, eggs, honey, or gelatin in any product.</p></div>
-                    </details>
-                    <details>
-                        <summary>2. What is your gluten-free policy? Can guests with celiac disease or wheat allergies eat here?</summary>
-                        <div><p>All of our products are made with 100% gluten-free rice flour or almond flour, and <strong>wheat, dairy, and eggs are never brought into our kitchen</strong> (including staff personal food for wheat). However, because we handle soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam, apples, peaches, and oranges in the same kitchen (disclosed across Japan’s <strong>29 specified allergens</strong>), <strong>complete elimination of trace allergens cannot be guaranteed</strong>. Guests with severe allergies or celiac disease are encouraged to review per-item ingredients and consult our staff before ordering.</p></div>
-                    </details>
-                    <details>
-                        <summary>3. How can I check per-item ingredients and allergens?</summary>
-                        <div><p>You can use the interactive <a href="#allergy">6-Allergen Checker</a> and the <a href="#full-menu-list">Complete Menu &amp; 29-Allergen Reference Table</a> on this page, check the allergen badges on each menu category page, or view our <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Official FoodHug Allergy Disclosure Page</a>. You can also ask our counter staff directly.</p></div>
-                    </details>
-                    <details>
-                        <summary>4. Do your products contain soy, tree nuts (almonds, cashews, pistachio, macadamia), sesame, or Japanese yam?</summary>
-                        <div><p>It depends on the product (all disclosed under Japan’s 29 specified allergens):<br>
-                        &bull; <strong>Soybeans:</strong> Used in Bubble Waffles, Pure Soy Soft Serve, Waffle Ice &amp; Whip Cups, Coffee Float, Baked Soy Donuts, Rice-Flour Dorayaki, 4 Gelato flavors, and Soy Lattes. <em>Soy-free options</em> include all 6 Glazed Cake Donuts (¥430), 4 Fruit Gelato flavors, Organic Coffee, Amazake Latte, Lemon Squash, Mixed Berry Tea, and Tropical Soda.<br>
-                        &bull; <strong>Tree Nuts:</strong> <strong>Almonds</strong> are used in Glazed Cake Donuts (¥430), Rice-Flour Dorayaki (¥460), Chocolate Waffle Ice, Melting Chocolate Gelato, and Caramel Nuts Waffle Whip. <strong>Cashew Nuts &amp; Macadamia Nuts</strong> are used in Caramel Nuts Waffle Whip (Cake Donuts do not use macadamia nuts). <strong>Pistachio</strong> is used on Strawberry &amp; Matcha Glazed Cake Donuts.<br>
-                        &bull; <strong>Sesame:</strong> Used in Black Sesame Bubble Waffle, Black Sesame Waffle Ice, and Black Sesame Soy Donut.<br>
-                        &bull; <strong>Japanese Yam (Yamaimo):</strong> Used in the 6 Baked Soy Donuts (¥330) for chewiness.<br>
-                        &bull; <strong>Apple / Peach:</strong> Apple is used in Glazed Cake Donuts, Strawberry Waffle Whip, and Refreshing Apple Gelato; Peach is used in Too Juicy Peach Gelato and Tropical Soda.</p></div>
-                    </details>
-                    <details>
-                        <summary>5. Do you use white sugar? Are your sweets “sugar-free”?</summary>
-                        <div><p>We use <strong>no refined white sugar</strong>. Instead, our sweets are gently sweetened with beet sugar, organic agave/maple, or natural plant sweeteners depending on the item. Please note that this means they are free from refined white sugar, <strong>not</strong> zero-sugar / sugar-free.</p></div>
-                    </details>
-                    <details>
-                        <summary>6. What are your opening hours, last order time, and holidays?</summary>
-                        <div><p>We are open daily from <strong>11:00 AM to 10:00 PM (22:00)</strong>, with <strong>Last Order at 9:45 PM (21:45)</strong> and no regular holidays. Any temporary hour changes or special holidays are announced on <a href="https://www.instagram.com/soystories_yakuin/" target="_blank" rel="noopener">Instagram (@soystories_yakuin)</a>.</p></div>
-                    </details>
-                    <details>
-                        <summary>7. Can items sell out? Can I pre-order or hold items?</summary>
-                        <div><p>Bubble waffles and soy soft serve are prepared fresh until last order (9:45 PM), though specific donut or gelato flavors can sell out later in the evening. To reserve specific flavors or gift boxes, send us a DM on <a href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener">Instagram (@soystories_yakuin)</a>.</p></div>
-                    </details>
-                    <details>
-                        <summary>8. How many dine-in seats do you have? Can I bring a stroller or suitcase?</summary>
-                        <div><p>We have a compact dine-in space with 4 main seats plus wooden cube stools. Strollers and suitcases are welcome inside, there is no minimum order per person, and sharing items is welcome.</p></div>
-                    </details>
-                    <details>
-                        <summary>9. Which items are best for takeaway, and how long can I carry them?</summary>
-                        <div><p>&bull; <strong>Bubble Waffles &amp; Soy Soft Serve:</strong> Soft-serve waffles melt quickly and are best eaten immediately. Standalone Bubble Waffles (¥660–¥690) can be packed in a takeout box (+¥100).<br>
-                        &bull; <strong>Glazed Cake Donuts (¥430):</strong> Keep for <strong>about 1 week at room temperature</strong> &mdash; our best choice for hotel snacks, bullet trains, and gifts.<br>
-                        &bull; <strong>Gluten-Free Rice-Flour Dorayaki (¥460):</strong> Handed over frozen; thaw 30–60 min at room temperature (or 1–2 hours refrigerated) to enjoy half-frozen like ice cream or soft and fluffy.<br>
-                        &bull; <strong>Baked Soy Donuts (¥330):</strong> Sold frozen (or warmed in-store). If carried at room temperature, they thaw naturally; keep refrigerated and enjoy within 3 days.<br>
-                        &bull; <strong>Cup Craft Gelato (¥490):</strong> Sold frozen; cooler bags with ice packs are available (free when buying 4 or more items).</p></div>
-                    </details>
-                    <details>
-                        <summary>10. How do I eat or reheat the frozen Baked Soy Donuts?</summary>
-                        <div><p>If you want to eat a Baked Soy Donut right away, <strong>ask our staff to warm it up in-store</strong>! If taking it back to your hotel or home, heat it in a <strong>600W microwave for about 1 minute</strong> (or toast lightly after thawing) for a freshly baked mochi-chewy texture.</p></div>
-                    </details>
-                    <details>
-                        <summary>11. What payment methods do you accept?</summary>
-                        <div><p>We accept Cash (JPY), major credit cards (Visa, Mastercard, JCB, American Express, Diners Club), Japanese transit IC cards (Suica, PASMO, ICOCA, SUGOCA, nimoca, Hayakaken), iD, QUICPay, and PayPay. All menu prices include tax.</p></div>
-                    </details>
-                    <details>
-                        <summary>12. How do I get there from Yakuin-odori, Tenjin, or Hakata Station?</summary>
-                        <div><p>Take the <strong>Fukuoka City Subway Nanakuma Line</strong> to <strong>Yakuin-odori Station (薬院大通駅)</strong>, take <strong>Exit 2</strong>, and walk 2–3 minutes (~160m) toward Yakuin Mutsukado. It is only ~4 minutes by subway from Tenjin-minami Station and ~9 minutes from Hakata Station. Look for our 1st-floor storefront with the glowing soft-serve sign.</p></div>
-                    </details>
-                    <details>
-                        <summary>13. Is there an English menu? What if I don't speak Japanese?</summary>
-                        <div><p>We have a printed English menu at the counter. Even if staff on shift speak basic English, you can tap the <strong>“Show staff”</strong> button on any item on this website to display a clear Japanese ordering card (with Eat-In / Takeout toggle) on your phone screen.</p></div>
-                    </details>
+                <div>
+                    <div class="faq-filter" role="toolbar" aria-label="Filter FAQ by topic">
+                        <button type="button" class="faq-filter__btn" data-faq-btn="all" aria-pressed="true">All (13)</button>
+                        <button type="button" class="faq-filter__btn" data-faq-btn="diet" aria-pressed="false">Vegan &amp; Allergens</button>
+                        <button type="button" class="faq-filter__btn" data-faq-btn="menu" aria-pressed="false">Takeout &amp; Storage</button>
+                        <button type="button" class="faq-filter__btn" data-faq-btn="visit" aria-pressed="false">Hours, Access &amp; Payment</button>
+                    </div>
+                    <div class="faq">
+                        <details data-faq-cat="diet">
+                            <summary>1. Are all products 100% vegan (plant-based)?</summary>
+                            <div><p>Yes. Every single sweet and drink at SoyStories Yakuin is 100% plant-based (vegan). We never use meat, fish, dairy, eggs, honey, or gelatin in any product.</p></div>
+                        </details>
+                        <details data-faq-cat="diet">
+                            <summary>2. What is your gluten-free policy? Can guests with celiac disease or wheat allergies eat here?</summary>
+                            <div><p>All of our products are made with 100% gluten-free rice flour or almond flour, and <strong>wheat, dairy, and eggs are never brought into our kitchen</strong> (including staff personal food for wheat). However, because we handle soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam, apples, peaches, and oranges in the same kitchen (disclosed across Japan’s <strong>29 specified allergens</strong>), <strong>complete elimination of trace allergens cannot be guaranteed</strong>. Guests with severe allergies or celiac disease are encouraged to review per-item ingredients and consult our staff before ordering.</p></div>
+                        </details>
+                        <details data-faq-cat="diet">
+                            <summary>3. How can I check per-item ingredients and allergens?</summary>
+                            <div><p>You can use the interactive <a href="#allergy">9-Allergen Checker</a> and the <a href="#full-menu-list">Complete Menu &amp; 29-Allergen Reference Table</a> on this page, check the allergen badges on each menu category page, or view our <a href="https://food-hug.com/soystoriesenglish-page/" target="_blank" rel="noopener">Official FoodHug Allergy Disclosure Page</a>. You can also ask our counter staff directly.</p></div>
+                        </details>
+                        <details data-faq-cat="diet">
+                            <summary>4. Do your products contain soy, tree nuts (almonds, cashews, pistachio, macadamia), sesame, or Japanese yam?</summary>
+                            <div><p>It depends on the product (all disclosed under Japan’s 29 specified allergens):<br>
+                            &bull; <strong>Soybeans:</strong> Used in Bubble Waffles, Pure Soy Soft Serve, Waffle Ice &amp; Whip Cups, Coffee Float, Baked Soy Donuts, Rice-Flour Dorayaki, 4 Gelato flavors, and Soy Lattes. <em>Soy-free options</em> include all 6 Glazed Cake Donuts (¥430), 4 Fruit Gelato flavors, Organic Coffee, Amazake Latte, Lemon Squash, Mixed Berry Tea, and Tropical Soda.<br>
+                            &bull; <strong>Tree Nuts:</strong> <strong>Almonds</strong> are used in Glazed Cake Donuts (¥430), Rice-Flour Dorayaki (¥460), Chocolate Waffle Ice, Melting Chocolate Gelato, and Caramel Nuts Waffle Whip. <strong>Cashew Nuts &amp; Macadamia Nuts</strong> are used in Caramel Nuts Waffle Whip (Cake Donuts do not use macadamia nuts). <strong>Pistachio</strong> is used on Strawberry &amp; Matcha Glazed Cake Donuts.<br>
+                            &bull; <strong>Sesame:</strong> Used in Black Sesame Bubble Waffle, Black Sesame Waffle Ice, and Black Sesame Soy Donut.<br>
+                            &bull; <strong>Japanese Yam (Yamaimo):</strong> Used in the 6 Baked Soy Donuts (¥330) for chewiness.<br>
+                            &bull; <strong>Apple / Peach:</strong> Apple is used in Glazed Cake Donuts, Strawberry Waffle Whip, and Refreshing Apple Gelato; Peach is used in Too Juicy Peach Gelato and Tropical Soda.</p></div>
+                        </details>
+                        <details data-faq-cat="diet">
+                            <summary>5. Do you use white sugar? Are your sweets “sugar-free”?</summary>
+                            <div><p>We use <strong>no refined white sugar</strong>. Instead, our sweets are gently sweetened with beet sugar, organic agave/maple, or natural plant sweeteners depending on the item. Please note that this means they are free from refined white sugar, <strong>not</strong> zero-sugar / sugar-free.</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>6. What are your opening hours, last order time, and holidays?</summary>
+                            <div><p>We are open daily from <strong>11:00 AM to 10:00 PM (22:00)</strong>, with <strong>Last Order at 9:45 PM (21:45)</strong> and no regular holidays. Any temporary hour changes or special holidays are announced on <a href="https://www.instagram.com/soystories_yakuin/" target="_blank" rel="noopener">Instagram (@soystories_yakuin)</a>.</p></div>
+                        </details>
+                        <details data-faq-cat="menu">
+                            <summary>7. Can items sell out? Can I pre-order or hold items?</summary>
+                            <div><p>Bubble waffles and soy soft serve are prepared fresh until last order (9:45 PM), though specific donut or gelato flavors can sell out later in the evening. To reserve specific flavors or gift boxes, send us a DM on <a href="https://ig.me/m/soystories_yakuin" target="_blank" rel="noopener">Instagram (@soystories_yakuin)</a>.</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>8. How many dine-in seats do you have? Can I bring a stroller or suitcase?</summary>
+                            <div><p>We have a compact dine-in space with 4 main seats plus wooden cube stools. Strollers and suitcases are welcome inside, there is no minimum order per person, and sharing items is welcome.</p></div>
+                        </details>
+                        <details data-faq-cat="menu">
+                            <summary>9. Which items are best for takeaway, and how long can I carry them?</summary>
+                            <div><p>&bull; <strong>Bubble Waffles &amp; Soy Soft Serve:</strong> Soft-serve waffles melt quickly and are best eaten immediately. Standalone Bubble Waffles (¥660–¥690) can be packed in a takeout box (+¥100).<br>
+                            &bull; <strong>Glazed Cake Donuts (¥430):</strong> Keep for <strong>about 1 week at room temperature</strong> &mdash; our best choice for hotel snacks, bullet trains, and gifts.<br>
+                            &bull; <strong>Gluten-Free Rice-Flour Dorayaki (¥460):</strong> Handed over frozen; thaw 30–60 min at room temperature (or 1–2 hours refrigerated) to enjoy half-frozen like ice cream or soft and fluffy.<br>
+                            &bull; <strong>Baked Soy Donuts (¥330):</strong> Sold frozen (or warmed in-store). If carried at room temperature, they thaw naturally; keep refrigerated and enjoy within 3 days.<br>
+                            &bull; <strong>Cup Craft Gelato (¥490):</strong> Sold frozen; cooler bags with ice packs are available (free when buying 4 or more items).</p></div>
+                        </details>
+                        <details data-faq-cat="menu">
+                            <summary>10. How do I eat or reheat the frozen Baked Soy Donuts?</summary>
+                            <div><p>If you want to eat a Baked Soy Donut right away, <strong>ask our staff to warm it up in-store</strong>! If taking it back to your hotel or home, heat it in a <strong>600W microwave for about 1 minute</strong> (or toast lightly after thawing) for a freshly baked mochi-chewy texture.</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>11. What payment methods do you accept?</summary>
+                            <div><p>We accept Cash (JPY), major credit cards (Visa, Mastercard, JCB, American Express, Diners Club), Japanese transit IC cards (Suica, PASMO, ICOCA, SUGOCA, nimoca, Hayakaken), iD, QUICPay, and PayPay. All menu prices include tax.</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>12. How do I get there from Yakuin-odori, Tenjin, or Hakata Station?</summary>
+                            <div><p>Take the <strong>Fukuoka City Subway Nanakuma Line</strong> to <strong>Yakuin-odori Station (薬院大通駅)</strong>, take <strong>Exit 2</strong>, and walk 2–3 minutes (~160m) toward Yakuin Mutsukado. It is only ~4 minutes by subway from Tenjin-minami Station and ~9 minutes from Hakata Station. Look for our 1st-floor storefront with the glowing soft-serve sign.</p></div>
+                        </details>
+                        <details data-faq-cat="visit">
+                            <summary>13. Is there an English menu? What if I don't speak Japanese?</summary>
+                            <div><p>We have a printed English menu at the counter. Even if staff on shift speak basic English, you can tap the <strong>“Show staff”</strong> button on any item on this website to display a clear Japanese ordering card (with Eat-In / Takeout toggle) on your phone screen.</p></div>
+                        </details>
+                    </div>
                 </div>
             </div>
         </section>
