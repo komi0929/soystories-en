@@ -8,6 +8,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://en.soystories.cafe/ja.html"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://en.soystories.cafe/ko.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://en.soystories.cafe/zh-tw.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://en.soystories.cafe/zh-cn.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/"/>
   </url>
   <url>
@@ -17,6 +18,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://en.soystories.cafe/ja.html"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://en.soystories.cafe/ko.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://en.soystories.cafe/zh-tw.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://en.soystories.cafe/zh-cn.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/"/>
   </url>
   <url>
@@ -26,6 +28,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://en.soystories.cafe/ja.html"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://en.soystories.cafe/ko.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://en.soystories.cafe/zh-tw.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://en.soystories.cafe/zh-cn.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/"/>
   </url>
   <url>
@@ -35,6 +38,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://en.soystories.cafe/ja.html"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://en.soystories.cafe/ko.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://en.soystories.cafe/zh-tw.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://en.soystories.cafe/zh-cn.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/"/>
   </url>
   <url>
@@ -55,6 +59,20 @@
   </url>
   <url>
     <loc>https://en.soystories.cafe/ice.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://en.soystories.cafe/zh-cn.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.soystories.cafe/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://en.soystories.cafe/ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://en.soystories.cafe/ko.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://en.soystories.cafe/zh-tw.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://en.soystories.cafe/zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/"/>
+  </url>
+  <url>
+    <loc>https://en.soystories.cafe/vegan-ice-cream-fukuoka.html</loc>
     <lastmod>2026-11-27</lastmod>
   </url>
 </urlset>

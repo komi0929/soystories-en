@@ -54,6 +54,31 @@ const UI = PAGE_LANG === 'ja' ? {
     ['ミックスベリーティー', '믹스베리 티'],
     ['トロピカルソーダ', '트로피컬 소다 (복숭아 함유)']
   ]
+} : PAGE_LANG === 'zh-hans' ? {
+  openNow: '营业中 · 至 22:00（最后点单 21:45）',
+  openLastOrder: '营业中 · 最后点单 21:45',
+  lastOrderPassed: '今日点单已结束 · 每日 11:00 营业',
+  closedNow: '休息中 · 每日 11:00 营业',
+  allergenLabels: { soy: '大豆', almond: '杏仁', pistachio: '开心果', cashew: '腰果', macadamia: '夏威夷果', nuts: '坚果类', sesame: '芝麻', yam: '山药', apple: '苹果', peach: '水蜜桃' },
+  allergenJoin: '、',
+  allergenIdle: '请选择要避开的食材，查看配方未使用这些食材的餐品。',
+  allergenResult: function (ok, total, names) { return '配方未使用' + names + '的餐品：' + ok + ' / ' + total + ' 组'; },
+  expandList: function (n) { return '查看全部 ' + n + ' 组详情 ＋'; },
+  collapseList: '折叠详情 －',
+  copied: '✓ 已复制，可粘贴到 Google 地图或打车应用（Uber、GO）。',
+  copiedBtn: '已复制',
+  setDrinks: [
+    ['オーガニックコーヒー（HOT）', '有机热咖啡'],
+    ['オーガニックコーヒー（COLD）', '有机冰咖啡'],
+    ['黒糖ソイラテ（HOT）', '黑糖热豆浆拿铁'],
+    ['黒糖ソイラテ（COLD）', '黑糖冰豆浆拿铁'],
+    ['抹茶ソイラテ（HOT）', '抹茶热豆浆拿铁'],
+    ['抹茶ソイラテ（COLD）', '抹茶冰豆浆拿铁'],
+    ['甘酒ラテ', '甘酒拿铁（不含大豆）'],
+    ['レモンスカッシュ', '柠檬气泡饮料'],
+    ['ミックスベリーティー', '混合莓果茶'],
+    ['トロピカルソーダ', '热带水果气泡饮料（含水蜜桃）']
+  ]
 } : PAGE_LANG.indexOf('zh') === 0 ? {
   openNow: '營業中 · 至 22:00（最後點餐 21:45）',
   openLastOrder: '營業中 · 最後點餐 21:45',
