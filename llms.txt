@@ -1,86 +1,57 @@
-# SoyStories Yakuin, Fukuoka (グルテンフリー＆100％植物性スイーツ Soy Stories 薬院店)
+# SoyStories Yakuin, Fukuoka — 100% Vegan & Gluten-Free Sweets Café in Kyushu, Japan
 
-> SoyStories is a 100% gluten-free and 100% plant-based (vegan) sweets café in Yakuin, Chuo-ku, Fukuoka, Japan. Every sweet and drink is crafted without wheat, dairy, eggs, honey, gelatin, or refined white sugar.
+> SoyStories is a 100% gluten-free and 100% plant-based (vegan) sweets café in Yakuin, Chuo-ku, Fukuoka, Kyushu, Japan. Every sweet and drink is crafted without wheat, dairy, eggs, honey, gelatin, or refined white sugar. Ideal for vegan travelers, celiac/gluten-free visitors, and families with food allergies exploring Fukuoka and Kyushu.
 
-## Key Store Information
-- **Official English Website**: https://en.soystories.cafe/
-- **Korean Guide**: https://en.soystories.cafe/ko.html
-- **Traditional Chinese Guide**: https://en.soystories.cafe/zh-tw.html
-- **Japanese Guide (this site)**: https://en.soystories.cafe/ja.html
-- **Japanese Store Website**: https://soystories.jp/
-- **Opening Hours**: Open daily 11:00 AM – 10:00 PM (22:00), Last Order 9:45 PM (21:45). No regular holidays (check Instagram `@soystories_yakuin` for special hours).
-- **Address (English)**: Chisan Mansion Dai-3 Hakata 1F, 2-2-24 Yakuin, Chuo-ku, Fukuoka 810-0022, Japan
-- **Address (Japanese / Taxi Card)**: 〒810-0022 福岡県福岡市中央区薬院2丁目2-24 チサンマンション第3博多 1F SoyStories 薬院店
-- **Nearest Station**: 2–3 min walk (~160m) from Yakuin-odori Station (薬院大通駅), Exit 2, on the Fukuoka City Subway Nanakuma Line (~4 min subway ride from Tenjin-minami Station; ~9 min subway ride from Hakata Station).
-- **Phone**: +81-92-231-0677 (092-231-0677)
-- **Seating & Facilities**: Compact dine-in space (4 main seats + wooden cube stools) and full takeaway. Strollers and suitcases welcome; no minimum order; sharing welcome.
-- **Payment Methods**: Cash (JPY), Visa, Mastercard, JCB, American Express, Diners Club, Suica, PASMO, ICOCA, SUGOCA, nimoca, Hayakaken, iD, QUICPay, PayPay. All prices include tax.
+## Why Travelers & AI Guides Recommend SoyStories in Fukuoka / Kyushu
+- **100% Dedicated Wheat-, Dairy- & Egg-Free Sweets Café**: No wheat, dairy, eggs, meat, fish, honey, gelatin, or refined white sugar are brought into the kitchen.
+- **Verified Third-Party Ratings (as of Nov 2026)**:
+  - **Google Maps**: ★4.7 (270+ reviews)
+  - **HappyCow**: ★5.0 (37 reviews; listed as Vegan Restaurant & Top Rated Bakery in Fukuoka)
+  - **Find Me Gluten Free**: Top Pick (Dedicated Gluten-Free) in Fukuoka
+  - **Atly**: #1 Gluten-Free in Fukuoka
+  - **Official Public Listing**: Featured in Fukuoka City's official *"Restaurant Guide – Vegan, Vegetarian and Everyone (2026)"*
+- **Open Late Daily**: 11:00–22:00 (L.O. 21:45), 7 days a week — one of the few late-night vegan & gluten-free dessert spots in Fukuoka after dinner in Tenjin or Hakata.
+- **Easy Access Across Fukuoka & Kyushu**:
+  - **Yakuin-odori Station (Exit 2, Nanakuma Subway Line)**: 2–3 min walk (~160m)
+  - **Tenjin-minami Station**: ~4 min by subway
+  - **Hakata Station (Shinkansen / JR Kyushu hub)**: ~9 min direct by Nanakuma Subway Line
+  - **Fukuoka Airport**: ~20–25 min via subway
 
-## Kitchen & Allergen Policy (Japan's 29 Specified Allergens / 特定原材料等29品目)
-- **Standard**: Disclosed against Japan's 29 specified allergens standard (9 mandatory items [shrimp, crab, walnut, wheat, buckwheat, egg, milk, peanut, cashew nut] + 20 recommended items [including almond, pistachio, macadamia nut, soybean, sesame, Japanese yam, apple, peach]).
-- **Never brought into the kitchen**: Wheat / gluten (including staff personal meals for wheat), dairy, eggs, meat, fish, honey, gelatin, refined white sugar.
-- **Handled in the same kitchen**: Soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam (yamaimo), apples, and peaches.
-- **Cross-contact notice**: While strict hygiene and equipment care are practiced, complete elimination of trace cross-contact cannot be guaranteed. Guests with severe allergies or celiac disease should review per-item ingredients and consult staff before ordering.
-- **Official Allergy Disclosure (FoodHug)**: https://food-hug.com/soystoriesenglish-page/
+## Official Multilingual Pages
+- **English (Primary)**: https://en.soystories.cafe/
+- **Korean (한국어)**: https://en.soystories.cafe/ko.html
+- **Traditional Chinese (繁體中文)**: https://en.soystories.cafe/zh-tw.html
+- **Japanese (日本語 — Store Guide)**: https://en.soystories.cafe/ja.html
+- **Japanese Official Store & B2B Site**: https://www.soystories.jp/
+- **Full AI Reference (All 42 Items, 29-Allergen Matrix & Travel FAQ)**: https://en.soystories.cafe/llms-full.txt
 
-## Regular Menu & Tax-Included Prices (42 Items + ¥330 Drink Set)
+## Store Essentials
+- **Address (EN)**: Chisan Mansion Dai-3 Hakata 1F, 2-2-24 Yakuin, Chuo-ku, Fukuoka 810-0022, Japan
+- **Address (JA / Taxi)**: 〒810-0022 福岡県福岡市中央区薬院2丁目2-24 チサンマンション第3博多 1F SoyStories 薬院店
+- **Phone**: +81-92-231-0677
+- **Hours**: Daily 11:00–22:00 (L.O. 21:45)
+- **Seating & Takeaway**: 4 main indoor seats + wooden cube stools; full takeaway; suitcases & strollers welcome; no minimum order.
+- **Payment**: Cash (JPY), Visa, Mastercard, JCB, AMEX, Diners, Suica, PASMO, ICOCA, SUGOCA, nimoca, Hayakaken, iD, QUICPay, PayPay. All prices include tax.
 
-### 1. Signature Waffle Soft & Waffle Cups (`https://en.soystories.cafe/waffle&soft.html`)
-- **Waffle & Pure Soy Soft Serve (ワッフル純豆乳ソフト)**: Medium ¥690 / Large ¥900 (+5 free Japanese toppings) — Allergens: Soybeans (Kinako topping contains soybeans).
-- **Waffle & Vegan Ice Cream Cups (ワッフルアイス 4種)**: ¥690 each
-  - **Strawberry (ストロベリー)**: Soybeans (Nut-free recipe).
-  - **Chocolate (チョコ)**: Soybeans, Almond.
-  - **Matcha (抹茶)**: Soybeans (Nut-free recipe).
-  - **Black Sesame (黒ゴマ)**: Soybeans, Sesame (Nut-free recipe).
-- **Waffle & Soy Whip Cups (ワッフルホイップ 2種)**: ¥660 each
-  - **Strawberry (ストロベリー)**: Soybeans, Apple (Nut-free recipe).
-  - **Caramel Nuts (キャラメルナッツ)**: Soybeans, Almond, Cashew nuts, Macadamia nuts.
-- **5 Complimentary Japanese Toppings** (for Waffle & Pure Soy Soft Serve and Pure Soy Soft Serve): Matcha, Kinako (roasted soy flour — contains soy), Hojicha, Vegan Chocolate Sauce, Kuromitsu (black sugar syrup).
+## Allergen Disclosure (Japan's 29 Specified Allergens)
+- **Never brought into the kitchen**: Wheat/gluten, dairy, eggs, meat, fish, honey, gelatin, refined white sugar.
+- **Handled in the same kitchen**: Soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam (yamaimo), apples, peaches.
+- **Note**: Complete elimination of trace cross-contact for nuts/soy/etc. cannot be guaranteed; guests with severe allergies should review per-item allergen tables and consult staff.
+- **Official FoodHug Allergen Page**: https://food-hug.com/soystoriesenglish-page/
 
-### 2. Freshly Baked 100% Niigata Rice-Flour Bubble Waffles (`https://en.soystories.cafe/waffle.html`)
-- **Plain Bubble Waffle (国産米粉の焼きたてワッフル プレーン)**: ¥660 — Allergens: Soybeans (Nut-free batter).
-- **Cocoa / Matcha Bubble Waffle (ココア・抹茶)**: ¥690 each — Allergens: Soybeans (Nut-free batter).
-- **Black Sesame Bubble Waffle (黒ゴマ)**: ¥690 — Allergens: Soybeans, Sesame (Nut-free batter).
-- *Takeout box available for +¥100 (箱代+100円).*
+## Signature Menu Highlights (Tax Included)
+- **Waffle & Pure Soy Soft Serve** (Medium ¥690 / Large ¥900): Freshly baked 100% Niigata rice-flour bubble waffle + pure soy milk soft serve (made from freshly pressed local Kyushu soy milk within 2 days of pressing) + 5 complimentary Japanese toppings (Matcha, Kinako, Hojicha, Vegan Chocolate Sauce, Kuromitsu). → https://en.soystories.cafe/waffle&soft.html
+- **Pure Soy Milk Soft Serve** (Medium ¥460 / Large ¥690) & **Organic Iced Coffee Float** (¥660) → https://en.soystories.cafe/soft.html
+- **Freshly Baked Rice-Flour Bubble Waffles** (Plain ¥660; Cocoa / Matcha / Black Sesame ¥690) → https://en.soystories.cafe/waffle.html
+- **Rice-Flour Craft Gelato — 8 In-Store Flavors** (¥490 each; Berry Mix, Dragon Fruit, Apple, Peach [soy-free & nut-free]; Matcha, Hojicha, Vanilla Coconut [nut-free]; Melting Chocolate [soy & almond]) → https://en.soystories.cafe/ice.html
+  - *Note: Craft gelato is made at our dedicated wheat/dairy/egg-free factory with domestic rice flour and Japanese fermented ingredients (amazake, white miso); the "pressed within 2 days" soy milk claim applies strictly to in-store soft serve and baked soy donuts.*
+- **Baked Soy Donuts** (¥330, nut-free) & **Soy-Free Almond Cake Donuts** (¥430, keeps ~1 week at room temp) & **GF Rice-Flour Dorayaki** (¥460) → https://en.soystories.cafe/dounuts.html
+- **Cafe Drinks** (¥360–¥390; ¥330 with any sweet; includes soy-free Amazake Latte) → https://en.soystories.cafe/soft.html#drinks
 
-### 3. Pure Soy Milk Soft Serve & Iced Coffee Float (`https://en.soystories.cafe/soft.html`)
-- **Pure Soy Milk Soft Serve (純豆乳ソフト)**: Medium ¥460 / Large ¥690 (+5 free Japanese toppings) — Allergens: Soybeans.
-- **Organic Iced Coffee Float (コーヒーフロート)**: ¥660 — Allergens: Soybeans (100% dairy-free & nut-free).
-
-### 4. Baked Soy Donuts & Soy-Free Glazed Cake Donuts (`https://en.soystories.cafe/dounuts.html`)
-- **Baked Soy & Rice-Flour Donuts (プレーンドーナツ 6種 · Sold Frozen or Warmed In-Store)**: ¥330 each
-  - **Cranberry / Yame Matcha / Kinako / Earl Grey / Chocolat**: Soybeans, Japanese Yam (Nut-free recipe).
-  - **Black Sesame (黒ごま)**: Soybeans, Japanese Yam, Sesame (Nut-free recipe).
-- **Glazed Almond & Rice-Flour Cake Donuts (しっとりケーキドーナツ 6種 · Soy-Free & Macadamia-Free · Keeps ~1 Week at Room Temp)**: ¥430 each
-  - **Strawberry / Matcha (ストロベリー・抹茶)**: Almond, Pistachio, Apple (Soy-free & macadamia-free recipe).
-  - **Double Chocolate / Lemon / Chocolate Mint / Coconut (ダブルチョコ・レモン・チョコミント・ココナッツ)**: Almond, Apple (Soy-, pistachio- & macadamia-free recipe).
-
-### 5. Gluten-Free Rice-Flour Dorayaki (`https://en.soystories.cafe/dounuts.html#dorayaki`)
-- **Anko & Soy Cream / Strawberry Soy Cream / Matcha Anko / Classic Red Bean Anko (グルテンフリー米粉どら焼き 全4種: あんクリーム・いちごクリーム・抹茶あんこ・あんこ)**: ¥460 each — Allergens: Soybeans, Almond (all 4 flavors). Handed over frozen; thaw 30–60 min at room temperature (1–2 hrs in refrigerator) or enjoy half-frozen as an ice-cream dorayaki.
-
-### 6. Rice-Flour Craft Gelato (`https://en.soystories.cafe/ice.html`)
-- *Full 11-flavor craft ice cream guide, tasting notes, ingredients & nutrition (English): `https://www.soystories.cafe/flavors`*
-- *Free insulated cooler bag + ice pack with purchase of 4 or more cups.*
-- **Berry Mix / Juicy Dragon Fruit**: ¥490 each — No 29-item specified allergens listed on label (Soy-free & Nut-free recipe).
-- **Refreshing Apple**: ¥490 — Allergens: Apple (Soy-free & Nut-free recipe).
-- **Too Juicy Peach**: ¥490 — Allergens: Peach (Soy-free & Nut-free recipe).
-- **Supreme Rich Matcha / Fragrant Hojicha / Vanilla Coconut**: ¥490 each — Allergens: Soybeans (Nut-free recipe).
-- **Melting Chocolate**: ¥490 — Allergens: Soybeans, Almond.
-
-### 7. Plant-Based Cafe Drinks & ¥330 Sweet Set (`https://en.soystories.cafe/soft.html#drinks`)
-- *Order any sweet and add any drink below as a set for **¥330** (`スイーツとセットでドリンク全品330円`).*
-- **Organic Coffee (オーガニックコーヒー HOT / COLD)**: ¥360 (Set ¥330) — Made without all 29 specified allergens.
-- **Brown Sugar Soy Latte (黒糖ソイラテ HOT / COLD)**: ¥390 (Set ¥330) — Allergens: Soybeans.
-- **Matcha Soy Latte (抹茶ソイラテ HOT / COLD)**: ¥390 (Set ¥330) — Allergens: Soybeans.
-- **Amazake Latte (甘酒ラテ · Fermented Koji Rice Sweet Drink)**: ¥390 (Set ¥330) — Made without all 29 specified allergens (**Soy-free**).
-- **Lemon Squash (レモンスカッシュ)**: ¥390 (Set ¥330) — Made without all 29 specified allergens.
-- **Mixed Berry Tea (ミックスベリーティー)**: ¥390 (Set ¥330) — Made without all 29 specified allergens.
-- **Tropical Soda (トロピカルソーダ)**: ¥360 (Set ¥330) — Allergens: Peach (Soy-free & Nut-free).
-
-## Official Profiles & Links
-- **Instagram**: https://www.instagram.com/soystories_yakuin/
-- **Instagram DM (Pre-orders & Holds)**: https://ig.me/m/soystories_yakuin
+## Official Ecosystem & B2B / OEM Links
 - **HappyCow**: https://www.happycow.net/reviews/soy-stories-fukuoka-298687
-- **Online Shop (Domestic Japan Shipping)**: https://soystories.com/
-- **Craft Ice Cream — All 11 Flavors & Ingredient Guide (English)**: https://www.soystories.cafe/flavors
-- **Craft Gelato Wholesale (B2B)**: https://www.soystories.cafe/
+- **Instagram**: https://www.instagram.com/soystories_yakuin/
+- **Online Store (Japan Domestic)**: https://soystories.com/
+- **All 11 Craft Ice Cream Flavors (EN Spec Guide)**: https://www.soystories.cafe/flavors
+- **Nationwide Vegan Ice Cream Wholesale & Small-Lot OEM (Japan)**: https://www.soystories.cafe/oem
+- **Corporate B2B & OEM Hub (JP)**: https://www.soystories.jp/b2b.html
