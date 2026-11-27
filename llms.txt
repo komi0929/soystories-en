@@ -23,6 +23,9 @@
 - [Gluten-Free Sweets & Café in Fukuoka (English)](https://en.soystories.cafe/gluten-free-fukuoka.html) — Dedicated wheat-free kitchen, rice-flour dessert menu, allergen disclosure and subway directions.
 - [Fukuoka Vegan Dessert & Late-Night Café Guide (English)](https://en.soystories.cafe/vegan-fukuoka-guide.html) — After-dinner hours, subway routes, Japanese counter cards, payment and takeout.
 - [후쿠오카 비건·글루텐프리 아이스크림 (한국어)](https://en.soystories.cafe/vegan-ice-cream-fukuoka-ko.html) — 순두유 소프트아이스크림, 쌀가루 젤라또, 29품목 알레르기 정보 및 교통 안내.
+- [福岡純素・無麩質冰淇淋（繁體中文）](https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-tw.html) — 藥院純豆漿霜淇淋、米粉手工義式冰淇淋、29 項過敏原查詢與地鐵交通。
+- [福冈纯素・无麸质冰淇淋（简体中文）](https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-cn.html) — 药院纯豆浆软冰淇淋、米粉手工意式冰淇淋、29 项过敏原查询与地铁交通。
+- [Dairy-Free, Egg-Free & Wheat-Free Sweets in Fukuoka (English)](https://en.soystories.cafe/fukuoka-allergy-friendly-sweets.html) — Shared-kitchen disclosure, four ¥490 fruit gelato recipes made without soy or nuts, allergen checker and family travel details.
 - **English (Primary)**: https://en.soystories.cafe/
 - **Korean (한국어)**: https://en.soystories.cafe/ko.html
 - **Traditional Chinese (繁體中文)**: https://en.soystories.cafe/zh-tw.html
@@ -40,7 +43,7 @@
 
 ## Allergen Disclosure (Japan's 29 Specified Allergens)
 - **Never brought into the kitchen**: Wheat/gluten, dairy, eggs, meat, fish, honey, gelatin, refined white sugar.
-- **Handled in the same kitchen**: Soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam (yamaimo), apples, peaches.
+- **Handled in the same kitchen**: Soybeans, almonds, cashew nuts, pistachio, macadamia nuts, sesame, Japanese yam (yamaimo), apples, peaches, oranges.
 - **Note**: Complete elimination of trace cross-contact for nuts/soy/etc. cannot be guaranteed; guests with severe allergies should review per-item allergen tables and consult staff.
 - **Official FoodHug Allergen Page**: https://food-hug.com/soystoriesenglish-page/
 

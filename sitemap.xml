@@ -76,6 +76,8 @@
     <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka.html"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-ko.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-tw.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-cn.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka.html"/>
   </url>
   <url>
@@ -91,6 +93,30 @@
     <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka.html"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-ko.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-tw.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-cn.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka.html"/>
+  </url>
+  <url>
+    <loc>https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-tw.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-ko.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-tw.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka.html"/>
+  </url>
+  <url>
+    <loc>https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-cn.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-ko.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-tw.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka-zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://en.soystories.cafe/vegan-ice-cream-fukuoka.html"/>
+  </url>
+  <url>
+    <loc>https://en.soystories.cafe/fukuoka-allergy-friendly-sweets.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
 </urlset>
